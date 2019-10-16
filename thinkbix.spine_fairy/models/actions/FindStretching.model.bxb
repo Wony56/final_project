@@ -1,0 +1,14 @@
+action (FindStretching) {
+  description (Search)
+  collect {
+    input (place) {
+      type (Place)
+      min (Optional) max (One)
+    }
+    input (part) {
+      type (Part)
+      min (Optional) max (One)
+    }
+  }
+  output (StretchingInfo)
+}

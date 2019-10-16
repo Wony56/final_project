@@ -1,0 +1,12 @@
+structure (StretchingInfo) {
+  description (스트레칭 내용을 담고 있는 structure 입니다)
+  property (name) {
+    type (Name)
+    min (Required) max (One)
+  }
+  property (info) {
+    type (Info)
+    min (Required) max (One)
+  }
+
+}

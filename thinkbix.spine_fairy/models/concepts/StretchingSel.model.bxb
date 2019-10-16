@@ -1,0 +1,11 @@
+structure (StretchingSel) {
+  description (스트레칭 정보를 담고 있는 structure 입니다)
+  property (name) {
+    type (Name)
+    min (Required) max (Many)
+  }
+  property (thumbnailURL) {
+    type (ThumbnailURL)
+    min (Required) max (Many)
+  }
+}
