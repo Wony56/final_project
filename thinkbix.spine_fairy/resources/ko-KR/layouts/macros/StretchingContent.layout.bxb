@@ -1,0 +1,32 @@
+layout-macro-def (StretchingContent){
+  params{
+    param (stretchingSel){
+      type (StretchingSel)
+      min (Required)
+      max (Many)
+    }
+  }
+  content{
+    image-card{
+      on-click{
+        intent{
+          goal : StretchingSel
+          value : StretchingSel{
+            title : $expr(stretchingSel.title)
+            thumbnailURL : $expr(stretchingSel.thumbnailURL)
+          }
+        }
+      }
+      title-area{
+        slot1{
+          text("#{value(stretchingSel.title)}")
+        }
+          halign (End)
+      }
+      image-url{
+        template ("#{value(stretchingSel.thumbnailURL)}")
+      }
+    }
+  }
+}
+

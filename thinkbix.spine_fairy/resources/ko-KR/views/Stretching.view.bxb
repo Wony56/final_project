@@ -1,0 +1,26 @@
+result-view{
+  match : StretchingSel(result)
+
+  message{
+    template ("질문하신 스트레칭에 대한 5개의 결과입니다.")
+  }
+  
+  render{
+    layout{
+      section{
+        content{
+          for-each (result){
+            as (item){
+              layout-macro (StretchingContent){
+                param (stretchingSel){
+                  expression (item)
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
