@@ -1,4 +1,4 @@
-module.exports.function = function selectStretching (place, part) {
+module.exports.function = function SelectStretchingSearch (place, part) {
   const fakeData = require("./data/SelectData.js");
   const console = require("console");
 

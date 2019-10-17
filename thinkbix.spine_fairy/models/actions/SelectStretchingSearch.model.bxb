@@ -1,4 +1,4 @@
-action (SelectStretching) {
+action (SelectStretchingSearch) {
   description (Search)
   collect {
     input (place) {

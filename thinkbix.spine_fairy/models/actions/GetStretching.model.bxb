@@ -1,4 +1,4 @@
-action (FindStretching) {
+action (GetStretching) {
   description (Search)
   collect {
     input (place) {

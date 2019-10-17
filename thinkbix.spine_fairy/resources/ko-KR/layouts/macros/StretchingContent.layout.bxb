@@ -1,6 +1,6 @@
 layout-macro-def (StretchingContent){
   params{
-    param (stretchingSel2){
+    param (stretchingSel){
       type (StretchingSel)
       min (Required)
       max (Many)
@@ -12,19 +12,19 @@ layout-macro-def (StretchingContent){
         intent{
           goal : StretchingSel
           value : StretchingSel{
-            name : $expr(stretchingSel2.name)
-            thumbnailURL : $expr(stretchingSel2.thumbnailURL)
+            title : $expr(stretchingSel.title)
+            thumbnailURL : $expr(stretchingSel.thumbnailURL)
           }
         }
       }
       title-area{
         slot1{
-          text("#{value(stretchingSel2.name)}")
+          text("#{value(stretchingSel.title)}")
         }
           halign (End)
       }
       image-url{
-        template ("#{value(stretchingSel2.thumbnailURL)}")
+        template ("#{value(stretchingSel.thumbnailURL)}")
       }
     }
   }

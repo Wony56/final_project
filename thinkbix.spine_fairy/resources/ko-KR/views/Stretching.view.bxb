@@ -12,7 +12,7 @@ result-view{
           for-each (result){
             as (item){
               layout-macro (StretchingContent){
-                param (stretchingSel2){
+                param (stretchingSel){
                   expression (item)
                 }
               }

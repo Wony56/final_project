@@ -2,19 +2,19 @@ result-view{
   match : StretchingInfo(this)
 
   message{
-    template ("#{value(this.name)} 스트레칭에 대한 정보입니다.")
+    template ("#{value(this.title)} 스트레칭에 대한 정보입니다.")
   }
 
   render{
     layout{
       section{
         title{
-          template ("#{value(this.name)}")
+          template ("#{value(this.title)}")
         }
         content{
           paragraph{
             value{
-              template ("#{value(this.info)}")
+              template ("#{value(this.text)}")
             }
           }
           image{
