@@ -8,19 +8,25 @@ export const home = (req, res) => {
 export const upload = async (req, res) => {
     const {
         body: {
-            url, highlight, location, target, occupation, situation
+            title, description, place, part, situation, image
         }
     } = req;
 
-    const situations = situation.split(',');
+    const descriptions = description.split('&&');
+    const situations = situation.split('&&');
 
     console.log(req.body);
 
     try{
         await Stretching.create({
-            url: url, highlightUrl: highlight, location: location, target: target, occupation: occupation, situations: situations
+            title, 
+            'description': descriptions, 
+            'tag.place': place, 
+            'tag.part': part, 
+            'tag.situation': situations, 
+            image
         })
-
+        
         console.log("Data-input, Success!")
     }catch(error){
         console.log(error);

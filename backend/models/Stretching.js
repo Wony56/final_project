@@ -1,33 +1,43 @@
-
 import mongoose from "mongoose";
 
 const StretchingSchema = new mongoose.Schema({
-    url: {
+    title: {
         type: String,
-        required: "URL is required"
+        required: 'Title is requried!'
     },
-    highlightUrl: String,
-    location: [
+    description: [
+        {
+            type: String,
+            default: 'Enjoy stretching'
+        }
+    ],
+    image: [
         {
             type: String
         }
     ],
-    target: [
-        {
-            type: String
-        }
-    ],
-    occupation: [
-        {
-            type: String
-        }
-    ],
-    situations: [
-        {
-            type: String
-        }
-    ]
+    views: {
+        type: Number,
+        default: 0
+    },
+    tag: {
+        place: [
+            {
+                type: String
+            }
+        ],
+        part: [
+            {
+                type: String
+            }
+        ],
+        situation: [
+            {
+                type: String
+            }
+        ]
+    }
 });
 
-const model = mongoose.model("Stretching", StretchingSchema);
+const model = mongoose.model("stretching", StretchingSchema);
 export default model;

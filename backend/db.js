@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 
 mongoose.connect(
-    "mongodb://localhost:27017/spine-fairy",
+    "mongodb://client:client@13.125.39.196:8000/spine_fairy",
     {
         useNewUrlParser: true,
         useFindAndModify: false

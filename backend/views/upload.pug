@@ -3,26 +3,39 @@ extends layouts/main
 block content
     .form-container
         form(action="/upload", method="post")
-            .url-input
-                input(type="text", name="url", placeholder="URL", required="true")
-            .url-highlight-input
-                input(type="text", name="highlight", placeholder="URL-highlight", required="true")
-            .location-input 장소
-                .location-items
-                    each location in locations
-                        input(type="checkbox", id=`${location.key}-check`, name="location", value=`${location.value}`)
-                        label(for=`${location.key}-check`) #{location.value}
-            .target-input 부위
-                .target-items
-                    each target in targets
-                        input(type="checkbox", id=`${target.key}-check`, name="target", value=`${target.value}`)
-                        label(for=`${target.key}-check`) #{target.value}
-            .occupation-input 직업
-                .occupation-items
-                    each occupation in occupations
-                        input(type="checkbox", id=`${occupation.key}-check`, name="occupation", value=`${occupation.value}`)
-                        label(for=`${occupation.key}-check`) #{occupation.value}
-            .situation-input 상황
-                .situation-items
-                    input(type="text", name="situation", placeholder="아침,긴장,운동 후,...")
-            input(type="submit", value="업로드")
+            .title-field
+                label.field-label(id="title", for="title") Title
+                .field-input
+                    input(type="text", id="title", name="title", size="8", tabindex="1")
+            .description-field
+                label.field-label(id="description", for="description") Description
+                .field-input
+                    textarea(type="text", id="description", name="description", spellcheck="true", rows="10", cols="50", tabindex="4", placeholder="&&로 입력을 구분!")
+            .tag-field
+                label.field-label Tag
+                .field-input
+                    label.tag-label Place
+                    .tag-input
+                        input(type="checkbox", id="house", name="place", value="집") 
+                        label(for="house") 집
+                    .tag-input
+                        input(type="checkbox", id="company", name="place", value="회사") 
+                        label(for="company") 회사
+                .field-input
+                    label.tag-label Part
+                    .tag-input
+                        input(type="checkbox", id="arm", name="part", value="팔") 
+                        label(for="arm") 팔
+                    .tag-input
+                        input(type="checkbox", id="neck", name="part", value="목") 
+                        label(for="neck") 목
+                .field-input
+                    label.tag-label Situation
+                    .tag-input
+                        label(for="situation") 상황
+                        input(type="text", id="situation", name="situation", placeholder="&&로 입력을 구분!")
+                .image-input
+                    
+
+            .submit-input    
+                input(type="submit", value="업로드")
