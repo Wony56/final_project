@@ -1,0 +1,39 @@
+extends layouts/main
+
+block content
+    .form-container
+        form(action="/upload", method="post", enctype="multipart/form-data")
+            .title-field
+                label.field-label(id="title", for="title") Title
+                .field-input
+                    input(type="text", id="title", name="title", size="8", tabindex="1")
+            .description-field
+                label.field-label(id="description", for="description") Description
+                .field-input
+                    textarea(type="text", id="description", name="description", spellcheck="true", rows="10", cols="50", tabindex="4", placeholder="&&로 입력을 구분!")
+            .tag-field
+                label.field-label Tag
+                .field-input
+                    label.tag-label Place
+                    each place in places
+                        .tag-input
+                            input(type="checkbox", id=`${place.key}`, name="place", value="집") 
+                            label(for=`${place.key}`) #{place.value}
+                .field-input
+                    label.tag-label Part
+                    each part in parts
+                        .tag-input
+                            input(type="checkbox", id=`${part.key}`, name="part", value="팔") 
+                            label(for=`${part.key}`) #{part.value}
+                .field-input
+                    label.tag-label Situation
+                    .tag-input
+                        label(for="situation") 상황
+                        input(type="text", id="situation", name="situation", placeholder="&&로 입력을 구분!")
+                .image-input
+                    label.image-label(for="file") Image
+                    .image-input
+                        input(type="file", id="file", name="imageFile", accept="image/*", multiple="true")
+
+            .submit-input    
+                input(type="submit", value="업로드")
