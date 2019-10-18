@@ -8,7 +8,7 @@ export const home = (req, res) => {
 export const upload = async (req, res) => {
     const {
         body: {
-            title, description, place, part, situation, image
+            title, description, place, part, situation
         },
         files
     } = req;
