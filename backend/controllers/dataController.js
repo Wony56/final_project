@@ -9,13 +9,13 @@ export const upload = async (req, res) => {
     const {
         body: {
             title, description, place, part, situation, image
-        }
+        },
+        files
     } = req;
 
     const descriptions = description.split('&&');
     const situations = situation.split('&&');
-
-    console.log(req.body);
+    const imgPath = files.map(file => file.path);
 
     try{
         await Stretching.create({
@@ -24,9 +24,9 @@ export const upload = async (req, res) => {
             'tag.place': place, 
             'tag.part': part, 
             'tag.situation': situations, 
-            image
+            imgPath
         })
-        
+
         console.log("Data-input, Success!")
     }catch(error){
         console.log(error);

@@ -11,7 +11,7 @@ const StretchingSchema = new mongoose.Schema({
             default: 'Enjoy stretching'
         }
     ],
-    image: [
+    imgPath: [
         {
             type: String
         }

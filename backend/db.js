@@ -1,7 +1,10 @@
 import mongoose from "mongoose";
+import dotenv from "dotenv";
+
+dotenv.config();
 
 mongoose.connect(
-    "mongodb://client:client@13.125.39.196:8000/spine_fairy",
+    process.env.MONGO_URL,
     {
         useNewUrlParser: true,
         useFindAndModify: false

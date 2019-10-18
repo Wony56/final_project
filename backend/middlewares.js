@@ -1,4 +1,17 @@
-const locations = [
+import multer from "multer";
+
+const storage = multer.diskStorage({
+    destination: (req, file, cb) => {
+        cb(null, 'uploads/images/');
+    },
+    filename: (req, file, cb) => {
+        cb(null, file.originalname);
+    }
+})
+
+const multerImage = multer({ storage })
+
+const places = [
     {
         key: "home",
         value: "집"
@@ -25,7 +38,7 @@ const locations = [
     },
 ]
 
-const targets = [
+const parts = [
     {
         key: "neck",
         value: "목"
@@ -88,27 +101,11 @@ const targets = [
     },
 ]
 
-const occupations = [
-    {
-        key: "employee",
-        value: "회사원"
-    },
-    {
-        key: "student",
-        value: "학생"
-    },
-    {
-        key: "housewife",
-        value: "주부"
-    },
-]
-
-
-
 export const localsMiddleware = (req, res, next) => {
-    res.locals.locations = locations;
-    res.locals.targets = targets;
-    res.locals.occupations = occupations;
+    res.locals.places = places;
+    res.locals.parts = parts;
 
     next();
 }
+
+export const uploadImage = multerImage.array("imageFile");
