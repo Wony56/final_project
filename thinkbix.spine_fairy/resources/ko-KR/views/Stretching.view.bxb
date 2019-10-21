@@ -1,20 +1,41 @@
 result-view{
   match : StretchingSel(result)
 
-  message{
-    template ("질문하신 스트레칭에 대한 5개의 결과입니다.")
+  message{   
+    if(size(result)>1){
+      template ("질문하신 스트레칭에 대한 #{size(result)}개의 결과입니다.")
+    }else{
+      template("#{value(result.title)} 스트레칭을 시작할게요.")
+    }
   }
   
   render{
     layout{
-      section{
-        content{
-          for-each (result){
-            as (item){
-              layout-macro (StretchingContent){
-                param (stretchingSel){
-                  expression (item)
+      if(size(result)>1){
+        section{
+          content{
+            for-each (result){
+              as (item){
+                layout-macro (StretchingContent){
+                  param (stretchingSel){
+                    expression (item)
+                  }
                 }
+              }
+            }
+          }
+        }
+      } else{ 
+        for-each (result.process){
+          as(item){
+            layout-macro (StretchingDetailImage){
+              param(process){
+                expression (item)
+              }
+            }
+            layout-macro (StretchingDetailText){
+              param(process){
+                expression (item)
               }
             }
           }
@@ -23,4 +44,17 @@ result-view{
     }
   }
 
+
+
+  conversation-drivers{
+    if(size(result)==1){
+      conversation-driver{
+        template ("돌아가")
+      }
+      conversation-driver{
+        template ("다음")
+      }
+    }
+
+  }
 }

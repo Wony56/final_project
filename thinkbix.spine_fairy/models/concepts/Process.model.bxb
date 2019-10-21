@@ -1,0 +1,10 @@
+structure (Process) {
+  property (text){
+    type(Text)
+    min (Required) max (Many)
+  }
+  property (image){
+    type(Image)
+    min (Required) max (Many)
+  }
+}

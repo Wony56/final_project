@@ -14,6 +14,7 @@ layout-macro-def (StretchingContent){
           value : StretchingSel{
             title : $expr(stretchingSel.title)
             thumbnailURL : $expr(stretchingSel.thumbnailURL)
+            process : $expr(stretchingSel.process)
           }
         }
       }
@@ -29,4 +30,3 @@ layout-macro-def (StretchingContent){
     }
   }
 }
-
