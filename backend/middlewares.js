@@ -123,6 +123,10 @@ const parts = [
         key: "wing-bone",
         value: "날개뼈"
     },
+    {
+        key: "leg",
+        value: "다리"
+    },
 ]
 
 export const localsMiddleware = (req, res, next) => {
