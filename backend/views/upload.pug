@@ -21,13 +21,13 @@ block content
                     label.tag-label Place
                     each place in places
                         .tag-input
-                            input(type="checkbox", id=`${place.key}`, name="place", value="집") 
+                            input(type="checkbox", id=`${place.key}`, name="place", value=`${place.value}`) 
                             label(for=`${place.key}`) #{place.value}
                 .field-input
                     label.tag-label Part
                     each part in parts
                         .tag-input
-                            input(type="checkbox", id=`${part.key}`, name="part", value="팔") 
+                            input(type="checkbox", id=`${part.key}`, name="part", value=`${part.value}`) 
                             label(for=`${part.key}`) #{part.value}
                 .field-input
                     label.tag-label Situation
