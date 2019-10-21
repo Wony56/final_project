@@ -8,7 +8,11 @@ export const home = (req, res) => {
 export const upload = async (req, res) => {
     const {
         body: {
+<<<<<<< HEAD
             title, description, repetition, place, part, situation
+=======
+            title, description, place, part, situation
+>>>>>>> develop
         },
         files
     } = req;
@@ -40,8 +44,11 @@ export const findAll = async (req, res) => {
     try{
         const datas = await Stretching.find({});
 
+<<<<<<< HEAD
         console.log(datas);
 
+=======
+>>>>>>> develop
         res.status(200).json({ datas });
     }catch(error){
         console.log(error);
@@ -50,7 +57,11 @@ export const findAll = async (req, res) => {
     }
 }
 
+<<<<<<< HEAD
 export const find = async (req, res) => {
+=======
+export const find = (req, res) => {
+>>>>>>> develop
     
     const {
         query
