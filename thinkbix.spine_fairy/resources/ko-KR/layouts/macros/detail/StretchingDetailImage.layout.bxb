@@ -1,0 +1,20 @@
+layout-macro-def(StretchingDetailImage) {
+  params {
+    param (process) {
+      type (Process)
+      min (Required)
+      max (Many)
+    }
+  }
+
+  content {
+    section {  // this macro returns a "section"
+      content {
+        image {
+          url ("#{value(process.image)}")
+          object-fit (Contain)
+        }
+      }
+    }
+  }
+}
