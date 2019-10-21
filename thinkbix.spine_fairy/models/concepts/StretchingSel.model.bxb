@@ -8,4 +8,10 @@ structure (StretchingSel) {
     type (ThumbnailURL)
     min (Required) max (Many)
   }
+
+  property (process) {
+    type (Process)
+    min (Required) max (Many)
+  }
+
 }
