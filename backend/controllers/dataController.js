@@ -34,3 +34,37 @@ export const upload = async (req, res) => {
 
     res.redirect(routes.home);
 }
+
+export const findAll = async (req, res) => {
+    try{
+        const datas = await Stretching.find({});
+
+        res.status(200).json({ datas });
+    }catch(error){
+        console.log(error);
+
+        res.status(200).json({ datas: [] });
+    }
+}
+
+export const find = (req, res) => {
+    
+    const {
+        query
+    } = req;
+
+    try{
+        const condition = {
+            title: query['title'] || null,
+            place: query['place'] || null,
+            part: query['part'] || null,
+            situation: query['situation'] || null
+        }
+
+        console.log(condition);
+    }catch(error){
+        console.log(error);
+    }
+
+    res.redirect(routes.home);
+}
