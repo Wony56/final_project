@@ -1,4 +1,7 @@
 import mongoose from "mongoose";
+import dotenv from "dotenv";
+
+dotenv.config();
 
 const StretchingSchema = new mongoose.Schema({
     title: {
@@ -11,6 +14,11 @@ const StretchingSchema = new mongoose.Schema({
             default: 'Enjoy stretching'
         }
     ],
+    repetition: String,
+    imgAddress: {
+        type: String,
+        default: process.env.IMAGE_ADDRESS || "127.0.0.1"
+    },
     imgPath: [
         {
             type: String

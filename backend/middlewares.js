@@ -99,6 +99,30 @@ const parts = [
         key: "chin",
         value: "턱"
     },
+    {
+        key: "hip-joint",
+        value: "고관절"
+    },
+    {
+        key: "spine",
+        value: "척추"
+    },
+    {
+        key: "chest",
+        value: "가슴"
+    },
+    {
+        key: "side",
+        value: "옆구리"
+    },
+    {
+        key: "core",
+        value: "코어"
+    },
+    {
+        key: "wing-bone",
+        value: "날개뼈"
+    },
 ]
 
 export const localsMiddleware = (req, res, next) => {
