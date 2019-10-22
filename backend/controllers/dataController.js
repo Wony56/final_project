@@ -7,33 +7,51 @@ export const home = (req, res) => {
 
 export const upload = async (req, res) => {
     const {
-        body: {
-            title, description, repetition, place, part, situation
-        },
-        files
+        body
     } = req;
-
-    const descriptions = description.split('&&');
-    const situations = situation.split('&&');
-    const imgPath = files.map(file => file.path);
 
     try{
         await Stretching.create({
-            title,
-            repetition,
-            'description': descriptions, 
-            'tag.place': place, 
-            'tag.part': part, 
-            'tag.situation': situations, 
-            imgPath
+
         })
 
-        console.log("✔ Data-input, Success!")
+        console.log("✔ Data-input, Success!");
     }catch(error){
         console.log(error);
     }
 
     res.redirect(routes.home);
+}
+
+export const uploadMany = (req, res) => {
+    const {
+        body: {
+            data
+        }
+    } = req;
+
+    try{
+        data.forEach(async stretching => {
+            await Stretching.create({
+                title: stretching.title,
+                repetition: stretching.repetition,
+                processList: stretching.processList,
+                check: stretching.check,
+                point: stretching.point,
+                place: stretching.place,
+                part: stretching.part,
+                situation: stretching.situation,
+                hashtag: stretching.hashtag
+            });
+        });
+
+        console.log("✔ Data-input, Success!");
+        res.status(201);
+    }catch(error){
+        console.log(error);
+
+        res.status(400);
+    }
 }
 
 export const findAll = async (req, res) => {
