@@ -1,12 +1,13 @@
 endpoints {
   action-endpoints {
-    action-endpoint (GetStretching) {
-      accepted-inputs (place, part)
-      local-endpoint (GetStretching.js)
-    }
+    // action-endpoint (GetStretching) {
+    //   accepted-inputs (place, part)
+    //   local-endpoint (GetStretching.js)
+    // }
     action-endpoint (SelectStretchingSearch) {
       accepted-inputs (place, part)
       local-endpoint (SelectStretchingSearch.js)
     }
+    
   }
 }

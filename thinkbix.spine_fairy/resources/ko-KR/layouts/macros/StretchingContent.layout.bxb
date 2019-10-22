@@ -13,8 +13,15 @@ layout-macro-def (StretchingContent){
           goal : StretchingSel
           value : StretchingSel{
             title : $expr(stretchingSel.title)
-            thumbnailURL : $expr(stretchingSel.thumbnailURL)
-            process : $expr(stretchingSel.process)
+            repetition : $expr(stretchingSel.repetition)
+            processList : $expr(stretchingSel.processList)
+            views : $expr(stretchingSel.views)
+            check : $expr(stretchingSel.check)
+            point : $expr(stretchingSel.point)
+            place : $expr(stretchingSel.place)
+            part : $expr(stretchingSel.part)
+            situation : $expr(stretchingSel.situation)
+            hashtag : $expr(stretchingSel.hashtag)
           }
         }
       }
@@ -25,7 +32,7 @@ layout-macro-def (StretchingContent){
           halign (End)
       }
       image-url{
-        template ("#{value(stretchingSel.thumbnailURL)}")
+        template ("#{value(stretchingSel.processList[0].imagePath)}/#{value(stretchingSel.processList[0].imageAddress)}")
       }
     }
   }

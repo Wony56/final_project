@@ -1,7 +1,7 @@
 layout-macro-def(StretchingDetailImage) {
   params {
-    param (process) {
-      type (Process)
+    param (processList) {
+      type (ProcessList)
       min (Required)
       max (Many)
     }
@@ -11,7 +11,7 @@ layout-macro-def(StretchingDetailImage) {
     section {  // this macro returns a "section"
       content {
         image {
-          url ("#{value(process.image)}")
+          url ("#{value(processList.imageAddress)}")
           object-fit (Contain)
         }
       }

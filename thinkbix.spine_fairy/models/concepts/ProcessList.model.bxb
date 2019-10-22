@@ -1,0 +1,14 @@
+structure (ProcessList) {
+  property (imageAddress){
+    type(ImageAddress)
+    min (Required) max (One)
+  }
+  property (imagePath){
+    type(ImagePath)
+    min (Required) max (One)
+  }
+  property (description){
+    type(Description)
+    min (Required) max (Many)
+  }
+}
