@@ -30,8 +30,11 @@ export const uploadMany = (req, res) => {
         }
     } = req;
 
+    const stretchings = JSON.parse(data);
+    console.log(stretchings);
+
     try{
-        data.forEach(async stretching => {
+        stretchings.forEach(async stretching => {
             await Stretching.create({
                 title: stretching.title,
                 repetition: stretching.repetition,
@@ -85,35 +88,19 @@ export const find = async (req, res) => {
         let datas = await Stretching.find({})
 
         if(condition.title){
-            datas = datas.map(data => {
-                if(data.title === condition.title.trim()){
-                    return data;
-                }
-            })
+            datas = datas.filter(data => data.title === condition.title.trim());
         }
 
         if(condition.place){
-            datas = datas.map(data => {
-                if(data.tag.place.includes(condition.place.trim())){
-                    return data;
-                }
-            })
+            datas = datas.filter(data => data.place.includes(condition.place.trim()));
         }
 
         if(condition.part){
-            datas = datas.map(data => {
-                if(data.tag.part.includes(condition.part.trim())){
-                    return data;
-                }
-            })
+            datas = datas.filter(data => data.part.includes(condition.part.trim()));
         }
 
         if(condition.situation){
-            datas = datas.map(data => {
-                if(data.tag.situation.includes(condition.situation.trim())){
-                    return data;
-                }
-            })
+            datas = datas.filter(data => data.situation.includes(condition.situation.trim()));
         }
 
         console.log(datas);
