@@ -4,7 +4,8 @@
   "description": "It's for connecting with mongoDB.",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon --exec babel-node init.js --delay 2"
+    "server": "nodemon --exec babel-node init.js --delay 2",
+    "dev:assets": "webpack --WEBPACK_ENV=development -w"
   },
   "author": "thinkbix",
   "license": "ISC",
@@ -13,14 +14,23 @@
     "@babel/node": "^7.6.3",
     "@babel/polyfill": "^7.6.0",
     "@babel/preset-env": "^7.6.3",
+    "autoprefixer": "^9.6.5",
+    "babel-loader": "^8.0.6",
     "body-parser": "^1.19.0",
+    "css-loader": "^3.2.0",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "helmet": "^3.21.1",
     "mongoose": "^5.7.5",
     "morgan": "^1.9.1",
     "multer": "^1.4.2",
-    "pug": "^2.0.4"
+    "node-sass": "^4.12.0",
+    "postcss-loader": "^3.0.0",
+    "pug": "^2.0.4",
+    "sass-loader": "^8.0.0",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.9"
   },
   "devDependencies": {
     "nodemon": "^1.19.3"
