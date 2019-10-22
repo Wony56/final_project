@@ -51,6 +51,8 @@ const StretchingSchema = new mongoose.Schema({
             type: String
         }
     ]
+},{
+    versionKey: false
 });
 
 const model = mongoose.model("stretching", StretchingSchema);
