@@ -1,14 +1,14 @@
-action (GetStretching) {
-  description (Search)
-  collect {
-    input (place) {
-      type (Place)
-      min (Optional) max (One)
-    }
-    input (part) {
-      type (Part)
-      min (Optional) max (One)
-    }
-  }
-  output (StretchingInfo)
-}
+// action (GetStretching) {
+//   description (Search)
+//   collect {
+//     input (place) {
+//       type (Place)
+//       min (Optional) max (One)
+//     }
+//     input (part) {
+//       type (Part)
+//       min (Optional) max (One)
+//     }
+//   }
+//   //output (StretchingInfo)
+// }

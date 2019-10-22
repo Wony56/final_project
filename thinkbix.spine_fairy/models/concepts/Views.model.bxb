@@ -1,0 +1,3 @@
+integer (Views) {
+  description (조회수)
+}

@@ -1,38 +1,38 @@
-result-view{
-  match : StretchingInfo(this)
+// result-view{
+//   match : StretchingInfo(this)
 
-  message{
-    template ("#{value(this.title)} 스트레칭에 대한 정보입니다.")
-  }
+//   message{
+//     template ("#{value(this.title)} 스트레칭에 대한 정보입니다.")
+//   }
 
-  render{
-    layout{
-      section{
-        title{
-          template ("#{value(this.title)}")
-        }
-        content{
-          paragraph{
-            value{
-              template ("#{value(this.text)}")
-            }
-          }
-          image{
-            url{
-              template ("http://cfile223.uf.daum.net/R400x0/9921BB465C416D0A047A0F")
-            }
-          }
-        }
-      }
-    }
-  }
+//   render{
+//     layout{
+//       section{
+//         title{
+//           template ("#{value(this.title)}")
+//         }
+//         content{
+//           paragraph{
+//             value{
+//               template ("#{value(this.text)}")
+//             }
+//           }
+//           image{
+//             url{
+//               template ("http://cfile223.uf.daum.net/R400x0/9921BB465C416D0A047A0F")
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
 
-  conversation-drivers{
-    conversation-driver{
-      template ("유사한 스트레칭 검색")
-    }
-    conversation-driver{
-      template ("유튜브로 이동")
-    }
-  }
-}
+//   conversation-drivers{
+//     conversation-driver{
+//       template ("유사한 스트레칭 검색")
+//     }
+//     conversation-driver{
+//       template ("유튜브로 이동")
+//     }
+//   }
+// }
