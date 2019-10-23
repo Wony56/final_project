@@ -10,7 +10,7 @@ layout-macro-def (StretchingCheck){
   content{
     paragraph{
       value ("#{value(stretchingSel.check)}")
-      style(Label_M_Soft)
+      // style(Label_M_Soft)
     }
   }
   

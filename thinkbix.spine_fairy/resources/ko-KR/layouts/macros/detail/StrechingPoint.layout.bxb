@@ -10,7 +10,7 @@ layout-macro-def (StretchingPoint){
   content{
     paragraph{
       value ("#{value(stretchingSel.point)}")
-      style(Label_M_Soft)
+      // style(Label_M_Soft)
     }
   }
 

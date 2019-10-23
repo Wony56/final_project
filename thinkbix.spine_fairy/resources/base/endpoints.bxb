@@ -8,6 +8,9 @@ endpoints {
       accepted-inputs (place, part)
       local-endpoint (SelectStretchingSearch.js)
     }
-    
+    action-endpoint (GetStretchingStep) {
+      accepted-inputs (stretchingSel)
+      local-endpoint (GetStretchingStep.js)
+    }
   }
 }

@@ -1,0 +1,14 @@
+structure (StretchingStep) {
+  property (imgAddress){
+    type(ImageAddress)
+    min (Required) max (One)
+  }
+  property (imgPath){
+    type(ImagePath)
+    min (Required) max (One)
+  }
+  property (description){
+    type(Description)
+    min (Required) max (Many)
+  }
+}

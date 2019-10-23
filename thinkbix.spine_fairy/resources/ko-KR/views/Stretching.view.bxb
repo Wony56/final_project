@@ -6,8 +6,6 @@ result-view{
       template ("질문하신 스트레칭에 대한 #{size(result)}개의 결과입니다.")
     }else-if (size(result)==1){
       template("#{value(result.title)} 스트레칭을 시작할게요.")
-    }else{
-      template("hello")
     }
   }
   
@@ -66,6 +64,7 @@ result-view{
                 }     
               }
             }
+            
             // layout-macro (StretchingDetailText){
             //   param(process){
             //     expression (item)
@@ -80,14 +79,16 @@ result-view{
 
 
   conversation-drivers{
-    // if(size(result)==1){
+    if(size(result)==1){
+
       conversation-driver{
-        template ("돌아가")
+        template ("다른 #{value(result.part[0])} 운동 알려줘")
       }
+
       conversation-driver{
-        template ("다음")
-      }
-    // }
+        template ("운동 시작")
+      } 
+    }
 
   }
 }
