@@ -42,7 +42,7 @@ layout-macro-def (StretchingContent){
       image-url{
         template ("#{value(stretchingSel.processList[0].imgAddress)}#{value(stretchingSel.processList[0].imgPath)}")
       }
-      text-position (Below)
+      text-position (Overlay)
     }
 
   }

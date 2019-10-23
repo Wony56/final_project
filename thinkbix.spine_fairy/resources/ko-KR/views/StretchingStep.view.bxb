@@ -1,0 +1,35 @@
+result-view{
+  match:StretchingStep(result)
+  
+  message{
+    template ("helllllllllllll")
+  }
+  render{
+    layout{
+      layout-macro (StretchingStepImage){
+          param(stretchingStep){
+            expression (result)
+          }
+      }
+
+      for-each (result.description){
+        as(desc){
+            layout-macro (StretchingDetailText){
+              param(description){
+                expression (desc)
+              }
+          }     
+        }
+      }
+
+      
+    }
+
+  }
+
+  conversation-drivers{
+    conversation-driver{
+      template ("다음")
+    }
+  }
+}
