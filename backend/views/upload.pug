@@ -3,20 +3,18 @@ extends layouts/main
 block content
     .form-container
         form(action="/upload", method="post", enctype="multipart/form-data")
-            input(type="text", name="title", placeholder="Title")
-            input(type="text", name="repetition", placeholder="Repetition")
-            input(type="text", name="check", placeholder="Check")
-            input(type="text", name="point", placeholder="Point")
-            input(type="text", name="hashtag", placeholder="Hash tag: ','로 구분!")
-            .image-container
+            input(type="text", id="title", name="title", placeholder="Title", required="true")
+            input(type="text", id="repetition", name="repetition", placeholder="Repetition", required="true")
+            input(type="text", id="check", name="check", placeholder="Check", required="true")
+            input(type="text", id="point", name="point", placeholder="Point", required="true")
+            input(type="text", id="place", name="place", placeholder="Place: '&&'로 구분!", required="true")
+            input(type="text", id="part", name="part", placeholder="Part: '&&'로 구분!", required="true")
+            input(type="text", id="situation", name="situation", placeholder="Situation: '&&'로 구분!", required="true")
+            input(type="text", id="hashtag", name="hashtag", placeholder="Hash tag: '&&'로 구분!", required="true")
+            div(id="image-container")
                 .process-item
-                    input(type="file", name="imageFile")
+                    input(type="file", name="imageFile", accept="image/*")
                     textarea(name="description", rows="10", cols="50", tabindex="4", placeholder="&&로 입력을 구분!")
-                .process-item
-                    input(type="file", name="imageFile")
-                    textarea(name="description", rows="10", cols="50", tabindex="4", placeholder="&&로 입력을 구분!")
-                .process-item
-                    input(type="file", name="imageFile")
-                    textarea(name="description", rows="10", cols="50", tabindex="4", placeholder="&&로 입력을 구분!")
-            input(type="button", value="Upload", onclick="jsonSubmit")
+            input(type="button", id="addImage", value="Add")
+            input(type="submit", value="Upload")
             
