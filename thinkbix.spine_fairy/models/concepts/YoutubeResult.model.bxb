@@ -1,0 +1,11 @@
+structure (YoutubeResult) {
+  description (유튜브 정보를 담고있는 구조체)
+  property (keyword) {
+    type (Keyword)
+    min (Required) max (One)
+  }
+  property (url){
+    type (Url)
+    min (Required) max (One)
+  }
+}

@@ -1,0 +1,28 @@
+action (CommitYoutubeShow) {
+  type(Commit)
+  description ()
+  collect {
+    input (stretchingSel) {
+      type (StretchingSel)
+      min (Required) max (One)
+    }
+  }
+  output (YoutubeResult){
+    throws{
+      error (NotAccessibleYoutubeAPI){
+        on-catch{
+          halt{
+            dialog("유튜브 동영상 링크를 가져오는데 실패했어요. 다시 시도해주세요,")
+          }
+        }
+      }
+      unknown-error{
+        on-catch{
+          halt{
+            dialog("예기치 못한 오류가 발생했어요.")
+          }
+        }
+      }
+    }
+  }
+}
