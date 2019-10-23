@@ -1,0 +1,5 @@
+train (t-wiradx2aioo9rwdwihaorcb9j) {
+  utterance ("[g:SelectStretchingSearch] (허리)[v:Part]에 좋은 스트레칭 알려줄래?")
+  plan (Y2BmUCnISaxML8ovzUvRKy7IzEuNT0vMLKrUCy4pSi1JzsjMSw9OzWHQxaUqNSc1uQRZbWJRcgaDNA7lAYlFJQxMDIxAzAAkGRlAAMoHAA==)
+  last-modified (1571819308227)
+}
