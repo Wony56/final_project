@@ -11,7 +11,7 @@ layout-macro-def(StretchingDetailImage) {
     section {  // this macro returns a "section"
       content {
         image {
-          url ("#{value(processList.imageAddress)}")
+          url ("#{value(processList.imgAddress)}#{value(processList.imgPath)}")
           object-fit (Contain)
         }
       }

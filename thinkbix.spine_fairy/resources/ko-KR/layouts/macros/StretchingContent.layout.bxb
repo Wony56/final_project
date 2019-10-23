@@ -22,6 +22,7 @@ layout-macro-def (StretchingContent){
             part : $expr(stretchingSel.part)
             situation : $expr(stretchingSel.situation)
             hashtag : $expr(stretchingSel.hashtag)
+            _id : $expr(stretchingSel._id)
           }
         }
       }
@@ -32,7 +33,7 @@ layout-macro-def (StretchingContent){
           halign (End)
       }
       image-url{
-        template ("#{value(stretchingSel.processList[0].imagePath)}/#{value(stretchingSel.processList[0].imageAddress)}")
+        template ("#{value(stretchingSel.processList[0].imgAddress)}#{value(stretchingSel.processList[0].imgPath)}")
       }
     }
   }
