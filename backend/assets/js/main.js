@@ -1,38 +1,24 @@
 import "../scss/styles.scss"
 
-// const submit = () => {
-//     const title = document.getElementsByName('title').value.trim();
-//     const repetition = document.getElementsByName('repetition').value.trim();
-//     const check = document.getElementsByName('check').value.trim();
-//     const point = document.getElementsByName('point').value.trim();
-//     const hashtag = document.getElementsByName('hashtag').value.trim();
-//     const processes = document.getElementsByClassName('process-item');
+document.getElementById('addImage').addEventListener('click', () => {
+    var imageContainer = document.getElementById('image-container');
 
-//     const processList = processes.map(process => {
-//         const data = {
-//             file: process.getElementsByTagName('input')[0].files[0],
-//             description: process.getElementsByTagName('textarea')[0].value.split("&&")
-//         };
+    var process = document.createElement("DIV");
+    process.className = "process-item";
 
-//         return data;
-//     });
+    var input = document.createElement("INPUT");
+    input.setAttribute("type", "file");
+    input.setAttribute("name", "imageFile");
+    input.setAttribute("accept", "image/*");
 
-//     const hashtagList = hashtag.split(',');
+    var textarea = document.createElement("TEXTAREA");
+    textarea.setAttribute("name", "description");
+    textarea.setAttribute("rows", "10");
+    textarea.setAttribute("cols", "50");
+    textarea.setAttribute("placeholder", "&&로 입력을 구분!");
 
-//     const data = {
-//         title,
-//         repetition,
-//         check,
-//         point,
-//         hashtag: hashtagList,
-//         processList
-//     }
+    process.appendChild(input);
+    process.appendChild(textarea);
 
-//     fetch("http://localhost:8080/upload", {
-//         method: 'POST',
-//         body: JSON.stringify(data),
-//         headers: {
-//             'Content-Type': 'application/json'
-//         }
-//     }).catch(error => console.log(error));
-// }
+    imageContainer.appendChild(process);
+});
