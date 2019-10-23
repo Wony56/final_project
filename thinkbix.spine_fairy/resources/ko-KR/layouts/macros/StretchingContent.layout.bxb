@@ -29,12 +29,21 @@ layout-macro-def (StretchingContent){
       title-area{
         slot1{
           text("#{value(stretchingSel.title)}")
+          //text("#{value(stretchingSel.hashtag)}")
         }
-          halign (End)
+        slot2{
+          paragraph{
+            value("#{value(stretchingSel.hashtag)}")
+          }
+        }
+        //halign (End)
       }
+      
       image-url{
         template ("#{value(stretchingSel.processList[0].imgAddress)}#{value(stretchingSel.processList[0].imgPath)}")
       }
+      text-position (Below)
     }
+
   }
 }
