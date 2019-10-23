@@ -7,12 +7,30 @@ export const home = (req, res) => {
 
 export const upload = async (req, res) => {
     const {
-        body
+        body: {
+            title, repetition, check, point, place, part, situation, hashtag, description
+        },
+        files
     } = req;
 
     try{
-        await Stretching.create({
+        const processList = files.map((file, index) => {
+            return {
+                imgPath: file.filename,
+                description: description[index].split("&&")
+            }
+        });
 
+        await Stretching.create({
+            title,
+            repetition,
+            check,
+            point,
+            processList,
+            place: place.split("&&"),
+            part: part.split("&&"),
+            situation: situation.split("&&"),
+            hashtag: hashtag.split("&&"),
         })
 
         console.log("✔ Data-input, Success!");
