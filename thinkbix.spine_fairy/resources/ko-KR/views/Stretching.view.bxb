@@ -24,10 +24,31 @@ result-view{
                   }
                 }
               }
+              
             }
           }
         }
       } else{ 
+        section{
+          content{
+            for-each(result){
+              as(item){
+              layout-macro (StretchingPoint){
+                param(stretchingSel){
+                  expression (item)
+                }
+              }
+              layout-macro (StretchingCheck){
+                param(stretchingSel){
+                  expression (item)
+                }
+              }
+              }
+            }
+            
+          }
+        }
+        
         for-each (result.processList){
           as(item){
             layout-macro (StretchingDetailImage){

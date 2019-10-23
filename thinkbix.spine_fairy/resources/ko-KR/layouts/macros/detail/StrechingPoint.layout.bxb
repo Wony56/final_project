@@ -1,0 +1,18 @@
+layout-macro-def (StretchingPoint){
+  params{
+    param (stretchingSel){
+      type (StretchingSel)
+      min (Required)
+      max (One)
+    }
+  }
+
+  content{
+    paragraph{
+      value ("#{value(stretchingSel.point)}")
+      style(Label_M_Soft)
+    }
+  }
+
+}
+
