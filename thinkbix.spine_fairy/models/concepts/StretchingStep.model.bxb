@@ -11,4 +11,9 @@ structure (StretchingStep) {
     type(Description)
     min (Required) max (Many)
   }
+  property (idx){
+    type(viv.core.Integer)
+    min (Required) max (One)
+    
+  }
 }

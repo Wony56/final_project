@@ -9,8 +9,16 @@ endpoints {
       local-endpoint (SelectStretchingSearch.js)
     }
     action-endpoint (GetStretchingStep) {
-      accepted-inputs (stretchingSel)
+      accepted-inputs (stretchingSel,stretchingStep)
       local-endpoint (GetStretchingStep.js)
+    }
+    action-endpoint (NextStretchingStep) {
+      accepted-inputs (stretchingSel,stretchingStep)
+      local-endpoint (NextStretchingStep.js)
+    }
+    action-endpoint (PreStretchingStep) {
+      accepted-inputs (stretchingSel,stretchingStep)
+      local-endpoint (PreStretchingStep.js)
     }
   }
 }

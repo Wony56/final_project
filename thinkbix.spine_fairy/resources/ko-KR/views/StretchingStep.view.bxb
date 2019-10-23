@@ -2,7 +2,7 @@ result-view{
   match:StretchingStep(result)
   
   message{
-    template ("helllllllllllll")
+    template ("Welcome to helllllllllllll")
   }
   render{
     layout{
@@ -21,13 +21,15 @@ result-view{
           }     
         }
       }
-
       
     }
 
   }
 
   conversation-drivers{
+    conversation-driver{
+      template ("이전")
+    }
     conversation-driver{
       template ("다음")
     }
