@@ -1,5 +1,5 @@
 var console = require('console')
-module.exports.function = function nextStretchingStep (stretchingSel,stretchingStep) {
+module.exports.function = function NextStretchingStep (stretchingSel,stretchingStep) {
 
   var idx = 0
   if(stretchingStep==null){

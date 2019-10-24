@@ -1,0 +1,15 @@
+action (StartStretching) {
+  description (단계별 시작, 조회 수 올림)
+  
+  collect {
+    input (stretchingSel) {
+      type (StretchingSel)
+      min (Optional) max (One)
+    }
+    input (stretchingStep) {
+      type (StretchingStep)
+      min (Optional) max (One)
+    }
+  }
+  output (StretchingStep)
+}

@@ -5,7 +5,7 @@ endpoints {
     //   local-endpoint (GetStretching.js)
     // }
     action-endpoint (SelectStretchingSearch) {
-      accepted-inputs (place, part)
+      accepted-inputs (place, part, situation)
       local-endpoint (SelectStretchingSearch.js)
     }
     action-endpoint (GetStretchingStep) {
@@ -20,7 +20,10 @@ endpoints {
       accepted-inputs (stretchingSel,stretchingStep)
       local-endpoint (PreStretchingStep.js)
     }
-
+    action-endpoint (StartStretching) {
+      accepted-inputs (stretchingSel,stretchingStep)
+      local-endpoint (StartStretching.js)
+    }
     action-endpoint (CommitYoutubeShow) {
       accepted-inputs (stretchingSel)
       local-endpoint (CommitYoutubeShow.js)
