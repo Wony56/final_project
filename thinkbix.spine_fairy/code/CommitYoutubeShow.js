@@ -1,7 +1,7 @@
 var http = require('http');
 var console = require('console');
 var config = require('config');
-module.exports.function = function commitYoutubeShow (stretchingSel) {
+module.exports.function = function CommitYoutubeShow (stretchingSel) {
   
   var keyword = stretchingSel.title; // 검색어 지정
 

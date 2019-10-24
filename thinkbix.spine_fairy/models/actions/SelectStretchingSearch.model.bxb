@@ -9,6 +9,10 @@ action (SelectStretchingSearch) {
       type (Part)
       min (Optional) max (One)
     }
+    input (situation) {
+      type (Situation)
+      min (Optional) max (One)
+    }
   }
   output (StretchingSel)
 }

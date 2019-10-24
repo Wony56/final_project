@@ -3,3 +3,13 @@ train (t-i1zm5fgx4pv4om84eraj7h3dy) {
   plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiEgYmBkYgZgCSjAwgAOUDAA==)
   last-modified (1571878599900)
 }
+train (t-i9nq853z58irsuzgmqqd8cetd) {
+  utterance ("[g:SelectStretchingSearch] (거북목)[v:Situation] 운동")
+  plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBDrvizJLSxJLM/DwGJgZGIGYAkowMIADlAwA=)
+  last-modified (1571903466513)
+}
+train (t-iev0t0w2q53yzzp0tv9vpdqr8) {
+  utterance ([g:SelectStretchingSearch] 스트레칭알려줘)
+  plan (Y2BiUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYOBEQgZoBhIAgA=)
+  last-modified (1571902265454)
+}
