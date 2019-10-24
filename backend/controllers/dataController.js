@@ -77,7 +77,7 @@ export const postUploadMany = (req, res) => {
 
 export const getAllStretchings = async (req, res) => {
     try{
-        const datas = await Stretching.find({});
+        const datas = await Stretching.find({}).sort({views: "desc"}).limit(15);
 
         console.log(datas);
 
@@ -114,7 +114,7 @@ export const getStretchings = async (req, res) => {
         }
 
         if(condition.part){
-            datas = datas.filter(data => data.part.includes({ $regex: condition.part.trim()}));
+            datas = datas.filter(data => data.part.includes(condition.part.trim()));
         }
 
         if(condition.situation){
