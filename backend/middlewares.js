@@ -1,4 +1,5 @@
 import multer from "multer";
+import routes from "./routes";
 
 const storage = multer.diskStorage({
     destination: (req, file, cb) => {
@@ -12,6 +13,7 @@ const storage = multer.diskStorage({
 const multerImage = multer({ storage })
 
 export const localsMiddleware = (req, res, next) => {
+    res.locals.routes = routes;
     next();
 }
 
