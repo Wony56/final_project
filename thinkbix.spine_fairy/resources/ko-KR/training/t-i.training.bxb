@@ -1,7 +1,7 @@
 train (t-i1zm5fgx4pv4om84eraj7h3dy) {
-  utterance ("[g:SelectStretchingSearch] (등)[v:Part]에 좋은 스트레칭 보여줘")
-  plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiEgYmBkYgZgCSjAwgAOUDAA==)
-  last-modified (1571878599900)
+  utterance ("[g:SelectStretchingSearch] (등)[v:Part]에 좋은 스트레칭 (보여줘)[v:SearchKeyword:검색]")
+  plan (Y2BhUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiElx2gfV5p1aW5xelMDAzMDIwAUkGIA2CEAAXBQA=)
+  last-modified (1571907695683)
 }
 train (t-i9nq853z58irsuzgmqqd8cetd) {
   utterance ("[g:SelectStretchingSearch] (거북목)[v:Situation] 운동")

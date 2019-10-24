@@ -1,0 +1,5 @@
+train (t-79zvq5qf7fabde6arb98l834h) {
+  utterance ("[g:SelectStretchingSearch] (실내)[v:Place]에서 할 만한 스트레칭 (알려줘)[v:SearchKeyword:검색]")
+  plan (Y2BhUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBCqvigJzE5FRcloE1eqdWlucXpTAwMzAyMAFJBiANghAAFwUA)
+  last-modified (1571907562196)
+}
