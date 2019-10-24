@@ -1,3 +1,8 @@
+train (t-97d4wslo2df8lnanzrf3c930d) {
+  utterance ([g:GetStretchingStep] 처음으로)
+  plan (Y2BiUC3ISaxML8ovzUvRKy7IzEuNT0vMLKrUCy4pSi1JzsjMSw8uSS1g0MChzD21BE0lIxAyQDGQBAA=)
+  last-modified (1571876643034)
+}
 train (t-9emy1yalfr2xsjpzt5xn6t3tb) {
   utterance ([g:CommitYoutubeShow] 영상으로 보여줘)
   plan (Y2BmUCnISaxML8ovzUvRKy7IzEuNT0vMLKrUi8wvLSlNSg1KLS7NKWHQwKHKOT83N7MEqjY4I78cp3nBJUWpJckZmXnpwak5DEwMjEDMACQZGRhgNAA=)

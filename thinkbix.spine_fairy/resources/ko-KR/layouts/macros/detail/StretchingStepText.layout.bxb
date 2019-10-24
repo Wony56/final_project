@@ -6,12 +6,14 @@ layout-macro-def(StretchingStepText) {
       max (Many)
     }
   }
-
+  
   content {
     section {  // this macro returns a "section"
       content {
         paragraph {
-          value ("#{value(description)}")
+          value{
+            template ("#{value(description)}")
+          }
           style (Detail_L)
         }
       }
