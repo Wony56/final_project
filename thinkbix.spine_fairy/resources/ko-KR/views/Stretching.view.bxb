@@ -5,7 +5,7 @@ result-view{
     if(size(result)>1){
       template ("질문하신 스트레칭에 대한 #{size(result)}개의 결과입니다.")
     }else-if (size(result)==1){
-      template("#{value(result.title)} 스트레칭을 시작할게요.")
+      template("#{value(result.title)}을 시작할게요.")
     }
   }
   

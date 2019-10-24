@@ -1,0 +1,4 @@
+integer (idx) {
+  description (__DESCRIPTION__)
+  extends (viv.core.Integer)
+}

@@ -12,6 +12,7 @@ module.exports.function = function nextStretchingStep (stretchingSel,stretchingS
     imgAddress : stretchingSel.processList[idx].imgAddress,
     imgPath : stretchingSel.processList[idx].imgPath,
     description : stretchingSel.processList[idx].description,
-    idx : idx
+    idx : idx,
+    length : stretchingSel.processList.length
   }
 }
