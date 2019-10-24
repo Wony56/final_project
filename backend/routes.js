@@ -11,6 +11,7 @@ const UPLOAD_MANY = "/upload/many";
 
 // Data Search
 const FIND_ALL = "/find/all";
+const FIND_BY_VIEWS = "/find/view";
 const FIND = "/find";
 
 // Data view
@@ -24,6 +25,7 @@ const routes = {
     upload: UPLOAD,
     uploadMany: UPLOAD_MANY,
     findAll: FIND_ALL,
+    findByView: FIND_BY_VIEWS,
     find: FIND,
     view: VIEW
 };

@@ -122,6 +122,22 @@ export const getStretchings = async (req, res) => {
             datas = datas.filter(data => data.situation.filter(item => regex.test(item)).length > 0);
         }
 
+        datas = datas.sort((a, b) => {
+            return b.views - a.views;
+        }).slice(0, 15);
+
+        console.log(datas);
+        res.status(200).json({ datas });
+    }catch(error){
+        console.log(error);
+        res.status(200).json({ datas: [] });
+    }
+}
+
+export const getStretchingsByViews = async (req, res) => {
+    try{
+        const datas = await Stretching.find({}).sort({views: "desc"}).limit(3);
+
         console.log(datas);
         res.status(200).json({ datas });
     }catch(error){

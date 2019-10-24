@@ -1,6 +1,6 @@
 import express from "express";
 import routes from "../routes";
-import { home, postUpload, postUploadMany, getView, getAllStretchings, getStretchings } from "../controllers/dataController";
+import { home, postUpload, postUploadMany, getView, getAllStretchings, getStretchings, getStretchingsByViews } from "../controllers/dataController";
 import { uploadImage, onlyAdmin, onlyPrivate, onlyPublic } from "../middlewares";
 import { getJoin, postJoin, postLogin, getLogin, logout } from "../controllers/userController";
 
@@ -25,6 +25,7 @@ router.post(routes.uploadMany, postUploadMany);
 
 //Search Datas
 router.get(routes.findAll, getAllStretchings);
+router.get(routes.findByView, getStretchingsByViews);
 router.get(routes.find, getStretchings);
 
 //Views
