@@ -67,11 +67,11 @@ export const postUploadMany = (req, res) => {
         });
 
         console.log("✔ Data-input, Success!");
-        res.status(201).end();
+        res.status(201).json({ message: "Success!" });
     }catch(error){
         console.log(error);
 
-        res.status(400).end();
+        res.status(400).json({ message: "Fail!" });
     }
 }
 
@@ -114,11 +114,12 @@ export const getStretchings = async (req, res) => {
         }
 
         if(condition.part){
-            datas = datas.filter(data => data.part.includes(condition.part.trim()));
+            datas = datas.filter(data => data.part.includes({ $regex: condition.part.trim()}));
         }
 
         if(condition.situation){
-            datas = datas.filter(data => data.situation.includes(condition.situation.trim()));
+            const regex = new RegExp(condition.situation.trim());
+            datas = datas.filter(data => data.situation.filter(item => regex.test(item)).length > 0);
         }
 
         console.log(datas);
@@ -140,9 +141,9 @@ export const getView = async (req, res) => {
         await Stretching.findOneAndUpdate({_id: id}, { views: stretching.views + 1});
 
         console.log("✔ Views up!");
-        res.status(200).end();
+        res.status(200).json({message: "Success!"});
     }catch(error){
         console.log(error);
-        res.status(404).end();
+        res.status(404).json({message: "Fail!"});
     }
 }

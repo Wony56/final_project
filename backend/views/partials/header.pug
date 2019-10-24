@@ -2,3 +2,8 @@ header.header
     .header__wrapper
         .header__column
             a(href=`${routes.home}`) ThinkBix Data center
+        .header__column
+            ul
+                if user
+                    li
+                        a(href=routes.logout) Logout

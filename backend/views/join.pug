@@ -1,0 +1,13 @@
+extends layouts/main
+
+block content
+    .form-container
+        form(action=routes.join, method="post")
+            input(type="text", name="username", placeholder="Username", required="true")
+            input(type="password", name="password", placeholder="Password")
+            input(type="password", name="rePassword", placeholder="Password Check")
+            input(type="submit", value="Join")
+        .change-container
+            a(href=routes.login)
+                button Login
+                

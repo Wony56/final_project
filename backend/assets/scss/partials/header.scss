@@ -7,11 +7,26 @@
         margin: 0 auto;
         max-width: 1200px;
         align-items: center;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+
+        .header__column{
+            font-family: 'Staatliches', cursive;
+            font-size: 30px;
+            color: #b3cde0;
+            &:last-child{
+                justify-self: end;
+                font-size: 20px;
+            }
+
+            ul{
+                display: flex;
+                color: white;
+                text-transform: uppercase;
+            }
+        }
     }
 
-    .header__column{
-        font-family: 'Staatliches', cursive;
-        font-size: 30px;
-        color: #b3cde0;
-    }
+    
 }
