@@ -20,5 +20,10 @@ endpoints {
       accepted-inputs (stretchingSel,stretchingStep)
       local-endpoint (PreStretchingStep.js)
     }
+
+    action-endpoint (CommitYoutubeShow) {
+      accepted-inputs (stretchingSel)
+      local-endpoint (CommitYoutubeShow.js)
+    }
   }
 }
