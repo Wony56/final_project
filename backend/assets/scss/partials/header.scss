@@ -1,0 +1,17 @@
+.header{
+    background-color: #011f4b;
+    
+    .header__wrapper{
+        padding: 10px 0;
+        width: 100%;
+        margin: 0 auto;
+        max-width: 1200px;
+        align-items: center;
+    }
+
+    .header__column{
+        font-family: 'Staatliches', cursive;
+        font-size: 30px;
+        color: #b3cde0;
+    }
+}

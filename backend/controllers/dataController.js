@@ -5,7 +5,7 @@ export const home = (req, res) => {
     res.render("upload");
 }
 
-export const upload = async (req, res) => {
+export const postUpload = async (req, res) => {
     const {
         body: {
             title, repetition, check, point, place, part, situation, hashtag, description
@@ -41,7 +41,7 @@ export const upload = async (req, res) => {
     res.redirect(routes.home);
 }
 
-export const uploadMany = (req, res) => {
+export const postUploadMany = (req, res) => {
     const {
         body: {
             data
@@ -67,15 +67,15 @@ export const uploadMany = (req, res) => {
         });
 
         console.log("✔ Data-input, Success!");
-        res.status(201);
+        res.status(201).end();
     }catch(error){
         console.log(error);
 
-        res.status(400);
+        res.status(400).end();
     }
 }
 
-export const findAll = async (req, res) => {
+export const getAllStretchings = async (req, res) => {
     try{
         const datas = await Stretching.find({});
 
@@ -89,7 +89,7 @@ export const findAll = async (req, res) => {
     }
 }
 
-export const find = async (req, res) => {
+export const getStretchings = async (req, res) => {
     
     const {
         query
@@ -103,7 +103,7 @@ export const find = async (req, res) => {
             situation: query['situation'] || null
         }
 
-        let datas = await Stretching.find({})
+        let datas = await Stretching.find({});
 
         if(condition.title){
             datas = datas.filter(data => data.title === condition.title.trim());
@@ -126,5 +126,23 @@ export const find = async (req, res) => {
     }catch(error){
         console.log(error);
         res.status(200).json({ datas: [] });
+    }
+}
+
+export const getView = async (req, res) => {
+    const {
+        params: {id}
+    } = req;
+
+    try{
+        const stretching = await Stretching.findOne({_id: id});
+
+        await Stretching.findOneAndUpdate({_id: id}, { views: stretching.views + 1});
+
+        console.log("✔ Views up!");
+        res.status(200).end();
+    }catch(error){
+        console.log(error);
+        res.status(404).end();
     }
 }
