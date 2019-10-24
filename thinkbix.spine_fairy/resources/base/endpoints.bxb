@@ -5,7 +5,7 @@ endpoints {
     //   local-endpoint (GetStretching.js)
     // }
     action-endpoint (SelectStretchingSearch) {
-      accepted-inputs (place, part, situation)
+      accepted-inputs (place, part, situation, searchKeyword)
       local-endpoint (SelectStretchingSearch.js)
     }
     action-endpoint (GetStretchingStep) {

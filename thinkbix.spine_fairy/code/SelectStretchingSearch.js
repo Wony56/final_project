@@ -1,7 +1,7 @@
 var http=require('http')
 var console = require('console')
 var config = require('config')
-module.exports.function = function SelectStretchingSearch (place, part, situation) {
+module.exports.function = function SelectStretchingSearch (place, part, situation, searchKeyword) {
   console.log(part+" , "+place+" , "+situation)
   if(place===undefined&&part===undefined&&situation===undefined){
     url = encodeURI(config.get('remoteURL')+'find/view');

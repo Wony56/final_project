@@ -1,12 +1,15 @@
 capsule {
   id (thinkbix.spine_fairy)
-  version (0.1.0)
+  version (1.0.0)
   format (3)
   targets {
     target (bixby-mobile-en-US){enabled (false)}
     target (bixby-mobile-ko-KR)
   }
-  
+  store-sections{
+    section (HealthAndFitness)
+  }
+
   runtime-flags {
    concepts-inherit-super-type-features
    modern-prompt-rejection

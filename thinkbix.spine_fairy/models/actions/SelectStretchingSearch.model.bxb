@@ -13,6 +13,10 @@ action (SelectStretchingSearch) {
       type (Situation)
       min (Optional) max (One)
     }
+    input (searchKeyword) {
+      type (SearchKeyword)
+      min (Required) max (One)
+    }
   }
   output (StretchingSel)
 }

@@ -1,0 +1,7 @@
+hints {
+  uncategorized {
+    utterance (어깨 뻐근할 때 할 수 있는 스트레칭 알려줘)
+    utterance (학생이 할 수 있는 스트레칭 보여줘)
+    utterance (회사에서 할 만한 스트레칭 보여줘)
+  }
+}
