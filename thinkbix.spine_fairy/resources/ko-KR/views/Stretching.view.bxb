@@ -83,9 +83,7 @@ result-view{
       conversation-driver{
         template ("영상으로 보여줘")
       }
-      conversation-driver{
-        template ("다른 #{value(result.part[0])} 운동 알려줘")
-      }
+
       conversation-driver{
         template ("운동 시작")
       } 
