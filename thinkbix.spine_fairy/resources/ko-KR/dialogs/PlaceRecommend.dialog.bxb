@@ -1,0 +1,12 @@
+template-macro-def (PlaceRecommend) {
+  content{
+    choose (Random){
+      template("집에서 할 스트레칭 알려줘")
+      template ("실내에서 스트레칭 알려줘")
+      template ("회사에서 스트레칭 알려줘")
+      template ("학교에서 스트레칭 알려줘")
+      template ("차 안에서 스트레칭 알려줘")
+    }
+  }
+
+}
