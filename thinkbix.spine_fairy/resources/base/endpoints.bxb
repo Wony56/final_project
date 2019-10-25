@@ -28,5 +28,9 @@ endpoints {
       accepted-inputs (stretchingSel)
       local-endpoint (CommitYoutubeShow.js)
     }
+    action-endpoint (SearchByTitle){
+      accepted-inputs (title,searchKeyword)
+      local-endpoint (SearchByTitle.js)
+    }
   }
 }

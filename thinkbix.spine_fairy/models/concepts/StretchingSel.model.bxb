@@ -44,8 +44,4 @@ structure (StretchingSel) {
     type (Id)
     min (Required) max (One)
   }
-  property (index) {
-    type (Index)
-    min (Required) max (One)
-  }
 }
