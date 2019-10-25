@@ -7,8 +7,8 @@ Bixby Programming  & AI chatBot
 "안녕하십니까! 사용자의 건강을 책임지는 개발자 ThinkBix 입니다."
 ## 목차
 1. Bixby Project
-- 서버구조(#menu1)
-- 데이터 구조(#menu2)
+- [서버구조](#menu1)
+- [데이터 구조](#menu2)
 - Backend Page
 - 캡슐구조
 - 주요기능
