@@ -1,3 +1,8 @@
+train (t-74fu0ctxzgev18a88j5rb8r8s) {
+  utterance ("[g:SelectStretchingSearch] (목)[v:Part] 스트레칭 (알려줘)[v:SearchKeyword:검색]")
+  plan (Y2BhUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiElx2gfV5p1aW5xelMDAzMDIwAUkGIA2CEAAXBQA=)
+  last-modified (1571972542050)
+}
 train (t-79zvq5qf7fabde6arb98l834h) {
   utterance ("[g:SelectStretchingSearch] (실내)[v:Place]에서 할 만한 스트레칭 (알려줘)[v:SearchKeyword:검색]")
   plan (Y2BhUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBCqvigJzE5FRcloE1eqdWlucXpTAwMzAyMAFJBiANghAAFwUA)
