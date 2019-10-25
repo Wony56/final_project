@@ -1,3 +1,13 @@
+train (t-k9nnzr2pa79ocibz46kj83vqf) {
+  utterance ("[g:SelectStretchingSearch] (손목)[v:Part]이 아플 때 좋은 스트레칭")
+  plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiEgYmBkYgZgCSjAwgAOUDAA==)
+  last-modified (1571990691993)
+}
+train (t-kdlldprkgtsz2ashi6ernpim7) {
+  utterance ("[g:SelectStretchingSearch] (학교)[v:Place]에서 (목)[v:Part]이 뭉쳤을 때 좋은 스트레칭 (찾아줘)[v:SearchKeyword:검색]")
+  plan (Y2BlUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiEgYp7FI5icmpuNwBNtM7tbI8vyiFgYWBkYGJgRlIMwBZEAgDSHIA)
+  last-modified (1571990684516)
+}
 train (t-kiywrsxvagnsirtb7fimhdcw8) {
   utterance ([g:StartStretching] 처음으로)
   plan (Y2BiUC7JyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAeXpBYwqOBQlFhUglDJwAiEDFAMJAE=)
@@ -7,6 +17,11 @@ train (t-kk1nu5n1vfjdg18nw58rdv9e4) {
   utterance ([g:StartStretching] 운동 시작)
   plan (Y2BiUC7JyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAeXpBYwqOBQlFhUglDJwAiEDFAMJAE=)
   last-modified (1571907981529)
+}
+train (t-knv7j6vi593pw0l854f05iinm) {
+  utterance ("[g:SelectStretchingSearch] (교실)[v:Place]에서 (손목)[v:Part]이 결릴 때 좋은 스트레칭")
+  plan (Y2BhUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiEgYp7FI5icmpDMwMjAxMQJIBSIMgBMBFAQ==)
+  last-modified (1571990696821)
 }
 train (t-ktse8obf9l0h3i8dghtfttpb5) {
   utterance ([g:CommitYoutubeShow] 영상으로 보여줘)

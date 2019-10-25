@@ -1,0 +1,25 @@
+train (t-47c1r2dsw8u39eyyevo2cp5va) {
+  utterance ("[g:SelectStretchingSearch] (교실)[v:Place]에서 (어깨)[v:Part]가 뻐근할 때 좋은 스트레칭 (보여줘)[v:SearchKeyword:검색]")
+  plan (Y2BlUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiEgYp7FI5icmpuNwBNtM7tbI8vyiFgYWBkYGJgRlIMwBZEAgDSHIA)
+  last-modified (1571990704318)
+}
+train (t-49fppbifn0l70msi5wwahf2at) {
+  utterance ("[g:SelectStretchingSearch] (골반)[v:Part] 스트레칭")
+  plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiEgYmBkYgZgCSjAwgAOUDAA==)
+  last-modified (1571991644031)
+}
+train (t-4r1kb8gv3zndm6b7txgj1nyq3) {
+  utterance ("[g:SelectStretchingSearch] (허리)[v:Part] 스트레칭 (보여줘)[v:SearchKeyword:검색]")
+  plan (Y2BhUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiElx2gfV5p1aW5xelMDAzMDIwAUkGIA2CEAAXBQA=)
+  last-modified (1571972542603)
+}
+train (t-4ugh6wb1pk2yekejf3fpljty0) {
+  utterance ("[g:SelectStretchingSearch] (앉아서)[v:Situation] 할 수 있는 스트레칭 (검색해)[v:SearchKeyword:검색]")
+  plan (Y2BhUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOQOXgWBJ79TK8vyiFAY57GoyS0oTSzLz8xiYGRgZmIAkA5AGQQiAiwIA)
+  last-modified (1571969327606)
+}
+train (t-4yy82jghqqp41l6ofl55j1zkw) {
+  utterance ("[g:SelectStretchingSearch] (차)[v:Place]에서 (목)[v:Part]이 뭉쳤을 때 좋은 스트레칭")
+  plan (Y2BhUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiEgYp7FI5icmpDMwMjAxMQJIBSIMgBMBFAQ==)
+  last-modified (1571990685277)
+}

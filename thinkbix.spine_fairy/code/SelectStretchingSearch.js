@@ -26,7 +26,6 @@ module.exports.function = function SelectStretchingSearch (place, part, situatio
   let stretchingSel = [];
   for(let i = 0; i < response.length; i++){
       if(response[i] != null){
-        response[i].index = 0;
         stretchingSel.push(response[i]);
       }
   }

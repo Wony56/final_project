@@ -1,13 +1,14 @@
 capsule-info {
   display-name (척추요정)
   developer-name (Thinkbix)
-  icon-asset (images/image.png)
+  icon-asset (images/image.JPG)
   description ("척추요정은 여러분이 언제 어디서든 할 수 있는 스트레칭 정보를 제공합니다.")
   website-url (https://example.com/)
   terms-url (https://example.com/terms-of-use/)
   search-keywords{
     keyword (스트레칭)
     keyword (자세교정)
+    keyword (마사지)
     keyword (운동)
   }
   dispatch-name (척추요정)

@@ -8,3 +8,13 @@ train (t-qfyu1zqd3fumus7k9srtlumny) {
   plan (Y2BhUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiElx2gfV5p1aW5xelMDAzMDIwAUkGIA2CEAAXBQA=)
   last-modified (1571973899227)
 }
+train (t-qotscmyr3mkfbjy1rp8m53s70) {
+  utterance ("[g:SelectStretchingSearch] (수험생)[v:Situation]이 하기 좋은 스트레칭")
+  plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBDrvizJLSxJLM/DwGJgZGIGYAkowMIADlAwA=)
+  last-modified (1571987650918)
+}
+train (t-qovof83dgw0esbkk1w0u8edr5) {
+  utterance ("[g:SelectStretchingSearch] (자세교정)[v:Situation]에 좋은 스트레칭")
+  plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBDrvizJLSxJLM/DwGJgZGIGYAkowMIADlAwA=)
+  last-modified (1571987701270)
+}

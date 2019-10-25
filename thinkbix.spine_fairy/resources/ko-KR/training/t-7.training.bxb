@@ -1,3 +1,8 @@
+train (t-73x23s7vwql5woydpny8r85sh) {
+  utterance ("[g:SelectStretchingSearch] (학교)[v:Place]에서 (어깨)[v:Part]가 결릴 때 좋은 스트레칭 (보여줘)[v:SearchKeyword:검색]")
+  plan (Y2BlUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiEgYp7FI5icmpuNwBNtM7tbI8vyiFgYWBkYGJgRlIMwBZEAgDSHIA)
+  last-modified (1571990698524)
+}
 train (t-74fu0ctxzgev18a88j5rb8r8s) {
   utterance ("[g:SelectStretchingSearch] (목)[v:Part] 스트레칭 (알려줘)[v:SearchKeyword:검색]")
   plan (Y2BhUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiElx2gfV5p1aW5xelMDAzMDIwAUkGIA2CEAAXBQA=)
@@ -7,4 +12,19 @@ train (t-79zvq5qf7fabde6arb98l834h) {
   utterance ("[g:SelectStretchingSearch] (실내)[v:Place]에서 할 만한 스트레칭 (알려줘)[v:SearchKeyword:검색]")
   plan (Y2BhUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBCqvigJzE5FRcloE1eqdWlucXpTAwMzAyMAFJBiANghAAFwUA)
   last-modified (1571907562196)
+}
+train (t-7a3rvm8m3isyf3z0r4dhxex3m) {
+  utterance ("[g:SelectStretchingSearch] (변비)[v:Part]에 좋은 마사지 (알려줘)[v:SearchKeyword:검색]")
+  plan (Y2BhUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiElx2gfV5p1aW5xelMDAzMDIwAUkGIA2CEAAXBQA=)
+  last-modified (1571990648356)
+}
+train (t-7a8x1q1vvweydustflwdxe914) {
+  utterance ("[g:SelectStretchingSearch] (실내)[v:Place]에서 할 수 있는 스트레칭 (알려줘)[v:SearchKeyword:검색]")
+  plan (Y2BhUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBCqvigJzE5FRcloE1eqdWlucXpTAwMzAyMAFJBiANghAAFwUA)
+  last-modified (1571990672059)
+}
+train (t-7xvn51cw8ipvsxtlrcdfdpc12) {
+  utterance ("[g:SelectStretchingSearch] (허리)[v:Part]가 아플 때 좋은 스트레칭 (검색해줘)[v:SearchKeyword:검색]")
+  plan (Y2BhUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiElx2gfV5p1aW5xelMDAzMDIwAUkGIA2CEAAXBQA=)
+  last-modified (1571990694733)
 }

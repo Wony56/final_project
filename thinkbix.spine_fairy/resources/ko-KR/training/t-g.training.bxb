@@ -8,3 +8,8 @@ train (t-g9t4hzn3ptvcqhkb8p1ra6j99) {
   plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiEgYmBkYgZgCSjAwgAOUDAA==)
   last-modified (1571894653300)
 }
+train (t-gxagfiqinsyymh8c0vled3soz) {
+  utterance ("[g:SelectStretchingSearch] (손)[v:Part]에 좋은 스트레칭")
+  plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiEgYmBkYgZgCSjAwgAOUDAA==)
+  last-modified (1571987277752)
+}

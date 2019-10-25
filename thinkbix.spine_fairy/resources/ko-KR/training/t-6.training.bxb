@@ -1,0 +1,5 @@
+train (t-6ikka08jy7heytuwkqtcypmm1) {
+  utterance ("[g:SelectStretchingSearch] (회사)[v:Place]에서 (손목)[v:Part]이 뭉쳤을 때 좋은 스트레칭 (검색해줘)[v:SearchKeyword:검색]")
+  plan (Y2BlUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiEgYp7FI5icmpuNwBNtM7tbI8vyiFgYWBkYGJgRlIMwBZEAgDSHIA)
+  last-modified (1571990683645)
+}
