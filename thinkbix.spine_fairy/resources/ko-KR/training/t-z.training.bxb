@@ -1,0 +1,5 @@
+train (t-zdy9aiy65wkgb1zpswhy5iwxf) {
+  utterance ("[g:SelectStretchingSearch] (회사)[v:Place]에서 할 수 있는 (목)[v:Part] 운동 알려줘")
+  plan (Y2BhUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiEgYp7FI5icmpDMwMjAxMQJIBSIMgBMBFAQ==)
+  last-modified (1571887277908)
+}

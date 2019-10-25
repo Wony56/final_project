@@ -1,0 +1,15 @@
+train (t-kiywrsxvagnsirtb7fimhdcw8) {
+  utterance ([g:StartStretching] 처음으로)
+  plan (Y2BiUC7JyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAeXpBYwqOBQlFhUglDJwAiEDFAMJAE=)
+  last-modified (1571908118104)
+}
+train (t-kk1nu5n1vfjdg18nw58rdv9e4) {
+  utterance ([g:StartStretching] 운동 시작)
+  plan (Y2BiUC7JyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAeXpBYwqOBQlFhUglDJwAiEDFAMJAE=)
+  last-modified (1571907981529)
+}
+train (t-ktse8obf9l0h3i8dghtfttpb5) {
+  utterance ([g:CommitYoutubeShow] 영상으로 보여줘)
+  plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1IvMLy0pTUoNSi0uzSlhUMOqxjk/NzezBKoyOCO/HIdZwSVFqSXJQJn04NQcBiYGRiBmAJKMDAwwGgA=)
+  last-modified (1571908153923)
+}

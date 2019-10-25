@@ -1,0 +1,49 @@
+layout-macro-def (StretchingContent){
+  params{
+    param (stretchingSel){
+      type (StretchingSel)
+      min (Required)
+      max (Many)
+    }
+  }
+  content{
+    image-card{
+      on-click{
+        intent{
+          goal : StretchingSel
+          value : StretchingSel{
+            title : $expr(stretchingSel.title)
+            repetition : $expr(stretchingSel.repetition)
+            processList : $expr(stretchingSel.processList)
+            views : $expr(stretchingSel.views)
+            check : $expr(stretchingSel.check)
+            point : $expr(stretchingSel.point)
+            place : $expr(stretchingSel.place)
+            part : $expr(stretchingSel.part)
+            situation : $expr(stretchingSel.situation)
+            hashtag : $expr(stretchingSel.hashtag)
+            _id : $expr(stretchingSel._id)
+          }
+        }
+      }
+      title-area{
+        slot1{
+          text("#{value(stretchingSel.title)}")
+          //text("#{value(stretchingSel.hashtag)}")
+        }
+        slot2{
+          paragraph{
+            value("#{value(stretchingSel.hashtag)}")
+          }
+        }
+        //halign (End)
+      }
+      
+      image-url{
+        template ("#{value(stretchingSel.processList[0].imgAddress)}#{value(stretchingSel.processList[0].imgPath)}")
+      }
+      text-position (Overlay)
+    }
+
+  }
+}

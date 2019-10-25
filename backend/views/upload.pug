@@ -1,0 +1,22 @@
+extends layouts/main
+
+block content
+    .form-container
+        form(action=`${routes.upload}`, method="post", enctype="multipart/form-data")
+            input(type="text", id="title", name="title", placeholder="Title", required="true")
+            input(type="text", id="repetition", name="repetition", placeholder="Repetition", required="true")
+            input(type="text", id="check", name="check", placeholder="Check", required="true")
+            input(type="text", id="point", name="point", placeholder="Point", required="true")
+            input(type="text", id="place", name="place", placeholder="Place: '&&'로 구분!", required="true")
+            input(type="text", id="part", name="part", placeholder="Part: '&&'로 구분!", required="true")
+            input(type="text", id="situation", name="situation", placeholder="Situation: '&&'로 구분!", required="true")
+            input(type="text", id="hashtag", name="hashtag", placeholder="Hash tag: '&&'로 구분!", required="true")
+            div(id="image-container")
+                .process-item
+                    input(type="file", name="imageFile", accept="image/*")
+                    textarea(name="description", rows="10", cols="50", tabindex="4", placeholder="&&로 입력을 구분!")
+            input(type="button", id="addImage", value="Add")
+            input(type="submit", value="Upload")
+        
+    script(src="/static/main.js")
+            

@@ -1,0 +1,21 @@
+layout-macro-def(StretchingDetailImage) {
+  params {
+    param (processList) {
+      type (ProcessList)
+      min (Required)
+      max (Many)
+    }
+  }
+
+  content {
+    section {  // this macro returns a "section"
+      content {
+        image {
+          url ("#{value(processList.imgAddress)}#{value(processList.imgPath)}")
+          object-fit (Cover)
+          // object-fit (Contain)
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "It's for connecting with mongoDB.",
+  "main": "index.js",
+  "scripts": {
+    "server": "nodemon --exec babel-node init.js --delay 2",
+    "dev:assets": "webpack --WEBPACK_ENV=development -w"
+  },
+  "author": "thinkbix",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.6.4",
+    "@babel/node": "^7.6.3",
+    "@babel/polyfill": "^7.6.0",
+    "@babel/preset-env": "^7.6.3",
+    "autoprefixer": "^9.6.5",
+    "babel-loader": "^8.0.6",
+    "body-parser": "^1.19.0",
+    "connect-mongo": "^3.1.0",
+    "cookie-parser": "^1.4.4",
+    "css-loader": "^3.2.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.0",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "helmet": "^3.21.1",
+    "mongoose": "^5.7.5",
+    "morgan": "^1.9.1",
+    "multer": "^1.4.2",
+    "node-sass": "^4.12.0",
+    "passport": "^0.4.0",
+    "passport-local-mongoose": "^5.0.1",
+    "postcss-loader": "^3.0.0",
+    "pug": "^2.0.4",
+    "sass-loader": "^8.0.0",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.9"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.3"
+  }
+}

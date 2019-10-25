@@ -1,0 +1,10 @@
+template-macro-def (SituationRecommend) {
+  content{
+    choose (Random){
+      template("앉아서 하는 스트레칭 알려줘")
+      template ("누워서 스트레칭 알려줘")
+      template ("잠올때 할 스트레칭 알려줘")
+    }
+  }
+
+}

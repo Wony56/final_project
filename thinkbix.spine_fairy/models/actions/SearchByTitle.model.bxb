@@ -1,0 +1,15 @@
+action (SearchByTitle) {
+  description (타이틀 검색)
+  
+  collect {
+    input (title) {
+      type (Title)
+      min (Optional) max (One)
+    }
+    input (searchKeyword) {
+      type (SearchKeyword)
+      min (Required) max (One)
+    }
+  }
+  output (StretchingSel)
+}

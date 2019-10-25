@@ -1,0 +1,48 @@
+result-view{
+  match:StretchingStep(result)
+  
+  message{
+    template (" "){
+      speech ("#{value(result.description)}")
+    }
+  }
+  render{
+    layout{
+      layout-macro (StretchingStepImage){
+          param(stretchingStep){
+            expression (result)
+          }
+      }
+
+      for-each (result.description){
+        as(desc){
+            layout-macro (StretchingDetailText){
+              param(description){
+                expression (desc)
+              }
+          }     
+        }
+      }
+      
+    }
+
+  }
+
+  conversation-drivers{
+    if(result.idx !=0){
+      conversation-driver{
+        template ("이전")
+      }
+    }
+    if(result.idx < result.length -1){
+      conversation-driver{
+        template ("다음")
+      }
+    }
+    if(result.idx !=0){
+      conversation-driver{
+        template ("처음으로")
+      }
+    }
+  }
+}

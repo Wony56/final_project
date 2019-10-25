@@ -1,0 +1,3 @@
+enum (SearchKeyword) {
+  symbol ("검색")
+}

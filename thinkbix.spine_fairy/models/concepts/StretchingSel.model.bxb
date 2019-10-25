@@ -1,0 +1,47 @@
+structure (StretchingSel) {
+  description (스트레칭 정보를 담고 있는 structure 입니다)
+  property (title) {
+    type (Title)
+    min (Required) max (One)
+  }
+  property (repetition) {
+    type (Repetition)
+    min (Required) max (One)
+  }
+  property (processList) {
+    type (ProcessList)
+    min (Required) max (Many)
+  }
+  property (views) {
+    type (Views)
+    min (Required) max (One)
+  }
+  property (check) {
+    type (Check)
+    min (Required) max (One)
+  }
+  property (point) {
+    type (Point)
+    min (Required) max (One)
+  }
+  property (place) {
+    type (Place)
+    min (Required) max (Many)
+  }
+  property (part) {
+    type (Part)
+    min (Required) max (Many)
+  }
+  property (situation) {
+    type (Situation)
+    min (Required) max (Many)
+  }
+  property (hashtag) {
+    type (Hashtag)
+    min (Required) max (Many)
+  }
+  property (_id) {
+    type (Id)
+    min (Required) max (One)
+  }
+}

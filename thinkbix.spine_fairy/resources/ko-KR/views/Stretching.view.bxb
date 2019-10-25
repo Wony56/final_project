@@ -1,0 +1,106 @@
+result-view{
+  match : StretchingSel(result)
+
+  message{   
+    if(size(result)>1){
+      template ("질문하신 스트레칭에 대한 #{size(result)}개의 결과입니다.")
+    }else-if (size(result)==1){
+      template("#{value(result.title)}을 시작할게요.")
+    }
+  }
+  
+  render{
+    layout{
+      if(size(result)>1){
+        section{
+          content{
+            for-each (result){
+              as (item){
+                layout-macro (StretchingContent){
+                  param (stretchingSel){
+                    expression (item)
+                  }
+                }
+              }
+              
+            }
+          }
+        }
+      } else{ 
+        section{
+          content{
+            
+            compound-card{
+              content{
+                layout-macro (StretchingPoint){
+                  param(stretchingSel){
+                    expression (result)
+                  }
+                }
+              }
+                
+            }
+            compound-card{
+              content{
+                layout-macro (StretchingCheck){
+                  param(stretchingSel){
+                    expression (result)
+                  }
+                }
+              }
+            }
+          }
+              
+            
+      }
+      
+        
+      for-each (result.processList){
+        as(item){
+          layout-macro (StretchingDetailImage){
+            param(processList){
+              expression (item)
+            }
+          }
+
+          for-each (item.description){
+            as(desc){
+              layout-macro (StretchingDetailText){
+                param(description){
+                  expression (desc)
+                }
+              }     
+            }
+          }
+          
+        }
+      }
+    }
+    } 
+  }
+
+
+
+  conversation-drivers{
+    if(size(result)>1){
+      conversation-driver{
+        template-macro (PartRecommend)
+      }
+      conversation-driver{
+        template-macro (PlaceRecommend)
+      }
+      conversation-driver{
+        template-macro (SituationRecommend)
+      }
+    }else-if(size(result)==1){
+      conversation-driver{
+        template ("영상으로 보여줘")
+      }
+
+      conversation-driver{
+        template ("운동 시작")
+      } 
+    }
+
+  }
+}

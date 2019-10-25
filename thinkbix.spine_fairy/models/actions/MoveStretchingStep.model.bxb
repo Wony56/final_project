@@ -1,0 +1,15 @@
+action (NextStretchingStep) {
+  description (단계별 설명 가져오기)
+  
+  collect {
+    input (stretchingSel) {
+      type (StretchingSel)
+      min (Optional) max (One)
+    }
+    input (stretchingStep) {
+      type (StretchingStep)
+      min (Optional) max (One)
+    }
+  }
+  output (StretchingStep)
+}

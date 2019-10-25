@@ -1,0 +1,22 @@
+action (SelectStretchingSearch) {
+  description (Search)
+  collect {
+    input (place) {
+      type (Place)
+      min (Optional) max (One)
+    }
+    input (part) {
+      type (Part)
+      min (Optional) max (One)
+    }
+    input (situation) {
+      type (Situation)
+      min (Optional) max (One)
+    }
+    input (searchKeyword) {
+      type (SearchKeyword)
+      min (Required) max (One)
+    }
+  }
+  output (StretchingSel)
+}

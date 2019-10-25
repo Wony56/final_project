@@ -1,0 +1,36 @@
+endpoints {
+  action-endpoints {
+    // action-endpoint (GetStretching) {
+    //   accepted-inputs (place, part)
+    //   local-endpoint (GetStretching.js)
+    // }
+    action-endpoint (SelectStretchingSearch) {
+      accepted-inputs (place, part, situation, searchKeyword)
+      local-endpoint (SelectStretchingSearch.js)
+    }
+    action-endpoint (GetStretchingStep) {
+      accepted-inputs (stretchingSel,stretchingStep)
+      local-endpoint (GetStretchingStep.js)
+    }
+    action-endpoint (NextStretchingStep) {
+      accepted-inputs (stretchingSel,stretchingStep)
+      local-endpoint (NextStretchingStep.js)
+    }
+    action-endpoint (PreStretchingStep) {
+      accepted-inputs (stretchingSel,stretchingStep)
+      local-endpoint (PreStretchingStep.js)
+    }
+    action-endpoint (StartStretching) {
+      accepted-inputs (stretchingSel,stretchingStep)
+      local-endpoint (StartStretching.js)
+    }
+    action-endpoint (CommitYoutubeShow) {
+      accepted-inputs (stretchingSel)
+      local-endpoint (CommitYoutubeShow.js)
+    }
+    action-endpoint (SearchByTitle){
+      accepted-inputs (title,searchKeyword)
+      local-endpoint (SearchByTitle.js)
+    }
+  }
+}

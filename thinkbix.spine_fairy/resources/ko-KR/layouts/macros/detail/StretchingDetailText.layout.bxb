@@ -1,0 +1,22 @@
+layout-macro-def(StretchingDetailText) {
+  params {
+    param (description) {
+      type (Description)
+      min (Required)
+      max (Many)
+    }
+  }
+  
+  content {
+    section {  // this macro returns a "section"
+      content {
+        paragraph {
+          value{
+            template ("#{value(description)}")
+          }
+          style (Detail_L)
+        }
+      }
+    }
+  }
+}
