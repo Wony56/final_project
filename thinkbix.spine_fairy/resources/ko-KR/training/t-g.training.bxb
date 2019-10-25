@@ -1,3 +1,8 @@
+train (t-g96pxrzz2z5ia10t2d5qftohj) {
+  utterance ("[g:SelectStretchingSearch] (팔)[v:Part]이 저린데 스트레칭 (알려줘)[v:SearchKeyword:검색]")
+  plan (Y2BhUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiElx2gfV5p1aW5xelMDAzMDIwAUkGIA2CEAAXBQA=)
+  last-modified (1571970822989)
+}
 train (t-g9t4hzn3ptvcqhkb8p1ra6j99) {
   utterance ("[g:SelectStretchingSearch] 굽은 (등)[v:Part]에 좋은 스트레칭 알려줄래?")
   plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiEgYmBkYgZgCSjAwgAOUDAA==)
