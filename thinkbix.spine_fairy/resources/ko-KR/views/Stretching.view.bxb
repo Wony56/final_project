@@ -49,6 +49,16 @@ result-view{
                 }
               }
             }
+            
+            compound-card{
+              content{
+                layout-macro (StretchingRepetition){
+                  param(stretchingSel){
+                    expression (result)
+                  }
+                }
+              }
+            }
           }
               
             

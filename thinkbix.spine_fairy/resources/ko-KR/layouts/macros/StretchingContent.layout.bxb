@@ -33,7 +33,7 @@ layout-macro-def (StretchingContent){
         }
         slot2{
           paragraph{
-            value("#{value(stretchingSel.hashtag)}")
+            value("⏱#{value(stretchingSel.repetition)}\n#{value(stretchingSel.hashtag)}")
           }
         }
         //halign (End)
