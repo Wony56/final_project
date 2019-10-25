@@ -9,21 +9,21 @@ Bixby Programming  & AI chatBot
 1. Bixby Project
 - [서버구조](#menu1)
 - [데이터 구조](#menu2)
-- Backend Page
-- 캡슐구조
-- 주요기능
-- 발화
+- [Backend Page](#menu3)
+- [캡슐구조](#menu4)
+- [주요기능](#menu5)
+- [발화](#menu6)
 
 ---
 
 ### Bixby Project
-##### 서버구조<a id="#menu1"></a>
+##### 서버구조<a id="menu1"></a>
 ![image-20191025165524228](https://lab.ssafy.com/jupang/final_project/raw/develop/images/server_architecture.png)
 
-##### 데이터 구조
+##### 데이터 구조<a id="menu2"></a>
 ![image-20191025165759600](https://lab.ssafy.com/jupang/final_project/raw/develop/images/database.png)
 
-###### Backend Page
+###### Backend Page<a id="menu3"></a>
 * 데이터를 관리하기 위한 Backend Page
 
 ![image-20191025160611797](https://lab.ssafy.com/jupang/final_project/raw/develop/images/backendpage_login.png)
@@ -31,7 +31,7 @@ Bixby Programming  & AI chatBot
 
 ![image-20191025160551931](https://lab.ssafy.com/jupang/final_project/raw/develop/images/backendpage.png)
 
-##### 캡슐구조
+##### 캡슐구조<a id="menu4"></a>
 assets,code,models,resources 구성 되어 있습니다.
 assets: 정적으로 사용되는 파일 저장
 code: 
@@ -49,7 +49,7 @@ resources
 
 - ko-KR/voca : 동의어 처리, 특정단어를 빅스비에게 학습시키기 위한 단어 파일
 
-##### 주요 기능
+##### 주요 기능<a id="menu5"></a>
 - 부위별 장소별 상황별 맞춤형 스트레칭 검색
 - 스트레칭 영상 연결
 - Bixby 실행화면
@@ -66,5 +66,5 @@ resources
     - <img src="https://lab.ssafy.com/jupang/final_project/raw/develop/images/appstep.png" alt="image-20191025161115304" style="zoom:50%;" />
 
   
-##### 발화(Training)
+##### 발화(Training)<a id="menu6"></a>
   
