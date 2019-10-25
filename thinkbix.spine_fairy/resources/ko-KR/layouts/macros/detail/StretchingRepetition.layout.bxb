@@ -1,0 +1,17 @@
+layout-macro-def (StretchingRepetition){
+  params{
+    param (stretchingSel){
+      type (StretchingSel)
+      min (Required)
+      max (One)
+    }
+  }
+
+  content{
+    paragraph{
+      value ("⏱#{value(stretchingSel.repetition)}")
+      style(Detail_L)
+    }
+  }
+  
+}

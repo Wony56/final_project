@@ -6,6 +6,7 @@ result-view{
       speech ("#{value(result.description)}")
     }
   }
+  
   render{
     layout{
       layout-macro (StretchingStepImage){
@@ -43,6 +44,9 @@ result-view{
       conversation-driver{
         template ("처음으로")
       }
+    }
+    conversation-driver{
+        template ("영상으로 보여줘")
     }
   }
 }
