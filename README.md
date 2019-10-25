@@ -11,7 +11,7 @@ Bixby Programming  & AI chatBot
 ##### 서버구조
 ![image-20191025165524228](https://lab.ssafy.com/jupang/final_project/raw/develop/images/server_architecture.png)
 ##### 데이터 구조
-![image-20191025165759600](C:\Users\multicampus\AppData\Roaming\Typora\typora-user-images\image-20191025165759600.png)
+![image-20191025165759600](https://lab.ssafy.com/jupang/final_project/raw/develop/images/database.png)
 ###### Backend Page
 * 데이터를 관리하기 위한 Backend Page
 ![image-20191025160611797](https://lab.ssafy.com/jupang/final_project/raw/develop/images/backendpage_login.png)
