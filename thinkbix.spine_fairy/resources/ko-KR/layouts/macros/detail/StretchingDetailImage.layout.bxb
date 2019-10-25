@@ -12,7 +12,8 @@ layout-macro-def(StretchingDetailImage) {
       content {
         image {
           url ("#{value(processList.imgAddress)}#{value(processList.imgPath)}")
-          object-fit (Contain)
+          object-fit (Cover)
+          // object-fit (Contain)
         }
       }
     }

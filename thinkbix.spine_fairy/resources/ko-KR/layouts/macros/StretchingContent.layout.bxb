@@ -23,7 +23,6 @@ layout-macro-def (StretchingContent){
             situation : $expr(stretchingSel.situation)
             hashtag : $expr(stretchingSel.hashtag)
             _id : $expr(stretchingSel._id)
-            index : $expr(stretchingSel.index)
           }
         }
       }
