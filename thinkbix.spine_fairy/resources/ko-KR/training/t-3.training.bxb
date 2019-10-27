@@ -13,11 +13,6 @@ train (t-3grsg5jaczaq5opzstqjdb7eh) {
   plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiEgYmBkYgZgCSjAwgAOUDAA==)
   last-modified (1572151319776)
 }
-train (t-3jckkdcvzc7oncxhemgj1n723) {
-  utterance ([g:StartStretching] 운동 시작 하자)
-  plan (Y2BiUC7JyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAeXpBYwqOBQlFhUglDJwAiEDFAMJAE=)
-  last-modified (1571907804967)
-}
 train (t-3ljfh9pu59vytebkj696v0st2) {
   utterance ("[g:SelectStretchingSearch] (직장인)[v:Situation]이 할 수 있는 (손목)[v:Part] 스트레칭 알려줘")
   plan (Y2BhUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiEgY57OZklpQmlmTm5zEwMzAyMAFJBiANghAAFwUA)

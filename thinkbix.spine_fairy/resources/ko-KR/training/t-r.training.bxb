@@ -18,3 +18,8 @@ train (t-rq0tzhm65adn7psdvr5cgm1i8) {
   plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBDrvizJLSxJLM/DwGJgZGIGYAkowMIADlAwA=)
   last-modified (1572151379877)
 }
+train (t-rw7zzf8eitc881h95xtrl5jnl) {
+  utterance ([g:StartStretching] 운동 시작)
+  plan (Y2BiUC7JyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAeXpBYwqOBQlFhUglDJwAiEDFAMJAE=)
+  last-modified (1572176566795)
+}

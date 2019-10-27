@@ -1,6 +1,6 @@
-action (NextStretchingStep) {
+action (NextStretchingStep){
   description (다음 단계 설명 가져오기)
-  type(Commit)
+  //type(UpdateTransaction)
   collect {
     input (stretchingSel) {
       type (StretchingSel)
