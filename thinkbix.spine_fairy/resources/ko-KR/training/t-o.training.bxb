@@ -1,3 +1,8 @@
+train (t-o7vdp5up552hw766hq11g11e2) {
+  utterance ([g:StartStretching] 운동시작)
+  plan (Y2BiUC7JyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAeXpBYwqOBQlFhUglDJwAiEDFAMJAE=)
+  last-modified (1572176551206)
+}
 train (t-onegd91t8dycpykn2dta1tfaz) {
   utterance ("[g:SelectStretchingSearch] (라운드)[v:Situation] 숄더 운동 알려줘")
   plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBDrvizJLSxJLM/DwGJgZGIGYAkowMIADlAwA=)

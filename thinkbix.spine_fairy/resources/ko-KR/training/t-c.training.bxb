@@ -1,8 +1,3 @@
-train (t-clzwmfqfoxv960as1bz4umwzv) {
-  utterance ([g:NextStretchingStep] 다음)
-  plan (Y2BiUC7JyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAeXpBYwqGNV5JdaUYKmkBEIGaAYSAIA)
-  last-modified (1571908065666)
-}
 train (t-cypejjv6ef5a79b0e2udo4w2q) {
   utterance ("[g:SelectStretchingSearch] (실내)[v:Place]에서 (손목)[v:Part]이 시원해지는 스트레칭")
   plan (Y2BhUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiEgYp7FI5icmpDMwMjAxMQJIBSIMgBMBFAQ==)
