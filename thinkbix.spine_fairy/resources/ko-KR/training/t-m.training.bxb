@@ -1,5 +1,5 @@
 train (t-mnv0ywes9dj3d50n40voj5lfq) {
-  utterance ("[g:SelectStretchingSearch] (발)[v:Part] 마사지 (알려줄래)[v:SearchKeyword:검색]")
-  plan (Y2BhUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiElx2gfV5p1aW5xelMDAzMDIwAUkGIA2CEAAXBQA=)
-  last-modified (1571991585998)
+  utterance ("[g:SelectStretchingSearch] (발)[v:Part] 마사지 알려줄래")
+  plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiEgYmBkYgZgCSjAwgAOUDAA==)
+  last-modified (1572147934528)
 }

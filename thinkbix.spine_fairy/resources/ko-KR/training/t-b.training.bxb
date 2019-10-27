@@ -1,5 +1,5 @@
 train (t-bbn6bub1rhrp82mc6zukitq5x) {
-  utterance ("[g:SelectStretchingSearch] (회사)[v:Place]에서 (목)[v:Part]이 결릴 때 좋은 스트레칭 (알려줘)[v:SearchKeyword:검색]")
-  plan (Y2BlUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiEgYp7FI5icmpuNwBNtM7tbI8vyiFgYWBkYGJgRlIMwBZEAgDSHIA)
-  last-modified (1571990699279)
+  utterance ("[g:SelectStretchingSearch] (회사)[v:Place]에서 (목)[v:Part]이 결릴 때 좋은 스트레칭 알려줘")
+  plan (Y2BhUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiEgYp7FI5icmpDMwMjAxMQJIBSIMgBMBFAQ==)
+  last-modified (1572151363371)
 }

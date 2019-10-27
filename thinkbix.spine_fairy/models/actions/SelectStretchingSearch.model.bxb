@@ -1,5 +1,6 @@
 action (SelectStretchingSearch) {
-  description (Search)
+  description (장소,부위,상황을 입력받아 스트레칭을 찾음)
+  type(Search)
   collect {
     input (place) {
       type (Place)
@@ -11,10 +12,6 @@ action (SelectStretchingSearch) {
     }
     input (situation) {
       type (Situation)
-      min (Optional) max (One)
-    }
-    input (searchKeyword) {
-      type (SearchKeyword)
       min (Optional) max (One)
     }
   }

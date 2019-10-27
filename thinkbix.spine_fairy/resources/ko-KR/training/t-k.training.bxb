@@ -4,9 +4,14 @@ train (t-k9nnzr2pa79ocibz46kj83vqf) {
   last-modified (1571990691993)
 }
 train (t-kdlldprkgtsz2ashi6ernpim7) {
-  utterance ("[g:SelectStretchingSearch] (학교)[v:Place]에서 (목)[v:Part]이 뭉쳤을 때 좋은 스트레칭 (찾아줘)[v:SearchKeyword:검색]")
-  plan (Y2BlUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiEgYp7FI5icmpuNwBNtM7tbI8vyiFgYWBkYGJgRlIMwBZEAgDSHIA)
-  last-modified (1571990684516)
+  utterance ("[g:SelectStretchingSearch] (학교)[v:Place]에서 (목)[v:Part]이 뭉쳤을 때 좋은 스트레칭 찾아줘")
+  plan (Y2BhUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiEgYp7FI5icmpDMwMjAxMQJIBSIMgBMBFAQ==)
+  last-modified (1572147911252)
+}
+train (t-ki92ow1pttzayhoke1zca5v9l) {
+  utterance ([g:StretchingRanking] 인기있는 스트레칭 알려줘)
+  plan (Y2BiUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jCoEVATlJiXDaQYGIGQAYqBJAA=)
+  last-modified (1572151461993)
 }
 train (t-kiywrsxvagnsirtb7fimhdcw8) {
   utterance ([g:StartStretching] 처음으로)
