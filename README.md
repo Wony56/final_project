@@ -26,7 +26,7 @@ Bixby Programming  & AI chatBot
 데이터 출처 : 
 쓸모있는 몸을 만드는 스트레칭
 url : 스트레칭 조이 https://www.youtube.com/channel/UC7jfcWMKdtypYEPPtpRboow
-병원가지 않고 통증잡는 5분 스트레칭
+\n병원가지 않고 통증잡는 5분 스트레칭
 url : 피지컬 갤러리 https://www.youtube.com/channel/UCdtRAcd3L_UpV4tMXCw63NQ
 
 ###### Backend Page <a id="menu3"></a>
