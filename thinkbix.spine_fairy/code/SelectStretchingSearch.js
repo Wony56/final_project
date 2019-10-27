@@ -1,10 +1,10 @@
 var http=require('http')
 var console = require('console')
 var config = require('config')
-module.exports.function = function SelectStretchingSearch (place, part, situation, searchKeyword) {
+module.exports.function = function SelectStretchingSearch (place, part, situation) {
   console.log(part+" , "+place+" , "+situation)
   if(place===undefined&&part===undefined&&situation===undefined){
-    url = encodeURI(config.get('remoteURL')+'find/view');
+    //url = encodeURI(config.get('remoteURL')+'find/view');
   }else if(part===undefined&&situation===undefined){
     url = encodeURI(config.get('remoteURL')+'find?place='+place);
   }else if(place===undefined&&situation===undefined){

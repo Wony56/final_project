@@ -26,14 +26,14 @@ result-view{
             }
           }
         }
-      } else{ 
+      } else-if(size(result)==1){ 
         section{
           content{
             
             compound-card{
               content{
                 layout-macro (StretchingPoint){
-                  param(stretchingSel){
+                  param (stretchingSel){
                     expression (result)
                   }
                 }
@@ -86,6 +86,28 @@ result-view{
         }
       }
     }
+    else{
+      section{
+        content{
+          cell-area{
+            slot2{
+              content{
+                primary{
+                  template ("찾으시는 결과가 없어요 😂")
+                  template ("s이런 스트레칭은 어떠세요?")
+                }
+                secondary{
+                  template-macro (PartRecommend)
+                  template-macro (PlaceRecommend)
+                  template-macro (SituationRecommend)
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
     } 
   }
 

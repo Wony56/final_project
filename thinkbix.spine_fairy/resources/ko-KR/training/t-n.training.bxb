@@ -4,12 +4,12 @@ train (t-n6ufs7bojzhxh2m3aimx4u1zu) {
   last-modified (1571990674886)
 }
 train (t-n9tmgtrc7vidia7m87xvwahwd) {
-  utterance ("[g:SelectStretchingSearch] (거북목)[v:Situation]예방에 좋은 스트레칭 (알려줘)[v:SearchKeyword:검색]")
-  plan (Y2BhUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOQOXgWBJ79TK8vyiFAY57GoyS0oTSzLz8xiYGRgZmIAkA5AGQQiAiwIA)
-  last-modified (1571990668613)
+  utterance ("[g:SelectStretchingSearch] (거북목)[v:Situation]예방에 좋은 스트레칭 알려줘")
+  plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBDrvizJLSxJLM/DwGJgZGIGYAkowMIADlAwA=)
+  last-modified (1572147942727)
 }
 train (t-nwzjsvj23clrqpvoofgcekto1) {
-  utterance ("[g:SelectStretchingSearch] (생리통)[v:Part]이 있을때 좋은 마사지 (검색해줘)[v:SearchKeyword:검색]")
-  plan (Y2BhUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiElx2gfV5p1aW5xelMDAzMDIwAUkGIA2CEAAXBQA=)
-  last-modified (1571990651092)
+  utterance ("[g:SelectStretchingSearch] (생리통)[v:Part]이 있을때 좋은 마사지 검색해줘")
+  plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiEgYmBkYgZgCSjAwgAOUDAA==)
+  last-modified (1572147948004)
 }

@@ -1,7 +1,7 @@
 train (t-v0uqe6jjdpzxbpv4l15nt8aky) {
-  utterance ("[g:SelectStretchingSearch] (키크는 운동)[v:Situation] (알려줘)[v:SearchKeyword:검색]")
-  plan (Y2BhUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOQOXgWBJ79TK8vyiFAY57GoyS0oTSzLz8xiYGRgZmIAkA5AGQQiAiwIA)
-  last-modified (1571990657589)
+  utterance ("[g:SelectStretchingSearch] (키크는 운동)[v:Situation] 알려줘")
+  plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBDrvizJLSxJLM/DwGJgZGIGYAkowMIADlAwA=)
+  last-modified (1572151382151)
 }
 train (t-vhbfiavd69grfur2mvu7gwhxa) {
   utterance ("[g:SelectStretchingSearch] (차)[v:Place]에서 (목)[v:Part]이 시원해지는 스트레칭")
@@ -14,9 +14,9 @@ train (t-vis3pxks3o29i9ypeitd7keg0) {
   last-modified (1571990701765)
 }
 train (t-vqd7vyzs5v23zz5f0pfgo3srm) {
-  utterance ("[g:SelectStretchingSearch] (등)[v:Part]에 좋은 스트레칭이 (있을까)[v:SearchKeyword:검색]")
-  plan (Y2BhUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiElx2gfV5p1aW5xelMDAzMDIwAUkGIA2CEAAXBQA=)
-  last-modified (1571971757044)
+  utterance ("[g:SelectStretchingSearch] (등)[v:Part]에 좋은 스트레칭이 있을까")
+  plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiEgYmBkYgZgCSjAwgAOUDAA==)
+  last-modified (1572148032466)
 }
 train (t-vx68gspwqsc6czettj0c4rztw) {
   utterance ("[g:SelectStretchingSearch] (허리)[v:Part] 스트레칭")

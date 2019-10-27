@@ -8,8 +8,3 @@ train (t-w4yvsuyqnblpiu03hnyd9n8th) {
   plan (Y2BhUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiEgYp7FI5icmpDMwMjAxMQJIBSIMgBMBFAQ==)
   last-modified (1571990677697)
 }
-train (t-wudaz87p5j710m4dj74tsepyb) {
-  utterance ("[g:SelectStretchingSearch] (자세교정)[v:Situation] (검색해줘)[v:SearchKeyword:검색]")
-  plan (Y2BhUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOQOXgWBJ79TK8vyiFAY57GoyS0oTSzLz8xiYGRgZmIAkA5AGQQiAiwIA)
-  last-modified (1571990656168)
-}
