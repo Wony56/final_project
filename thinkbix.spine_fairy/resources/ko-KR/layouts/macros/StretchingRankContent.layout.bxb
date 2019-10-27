@@ -1,0 +1,50 @@
+layout-macro-def (StretchingRankContent){
+  params{
+    param (stretchingRank){
+      type (StretchingRank)
+      min (Required)
+      max (Many)
+    }
+  }
+  content{
+    image-card{
+      on-click{
+        intent{
+          goal : StretchingRank
+          value : StretchingRank{
+            title : $expr(stretchingRank.title)
+            repetition : $expr(stretchingRank.repetition)
+            processList : $expr(stretchingRank.processList)
+            views : $expr(stretchingRank.views)
+            check : $expr(stretchingRank.check)
+            point : $expr(stretchingRank.point)
+            place : $expr(stretchingRank.place)
+            part : $expr(stretchingRank.part)
+            situation : $expr(stretchingRank.situation)
+            hashtag : $expr(stretchingRank.hashtag)
+            _id : $expr(stretchingRank._id)
+          }
+        }
+      }
+      title-area{
+        slot1{
+          text("#{value(stretchingRank.title)}")
+          //text("#{value(stretchingSel.hashtag)}")
+        }
+        slot2{
+          paragraph{
+            value("⏱#{value(stretchingRank.repetition)}\n#{value(stretchingRank.hashtag)}")
+          }
+        }
+        //halign (End)
+      }
+      
+      image-url{
+        template ("#{value(stretchingRank.processList[0].imgAddress)}#{value(stretchingRank.processList[0].imgPath)}")
+      }
+      text-position (Overlay)
+    }
+    
+
+  }
+}

@@ -1,0 +1,22 @@
+result-view{
+  match :  StretchingRank(result)
+  
+  message("가장 많은 사람들이 한 스트레칭입니다.")
+  render{
+    layout{
+      section{
+        content{
+          for-each (result){
+            as (item){
+              layout-macro (StretchingRankContent){
+                  param (stretchingRank){
+                    expression (item)
+                  }
+                }
+            }
+          }
+        }
+      }
+    }
+  }
+}
