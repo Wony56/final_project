@@ -23,10 +23,10 @@ Bixby Programming  & AI chatBot
 ##### 데이터 구조 <a id="menu2"></a>
 ![image-20191025165759600](https://lab.ssafy.com/jupang/final_project/raw/develop/images/database.png)
 
-데이터 출처 : 
-쓸모있는 몸을 만드는 스트레칭
+- 데이터 출처 : 
+- 쓸모있는 몸을 만드는 스트레칭
 url : 스트레칭 조이 https://www.youtube.com/channel/UC7jfcWMKdtypYEPPtpRboow
-\n병원가지 않고 통증잡는 5분 스트레칭
+- 병원가지 않고 통증잡는 5분 스트레칭
 url : 피지컬 갤러리 https://www.youtube.com/channel/UCdtRAcd3L_UpV4tMXCw63NQ
 
 ###### Backend Page <a id="menu3"></a>
