@@ -108,6 +108,9 @@ result-view{
                 primary{
                   template ("이런 스트레칭은 어떠세요?")
                 }
+                secondary{
+                  template ("3초만 기다려 주세요🌈")
+                }
               }
             }
           }

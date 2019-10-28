@@ -9,11 +9,6 @@ result-view{
   
   render{
     layout{
-      section{
-        content{
-          progress-bar("#{value(result.idx)/value(result.length)}")
-        }
-      }
       layout-macro (StretchingStepImage){
           param(stretchingStep){
             expression (result)

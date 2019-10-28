@@ -19,4 +19,15 @@ result-view{
       }
     }
   }
+    conversation-drivers{
+      conversation-driver{
+        template-macro (PartRecommend)
+      }
+      conversation-driver{
+        template-macro (PlaceRecommend)
+      }
+      conversation-driver{
+        template-macro (SituationRecommend)
+      }
+  }
 }
