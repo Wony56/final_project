@@ -91,7 +91,7 @@ export const getAllStretchings = async (req, res) => {
 
 export const getAllStretchingsForAdmin = async (req, res) => {
     try{
-        const datas = await Stretching.find({}).sort({views: "desc"}).limit(15);
+        const datas = await Stretching.find({});
 
         console.log(datas);
 
