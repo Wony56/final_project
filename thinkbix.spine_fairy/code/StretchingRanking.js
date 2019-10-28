@@ -5,11 +5,11 @@ module.exports.function = function StretchingRanking () {
   url = encodeURI(config.get('remoteURL')+'find/view');
   var response = http.getUrl(url,{format:'json'}).datas;
   console.log(response)
-  let stretchingSel = [];
+  let stretchingRank = [];
   for(let i = 0; i < response.length; i++){
       if(response[i] != null){
-        stretchingSel.push(response[i]);
+        stretchingRank.push(response[i]);
       }
   }
-  return stretchingSel;
+  return stretchingRank;
 }

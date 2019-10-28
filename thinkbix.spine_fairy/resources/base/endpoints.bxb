@@ -29,7 +29,7 @@ endpoints {
       local-endpoint (SearchByTitle.js)
     }
     action-endpoint (StretchingRanking){
-      accepted-inputs ()
+      accepted-inputs (stretchingRank)
       local-endpoint (StretchingRanking.js)
     }
   }

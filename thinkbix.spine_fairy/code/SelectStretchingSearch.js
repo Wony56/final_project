@@ -4,7 +4,16 @@ var config = require('config')
 module.exports.function = function SelectStretchingSearch (place, part, situation) {
   console.log(part+" , "+place+" , "+situation)
   if(place===undefined&&part===undefined&&situation===undefined){
-    //url = encodeURI(config.get('remoteURL')+'find/view');
+      url = encodeURI(config.get('remoteURL')+'find/view');
+  var response = http.getUrl(url,{format:'json'}).datas;
+  console.log(response)
+  let stretchingRank = [];
+  for(let i = 0; i < response.length; i++){
+      if(response[i] != null){
+        stretchingRank.push(response[i]);
+      }
+  }
+  return stretchingRank;
   }else if(part===undefined&&situation===undefined){
     url = encodeURI(config.get('remoteURL')+'find?place='+place);
   }else if(place===undefined&&situation===undefined){
