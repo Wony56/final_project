@@ -8,3 +8,8 @@ train (t-w4yvsuyqnblpiu03hnyd9n8th) {
   plan (Y2BhUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiEgYp7FI5icmpDMwMjAxMQJIBSIMgBMBFAQ==)
   last-modified (1571990677697)
 }
+train (t-wotqgt2z2ybgq59zcum7j96rh) {
+  utterance ("[g:SelectStretchingSearch] (컴퓨터)[v:Situation]하다가 하기 좋은 운동")
+  plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBDrvizJLSxJLM/DwGJgZGIGYAkowMIADlAwA=)
+  last-modified (1572245213258)
+}

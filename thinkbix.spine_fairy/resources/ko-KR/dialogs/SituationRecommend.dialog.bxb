@@ -2,8 +2,15 @@ template-macro-def (SituationRecommend) {
   content{
     choose (Random){
       template("앉아서 하는 스트레칭 알려줘")
-      template ("누워서 스트레칭 알려줘")
-      template ("잠올때 할 스트레칭 알려줘")
+      template ("도구를 이용한 운동 뭐가 있을까")
+      template ("애플힙 만드는 운동 알려줘")
+      template ("다이어트에 좋은 운동 알려줘")
+      template ("자세교정에 좋은 동작 알려줘")
+      template ("소화에 도움이 되는 알려줘")
+      template ("성장에 좋은 스트레칭 알려줘")
+      template ("청소년에게 좋은 운동 추천해줘")
+      template ("찜질방에서 하기 좋은 운동 알려줘")
+      template ("야근할 때 추천 스트레칭")
     }
   }
 

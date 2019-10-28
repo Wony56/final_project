@@ -1,3 +1,8 @@
+train (t-g6qq2qktwdo39cb29zmaqtxju) {
+  utterance ("[g:SelectStretchingSearch] (척추)[v:Part]에 좋은 운동 추천해줘")
+  plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiEgYmBkYgZgCSjAwgAOUDAA==)
+  last-modified (1572243628129)
+}
 train (t-g96pxrzz2z5ia10t2d5qftohj) {
   utterance ("[g:SelectStretchingSearch] (팔)[v:Part]이 저린데 스트레칭 알려줘")
   plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiEgYmBkYgZgCSjAwgAOUDAA==)
@@ -7,9 +12,4 @@ train (t-g9t4hzn3ptvcqhkb8p1ra6j99) {
   utterance ("[g:SelectStretchingSearch] 굽은 (등)[v:Part]에 좋은 스트레칭 알려줄래?")
   plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiEgYmBkYgZgCSjAwgAOUDAA==)
   last-modified (1571894653300)
-}
-train (t-gxagfiqinsyymh8c0vled3soz) {
-  utterance ("[g:SelectStretchingSearch] (손)[v:Part]에 좋은 스트레칭")
-  plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiEgYmBkYgZgCSjAwgAOUDAA==)
-  last-modified (1571987277752)
 }

@@ -32,7 +32,7 @@ layout-macro-def (StretchingRankContent){
           //text("#{value(stretchingSel.hashtag)}")
         }
         slot2{
-          if(value(stretchingRank.repetition) != ' '){
+          if(value(stretchingRank.repetition) != 'null'){
             paragraph{
               value("⏱#{value(stretchingRank.repetition)}\n#{value(stretchingRank.hashtag)}")
             }

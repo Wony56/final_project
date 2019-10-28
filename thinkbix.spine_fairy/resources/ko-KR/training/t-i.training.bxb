@@ -11,7 +11,12 @@ train (t-i9nq853z58irsuzgmqqd8cetd) {
 train (t-iev0t0w2q53yzzp0tv9vpdqr8) {
   utterance ([g:SelectStretchingSearch] 스트레칭알려줘)
   plan (Y2BiUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYOBEQgZoBhIAgA=)
-  last-modified (1571902265454)
+  last-modified (1572221694727)
+}
+train (t-iqh47bmtsx1wxtz5g5k9xxqok) {
+  utterance ("[g:SelectStretchingSearch] (복부)[v:Part] 운동 알려줘")
+  plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiEgYmBkYgZgCSjAwgAOUDAA==)
+  last-modified (1572239250486)
 }
 train (t-ivr3m6kdms1yudgh1zm2qve2n) {
   utterance ("[g:SelectStretchingSearch] (손목)[v:Part]에 좋은 스트레칭 보여줘")

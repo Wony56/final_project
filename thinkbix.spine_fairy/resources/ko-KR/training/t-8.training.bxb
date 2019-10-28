@@ -8,3 +8,8 @@ train (t-8sy4vvq7jy1ud602fgqp842i7) {
   plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBDrvizJLSxJLM/DwGJgZGIGYAkowMIADlAwA=)
   last-modified (1572150251563)
 }
+train (t-8uzak73xsrdc8dn5zxqeorejz) {
+  utterance ("[g:SelectStretchingSearch] (코어)[v:Part] 운동 알려줘")
+  plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiEgYmBkYgZgCSjAwgAOUDAA==)
+  last-modified (1572239227927)
+}

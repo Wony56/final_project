@@ -3,3 +3,8 @@ train (t-ebc9ls44d0qywzovnes3nvsy8) {
   plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiEgYmBkYgZgCSjAwgAOUDAA==)
   last-modified (1572147841300)
 }
+train (t-eiyizeor28qm8wdas2ot7doen) {
+  utterance ("[g:SelectStretchingSearch] (일어나서)[v:Situation] 할 만한 운동 추천해줘")
+  plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBDrvizJLSxJLM/DwGJgZGIGYAkowMIADlAwA=)
+  last-modified (1572241828264)
+}
