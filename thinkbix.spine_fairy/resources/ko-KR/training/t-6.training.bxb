@@ -3,3 +3,13 @@ train (t-6ikka08jy7heytuwkqtcypmm1) {
   plan (Y2BhUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiEgYp7FI5icmpDMwMjAxMQJIBSIMgBMBFAQ==)
   last-modified (1572151341675)
 }
+train (t-6tjjgdxcfieozo14dxo4ko833) {
+  utterance ("[g:SelectStretchingSearch] (차)[v:Place] 안에서 하기 좋은 스트레칭 알려줘")
+  plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBCqvigJzE5FQGJgZGIGYAkowMIADlAwA=)
+  last-modified (1572243043826)
+}
+train (t-6u9dh5zfehtzpoue5oz80zlpp) {
+  utterance ("[g:SelectStretchingSearch] (서서)[v:Situation] 할 수 있는 운동 알려줘")
+  plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBDrvizJLSxJLM/DwGJgZGIGYAkowMIADlAwA=)
+  last-modified (1572241777750)
+}

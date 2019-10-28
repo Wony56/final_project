@@ -1,5 +1,15 @@
+train (t-c6lk4xallcwgbeqk394iwa2o4) {
+  utterance ("[g:SelectStretchingSearch] (폼롤러)[v:Situation]를 이용한 운동 알려줘")
+  plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBDrvizJLSxJLM/DwGJgZGIGYAkowMIADlAwA=)
+  last-modified (1572240167401)
+}
+train (t-cfx0t8btnxgtfflas4y6o8ndp) {
+  utterance ("[g:SelectStretchingSearch] (차)[v:Place]에서 할 만한 운동 알려줘")
+  plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBCqvigJzE5FQGJgZGIGYAkowMIADlAwA=)
+  last-modified (1572243844186)
+}
 train (t-cypejjv6ef5a79b0e2udo4w2q) {
   utterance ("[g:SelectStretchingSearch] (실내)[v:Place]에서 (손목)[v:Part]이 시원해지는 스트레칭")
   plan (Y2BhUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiEgYp7FI5icmpDMwMjAxMQJIBSIMgBMBFAQ==)
-  last-modified (1572151364098)
+  last-modified (1572249590402)
 }

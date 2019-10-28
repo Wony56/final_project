@@ -1,8 +1,3 @@
-train (t-qcrusyy4lbchy6xi6uhpiqh2b) {
-  utterance ("[g:SelectStretchingSearch] (키크는 운동)[v:Situation] 알려줄래?")
-  plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBDrvizJLSxJLM/DwGJgZGIGYAkowMIADlAwA=)
-  last-modified (1572147971528)
-}
 train (t-qfyu1zqd3fumus7k9srtlumny) {
   utterance ("[g:SelectStretchingSearch] (엉덩)[v:Part]이 스트레칭 알려줄래")
   plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiEgYmBkYgZgCSjAwgAOUDAA==)

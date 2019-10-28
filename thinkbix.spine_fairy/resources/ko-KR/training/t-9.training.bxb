@@ -1,3 +1,8 @@
+train (t-9hi1cytkrsh47esxiub4boc0e) {
+  utterance ("[g:SelectStretchingSearch] (고양이)[v:Situation] 자세 알려줘")
+  plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBDrvizJLSxJLM/DwGJgZGIGYAkowMIADlAwA=)
+  last-modified (1572240741457)
+}
 train (t-9izdzx1nchyp5oiy7mwrm0fp2) {
   utterance ("[g:SelectStretchingSearch] (주부)[v:Situation]에게 좋은 스트레칭 검색해")
   plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBDrvizJLSxJLM/DwGJgZGIGYAkowMIADlAwA=)

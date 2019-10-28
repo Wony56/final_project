@@ -8,7 +8,7 @@ layout-macro-def (StretchingRepetition){
   }
 
   content{
-    if(value(stretchingSel.repetition) != ' '){
+    if(value(stretchingSel.repetition) != 'null'){
     paragraph{
       value ("⏱#{value(stretchingSel.repetition)}")
       style(Detail_L)

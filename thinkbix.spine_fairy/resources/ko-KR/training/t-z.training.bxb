@@ -1,3 +1,13 @@
+train (t-z66frdwkvp6af90h4rsf3mn72) {
+  utterance ("[g:SelectStretchingSearch] (허벅지)[v:Part]에 좋은 스트레칭 알려줘")
+  plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiEgYmBkYgZgCSjAwgAOUDAA==)
+  last-modified (1572238894888)
+}
+train (t-z8ccdv1clr9bilhrmewu6ph8g) {
+  utterance ("[g:SelectStretchingSearch] (무릎 통증)[v:Situation]에 좋은 운동 알려줘")
+  plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBDrvizJLSxJLM/DwGJgZGIGYAkowMIADlAwA=)
+  last-modified (1572249080044)
+}
 train (t-zdy9aiy65wkgb1zpswhy5iwxf) {
   utterance ("[g:SelectStretchingSearch] (회사)[v:Place]에서 할 수 있는 (목)[v:Part] 운동 알려줘")
   plan (Y2BhUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiEgYp7FI5icmpDMwMjAxMQJIBSIMgBMBFAQ==)
@@ -12,4 +22,9 @@ train (t-zu6mi7an37nic1k8m5nzbdlrl) {
   utterance ("[g:SelectStretchingSearch] (실내)[v:Place]에서 (손목)[v:Part]이 뻐근할 때 좋은 스트레칭")
   plan (Y2BhUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiEgYp7FI5icmpDMwMjAxMQJIBSIMgBMBFAQ==)
   last-modified (1571990700199)
+}
+train (t-zvus66lxe5bfyh6yi2tznpzfq) {
+  utterance ("[g:SelectStretchingSearch] (애플힙)[v:Situation] 만드는 운동 알려줘")
+  plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBDrvizJLSxJLM/DwGJgZGIGYAkowMIADlAwA=)
+  last-modified (1572241865072)
 }

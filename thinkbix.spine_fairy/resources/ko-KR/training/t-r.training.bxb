@@ -13,6 +13,11 @@ train (t-rf20wbwu5pbhxekz1i8lzskve) {
   plan (Y2BhUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiEgYp7FI5icmpDMwMjAxMQJIBSIMgBMBFAQ==)
   last-modified (1572147992578)
 }
+train (t-rg5uukbdp33rmh4h74zr39jbe) {
+  utterance ("[g:SelectStretchingSearch] (복근)[v:Part] 운동 알려줘")
+  plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiEgYmBkYgZgCSjAwgAOUDAA==)
+  last-modified (1572243607154)
+}
 train (t-rq0tzhm65adn7psdvr5cgm1i8) {
   utterance ("[g:SelectStretchingSearch] (두통)[v:Situation]이 있을때 좋은 마사지 알려줘")
   plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBDrvizJLSxJLM/DwGJgZGIGYAkowMIADlAwA=)

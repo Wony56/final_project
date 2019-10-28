@@ -13,8 +13,3 @@ train (t-pfacw8nu1zgwlsxan08cq9b7i) {
   plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBDrvizJLSxJLM/DwGJgZGIGYAkowMIADlAwA=)
   last-modified (1572147965640)
 }
-train (t-py4j8omtsxoj1xwnnv5q28t76) {
-  utterance ("[g:SelectStretchingSearch] (카페)[v:Place]에서 하기 좋은 스트레칭 없냐")
-  plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBCqvigJzE5FQGJgZGIGYAkowMIADlAwA=)
-  last-modified (1572151536061)
-}

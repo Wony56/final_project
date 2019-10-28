@@ -1,11 +1,14 @@
 template-macro-def (PartRecommend) {
   content{
     choose (Random){
-      template("등 스트레칭 알려줘")
+      template("등 운동 알려줘")
       template ("허리 스트레칭 알려줘")
-      template ("손목 스트레칭 알려줘")
-      template ("어깨 스트레칭 알려줘")
+      template ("손목에 좋은 동작 알려줘")
+      template ("어깨에 좋은 운동 알려줘")
       template ("목 스트레칭 알려줘")
+      template ("복근 운동 알려줘")
+      template ("척추에 좋은 운동 추천해줘")
+      template ("코어 운동")
     }
   }
 

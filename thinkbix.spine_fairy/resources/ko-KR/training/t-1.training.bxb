@@ -1,0 +1,20 @@
+train (t-10smo60ibkstfolis44p8mdd0) {
+  utterance ("[g:SelectStretchingSearch] (다이어트)[v:Situation]에 좋은 운동 알려줘")
+  plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBDrvizJLSxJLM/DwGJgZGIGYAkowMIADlAwA=)
+  last-modified (1572242528956)
+}
+train (t-1g0kb8lo90kt79ts84bwc6c6l) {
+  utterance ("[g:SelectStretchingSearch] (어깨)[v:Part]에 좋은 스트레칭 알려줘")
+  plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiEgYmBkYgZgCSjAwgAOUDAA==)
+  last-modified (1572238848959)
+}
+train (t-1qq8u0v2xbuur59o6dqs3yxmf) {
+  utterance ("[g:SelectStretchingSearch] (게임)[v:Situation]하다가 하기 좋은 운동")
+  plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBDrvizJLSxJLM/DwGJgZGIGYAkowMIADlAwA=)
+  last-modified (1572245969038)
+}
+train (t-1udcf3d1s9mc7wcb6r3b5xggc) {
+  utterance ("[g:SelectStretchingSearch] (개구리 자세)[v:Situation] 알려줘")
+  plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBDrvizJLSxJLM/DwGJgZGIGYAkowMIADlAwA=)
+  last-modified (1572250418675)
+}
