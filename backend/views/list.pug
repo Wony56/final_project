@@ -1,0 +1,12 @@
+extends layouts/main
+
+block content
+    .data-list
+        if stretchings.length != 0
+            ul
+                each stretching, index in stretchings
+                    li 
+                        a(href=`/detail/${stretching.id}`) #{ index+1 }: #{ stretching.title }
+        else
+            span No Datas to show
+    

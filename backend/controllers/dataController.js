@@ -89,6 +89,20 @@ export const getAllStretchings = async (req, res) => {
     }
 }
 
+export const getAllStretchingsForAdmin = async (req, res) => {
+    try{
+        const datas = await Stretching.find({}).sort({views: "desc"}).limit(15);
+
+        console.log(datas);
+
+        res.render("list", { stretchings: datas });
+    }catch(error){
+        console.log(error);
+
+        res.render("list", { stretchings: [] });
+    }
+}
+
 export const getStretchings = async (req, res) => {
     
     const {
@@ -148,11 +162,11 @@ export const getStretchingsByViews = async (req, res) => {
 
 export const getView = async (req, res) => {
     const {
-        params: {id}
+        params: { id }
     } = req;
 
     try{
-        const stretching = await Stretching.findOne({_id: id});
+        const stretching = await Stretching.findOne({_id: id });
 
         await Stretching.findOneAndUpdate({_id: id}, { views: stretching.views + 1});
 
@@ -161,5 +175,90 @@ export const getView = async (req, res) => {
     }catch(error){
         console.log(error);
         res.status(404).json({message: "Fail!"});
+    }
+}
+
+export const getDetail = async (req, res) => {
+    const {
+        params: { id }
+    } = req;
+
+    try{
+        const stretching = await Stretching.findById({ _id: id });
+
+        res.render("detail", { stretching })
+    }catch(error){
+        console.log(error)
+
+        res.redirect(routes.findList);
+    }
+}
+
+export const getEdit = async (req, res) => {
+    const {
+        params: { id }
+    } = req;
+
+    try{
+        const stretching = await Stretching.findById({ _id: id });
+
+        res.render("edit", { stretching });
+    }catch(error){
+        console.log(error);
+
+        res.redirect(routes.view(id));
+    }
+}
+
+export const postEdit = async (req, res) => {
+    const {
+        params: { id },
+        body: {
+            title, repetition, check, point, place, part, situation, hashtag, imgPath, description
+        }
+    } = req;
+
+    try{
+        
+        const processList = imgPath.map((item, index) => {
+            return {
+                imgPath: item,
+                description: description[index].split("&&")
+            };
+        });
+
+        await Stretching.findByIdAndUpdate({ _id: id }, {
+            title,
+            repetition,
+            check,
+            point,
+            processList,
+            place: place.split("&&"),
+            part: part.split("&&"),
+            situation: situation.split("&&"),
+            hashtag: hashtag.split("&&")
+        });
+
+        res.redirect(routes.detail(id));
+    }catch(error){
+        console.log(error);
+
+        res.redirect(routes.edit(id));
+    }
+}
+
+export const getDelete = async (req, res) => {
+    const{
+        params: { id }
+    } = req;
+
+    try{
+        await Stretching.findByIdAndRemove({ _id: id});
+
+        res.redirect(routes.findList);
+    }catch(error){
+        console.log(error);
+
+        res.redirect(routes.detail(id));
     }
 }

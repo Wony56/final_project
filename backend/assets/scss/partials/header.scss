@@ -1,5 +1,6 @@
 .header{
     background-color: #011f4b;
+    margin-bottom: 20px;
     
     .header__wrapper{
         padding: 10px 0;
@@ -24,6 +25,9 @@
                 display: flex;
                 color: white;
                 text-transform: uppercase;
+                li:not(:last-child){
+                    margin-right: 15px;
+                }
             }
         }
     }

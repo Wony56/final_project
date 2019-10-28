@@ -1,0 +1,21 @@
+extends layouts/main
+
+block content
+    .form-container
+        form(action=`/edit/${ stretching.id }`, method="post")
+            input(type="text", name="title", value=stretching.title, placeholder="Title", required)
+            input(type="text", name="repetition", value=stretching.repetition, placeholder="Repetition", required)
+            input(type="text", name="check", value=stretching.check, placeholder="Check", required)
+            input(type="text", name="point", value=stretching.point, placeholder="Point", required)
+            input(type="text", name="place", value=stretching.place.join("&&"), placeholder="Place", required)
+            input(type="text", name="part", value=stretching.part.join("&&"), placeholder="Part", required)
+            input(type="text", name="situation", value=stretching.situation.join("&&"), placeholder="Situation", required)
+            input(type="text", name="hashtag", value=stretching.hashtag.join("&&"), placeholder="HashTag", required)
+            hr
+            .data-process-list
+                each item, index in stretching.processList
+                    input(type="text", name="imgPath", value=item.imgPath, placeholder="Image name", required)
+                    textarea(rows="10", cols="50", name="description", placeholder="Description", required) #{ item.description.join("&&") }
+            input(type="submit", value="수정하기")
+            a(href=`/detail/${ stretching.id }`)
+                button 취소

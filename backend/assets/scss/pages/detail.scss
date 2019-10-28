@@ -1,0 +1,29 @@
+.data-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    input:not(:last-child){
+        margin-bottom: 10px;
+    }
+    .data-process-list{
+        display: flex;
+        flex-direction: column;
+        img{
+            width: 300px;
+            height: 200px;
+        }
+        textarea:not(:last-child){
+            margin-bottom: 20px;
+        }
+    }
+    .data-update{
+        display: flex;
+        a:not(:last-child){
+            margin-right: 10px;
+        }
+    }
+    a{
+        margin-top: 10px;
+    }
+}
