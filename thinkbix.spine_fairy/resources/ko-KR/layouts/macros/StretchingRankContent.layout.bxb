@@ -10,8 +10,8 @@ layout-macro-def (StretchingRankContent){
     image-card{
       on-click{
         intent{
-          goal : StretchingRank
-          value : StretchingRank{
+          goal : StretchingSel
+          value : StretchingSel{
             title : $expr(stretchingRank.title)
             repetition : $expr(stretchingRank.repetition)
             processList : $expr(stretchingRank.processList)
