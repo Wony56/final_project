@@ -32,8 +32,14 @@ layout-macro-def (StretchingContent){
           //text("#{value(stretchingSel.hashtag)}")
         }
         slot2{
-          paragraph{
-            value("⏱#{value(stretchingSel.repetition)}\n#{value(stretchingSel.hashtag)}")
+          if(value(stretchingSel.repetition) != ' '){
+            paragraph{
+              value("⏱#{value(stretchingSel.repetition)}\n#{value(stretchingSel.hashtag)}")
+            }
+          }else{
+            paragraph{
+              value("#{value(stretchingSel.hashtag)}")
+            }
           }
 
         }
