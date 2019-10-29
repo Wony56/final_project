@@ -1,6 +1,6 @@
 action (StartStretching) {
   description (단계별 시작, 조회 수 올림)
-  
+  //type(BeginTransaction)
   collect {
     input (stretchingSel) {
       type (StretchingSel)

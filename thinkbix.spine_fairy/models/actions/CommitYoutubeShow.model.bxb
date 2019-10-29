@@ -1,6 +1,6 @@
 action (CommitYoutubeShow) {
   type(Commit)
-  description ()
+  description (유투브로 이동)
   collect {
     input (stretchingSel) {
       type (StretchingSel)

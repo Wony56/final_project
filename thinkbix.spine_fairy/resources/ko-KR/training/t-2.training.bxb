@@ -1,0 +1,15 @@
+train (t-2aseal7o6t9d5uj5oftsvlc1s) {
+  utterance ("[g:SelectStretchingSearch] (변비)[v:Situation]에 도움이 되는 마사지 검색해줘")
+  plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBDrvizJLSxJLM/DwGJgZGIGYAkowMIADlAwA=)
+  last-modified (1572150041014)
+}
+train (t-2kw6jzrquw3hwj1185xxhnn5k) {
+  utterance ("[g:SelectStretchingSearch] (척추)[v:Part] 운동 뭐가 있을까?")
+  plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiEgYmBkYgZgCSjAwgAOUDAA==)
+  last-modified (1572240654690)
+}
+train (t-2wh8x0fmx5eddrtcnya6y3uk6) {
+  utterance ("[g:SelectStretchingSearch] (나비 자세)[v:Situation]")
+  plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBDrvizJLSxJLM/DwGJgZGIGYAkowMIADlAwA=)
+  last-modified (1572250477490)
+}

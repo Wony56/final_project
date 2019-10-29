@@ -1,20 +1,35 @@
-train (t-3grsg5jaczaq5opzstqjdb7eh) {
-  utterance ("[g:SelectStretchingSearch] (등)[v:Part]의 좋은 스트레칭 (찾아줘)[v:SearchKeyword:검색]")
-  plan (Y2BhUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiElx2gfV5p1aW5xelMDAzMDIwAUkGIA2CEAAXBQA=)
-  last-modified (1571971590370)
+train (t-327u8ol70t8ow44vplcunu0uu) {
+  utterance ("[g:SelectStretchingSearch] (자세 교정)[v:Situation] 스트레칭 알려줘")
+  plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBDrvizJLSxJLM/DwGJgZGIGYAkowMIADlAwA=)
+  last-modified (1572150439287)
 }
-train (t-3jckkdcvzc7oncxhemgj1n723) {
-  utterance ([g:StartStretching] 운동 시작 하자)
-  plan (Y2BiUC7JyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAeXpBYwqOBQlFhUglDJwAiEDFAMJAE=)
-  last-modified (1571907804967)
+train (t-3g5isxzoyg0br5cl1z2tmo7as) {
+  utterance ("[g:SelectStretchingSearch] (무릎)[v:Part]이 뻐근할 때 좋은 스트레칭")
+  plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiEgYmBkYgZgCSjAwgAOUDAA==)
+  last-modified (1572151318176)
+}
+train (t-3grsg5jaczaq5opzstqjdb7eh) {
+  utterance ("[g:SelectStretchingSearch] (등)[v:Part]의 좋은 스트레칭 찾아줘")
+  plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiEgYmBkYgZgCSjAwgAOUDAA==)
+  last-modified (1572151319776)
 }
 train (t-3ljfh9pu59vytebkj696v0st2) {
-  utterance ("[g:SelectStretchingSearch] (직장인)[v:Situation]이 할 수 있는 (손목)[v:Part] 스트레칭 (알려줘)[v:SearchKeyword:검색]")
-  plan (Y2BlUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiElx2gfV5p1aW5xelMMhhV5NZUppYkpmfx8DCwMjAxMAMpBmALAiEASQ5AA==)
-  last-modified (1571972262813)
+  utterance ("[g:SelectStretchingSearch] (직장인)[v:Situation]이 할 수 있는 (손목)[v:Part] 스트레칭 알려줘")
+  plan (Y2BhUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiEgY57OZklpQmlmTm5zEwMzAyMAFJBiANghAAFwUA)
+  last-modified (1572151330054)
+}
+train (t-3o1gruckjn71zq89hoaq9pm6m) {
+  utterance ("[g:SelectStretchingSearch] (다리 붓기)[v:Situation] 해소에 좋은 운동 알려줘")
+  plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBDrvizJLSxJLM/DwGJgZGIGYAkowMIADlAwA=)
+  last-modified (1572251077157)
 }
 train (t-3phpwjvuqj2cm4yat9ezv8ik1) {
-  utterance ("[g:SelectStretchingSearch] (학교)[v:Place]에서 할 수 있는 (목)[v:Part] 스트레칭 (검색해줘)[v:SearchKeyword:검색]")
-  plan (Y2BlUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiEgYp7FI5icmpuNwBNtM7tbI8vyiFgYWBkYGJgRlIMwBZEAgDSHIA)
-  last-modified (1571968763467)
+  utterance ("[g:SelectStretchingSearch] (학교)[v:Place]에서 할 수 있는 (목)[v:Part] 스트레칭 검색해줘")
+  plan (Y2BhUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiEgYp7FI5icmpDMwMjAxMQJIBSIMgBMBFAQ==)
+  last-modified (1572151330915)
+}
+train (t-3tk9jkoau44vnwkc30ctcdw1u) {
+  utterance ("[g:SelectStretchingSearch] (애플힙)[v:Situation] 만드는 운동 알려줘")
+  plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBDrvizJLSxJLM/DwGJgZGIGYAkowMIADlAwA=)
+  last-modified (1572243252624)
 }

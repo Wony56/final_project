@@ -1,6 +1,6 @@
 action (PreStretchingStep) {
-  description (단계별 설명 가져오기)
-  
+  description (이전 단계 설명 가져오기)
+  //type(UpdateTransaction)
   collect {
     input (stretchingSel) {
       type (StretchingSel)

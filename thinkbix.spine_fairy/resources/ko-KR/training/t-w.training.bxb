@@ -1,0 +1,20 @@
+train (t-w2knmwtypftso549gkklt7h1h) {
+  utterance ("[g:SelectStretchingSearch] (손목)[v:Part]마사지")
+  plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiEgYmBkYgZgCSjAwgAOUDAA==)
+  last-modified (1571990644691)
+}
+train (t-w4yvsuyqnblpiu03hnyd9n8th) {
+  utterance ("[g:SelectStretchingSearch] (회사)[v:Place]에서 (어깨)[v:Part] 풀 때 좋은 스트레칭")
+  plan (Y2BhUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiEgYp7FI5icmpDMwMjAxMQJIBSIMgBMBFAQ==)
+  last-modified (1571990677697)
+}
+train (t-w77ai1f9v5fiauu8x91fwh6zd) {
+  utterance ("[g:SelectStretchingSearch] 할 만한 (어깨)[v:Part] 스트레칭 알려줘")
+  plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiEgYmBkYgZgCSjAwgAOUDAA==)
+  last-modified (1572256812824)
+}
+train (t-wotqgt2z2ybgq59zcum7j96rh) {
+  utterance ("[g:SelectStretchingSearch] (컴퓨터)[v:Situation]하다가 하기 좋은 운동")
+  plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBDrvizJLSxJLM/DwGJgZGIGYAkowMIADlAwA=)
+  last-modified (1572245213258)
+}

@@ -1,0 +1,10 @@
+train (t-j6m6s9flwmje5nw1vpj1jgi9f) {
+  utterance ("[g:SelectStretchingSearch] (사무실)[v:Place]에서 (턱)[v:Part] 풀 때 좋은 스트레칭")
+  plan (Y2BhUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiEgYp7FI5icmpDMwMjAxMQJIBSIMgBMBFAQ==)
+  last-modified (1571990681987)
+}
+train (t-jynh8cov49iua5fy7m813qh1l) {
+  utterance ("[g:SelectStretchingSearch] (앉아)[v:Situation]있을 때 할 만한 운동 알려줘")
+  plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBDrvizJLSxJLM/DwGJgZGIGYAkowMIADlAwA=)
+  last-modified (1572256704338)
+}

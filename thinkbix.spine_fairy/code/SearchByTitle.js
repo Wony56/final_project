@@ -1,7 +1,7 @@
 var http=require('http')
 var console = require('console')
 var config = require('config')
-module.exports.function = function SearchByTitle (title, searchKeyword) {
+module.exports.function = function SearchByTitle (title) {
   console.log(title)
   url = encodeURI(config.get('remoteURL')+'find?title='+title);
   var response = http.getUrl(url,{format:'json'}).datas;
@@ -13,7 +13,6 @@ module.exports.function = function SearchByTitle (title, searchKeyword) {
   let stretchingSel = [];
   for(let i = 0; i < response.length; i++){
       if(response[i] != null){
-        response[i].index = 0;
         stretchingSel.push(response[i]);
       }
   }

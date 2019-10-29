@@ -1,0 +1,20 @@
+train (t-u7hm07fg63okkd8xb4o0pddf3) {
+  utterance ("[g:SelectStretchingSearch] (앉아서)[v:Situation] 할 만한 (어깨)[v:Part] 운동")
+  plan (Y2BhUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiEgY57OZklpQmlmTm5zEwMzAyMAFJBiANghAAFwUA)
+  last-modified (1572240506909)
+}
+train (t-ufpyrc1a0rrtscupq5c2ffbmg) {
+  utterance ("[g:SelectStretchingSearch] (다리)[v:Part] 운동 뭐가 있어?")
+  plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiEgYmBkYgZgCSjAwgAOUDAA==)
+  last-modified (1572241487211)
+}
+train (t-ur1oj1lg3hp264efw6ad31ubf) {
+  utterance ("[g:SelectStretchingSearch] (허리)[v:Part] (통증)[v:Situation]에 좋은 운동 알려줘")
+  plan (Y2BhUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiEgY57OZklpQmlmTm5zEwMzAyMAFJBiANghAAFwUA)
+  last-modified (1572245137419)
+}
+train (t-urrn79p2sfuvg68qwznn94l25) {
+  utterance ("[g:SelectStretchingSearch] (혈액순환)[v:Situation]에 좋은 운동알려줘")
+  plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBDrvizJLSxJLM/DwGJgZGIGYAkowMIADlAwA=)
+  last-modified (1572240056156)
+}

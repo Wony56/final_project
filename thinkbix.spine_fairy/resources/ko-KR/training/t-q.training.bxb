@@ -1,10 +1,15 @@
-train (t-qcrusyy4lbchy6xi6uhpiqh2b) {
-  utterance ("[g:SelectStretchingSearch] (키크는 운동)[v:Situation] (알려줄래)[v:SearchKeyword:검색]?")
-  plan (Y2BhUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOQOXgWBJ79TK8vyiFAY57GoyS0oTSzLz8xiYGRgZmIAkA5AGQQiAiwIA)
-  last-modified (1571969487330)
-}
 train (t-qfyu1zqd3fumus7k9srtlumny) {
-  utterance ("[g:SelectStretchingSearch] (엉덩)[v:Part]이 스트레칭 (알려줄래)[v:SearchKeyword:검색]")
-  plan (Y2BhUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiElx2gfV5p1aW5xelMDAzMDIwAUkGIA2CEAAXBQA=)
-  last-modified (1571973899227)
+  utterance ("[g:SelectStretchingSearch] (엉덩)[v:Part]이 스트레칭 알려줄래")
+  plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiEgYmBkYgZgCSjAwgAOUDAA==)
+  last-modified (1572147978015)
+}
+train (t-qotscmyr3mkfbjy1rp8m53s70) {
+  utterance ("[g:SelectStretchingSearch] (수험생)[v:Situation]이 하기 좋은 스트레칭")
+  plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBDrvizJLSxJLM/DwGJgZGIGYAkowMIADlAwA=)
+  last-modified (1572151376269)
+}
+train (t-qovof83dgw0esbkk1w0u8edr5) {
+  utterance ("[g:SelectStretchingSearch] (자세교정)[v:Situation]에 좋은 스트레칭")
+  plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBDrvizJLSxJLM/DwGJgZGIGYAkowMIADlAwA=)
+  last-modified (1572151377233)
 }

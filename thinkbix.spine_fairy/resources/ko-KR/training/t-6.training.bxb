@@ -1,0 +1,20 @@
+train (t-6h9pecfi3zg7gmv3m77f6x6zs) {
+  utterance ("[g:SelectStretchingSearch] (허벅지)[v:Part] 스트레칭 알려줄래?")
+  plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiEgYmBkYgZgCSjAwgAOUDAA==)
+  last-modified (1572255433470)
+}
+train (t-6ikka08jy7heytuwkqtcypmm1) {
+  utterance ("[g:SelectStretchingSearch] (회사)[v:Place]에서 (손목)[v:Part]이 뭉쳤을 때 좋은 스트레칭 검색해줘")
+  plan (Y2BhUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiEgYp7FI5icmpDMwMjAxMQJIBSIMgBMBFAQ==)
+  last-modified (1572151341675)
+}
+train (t-6tjjgdxcfieozo14dxo4ko833) {
+  utterance ("[g:SelectStretchingSearch] (차)[v:Place] 안에서 하기 좋은 스트레칭 알려줘")
+  plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBCqvigJzE5FQGJgZGIGYAkowMIADlAwA=)
+  last-modified (1572243043826)
+}
+train (t-6u9dh5zfehtzpoue5oz80zlpp) {
+  utterance ("[g:SelectStretchingSearch] (서서)[v:Situation] 할 수 있는 운동 알려줘")
+  plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBDrvizJLSxJLM/DwGJgZGIGYAkowMIADlAwA=)
+  last-modified (1572241777750)
+}

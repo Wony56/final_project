@@ -1,0 +1,15 @@
+train (t-y1y2zmju2us7qw069oui4gj54) {
+  utterance ("[g:SelectStretchingSearch] (키 크는 운동)[v:Situation] 알려줄래?")
+  plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBDrvizJLSxJLM/DwGJgZGIGYAkowMIADlAwA=)
+  last-modified (1572250218189)
+}
+train (t-yhr1eqzddk9x8yl25cz2kbrm3) {
+  utterance ("[g:SelectStretchingSearch] (뒷목)[v:Part] 아플때")
+  plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiEgYmBkYgZgCSjAwgAOUDAA==)
+  last-modified (1572246120702)
+}
+train (t-yocpwsamd21nksszpjvutystq) {
+  utterance ("[g:SelectStretchingSearch] 간단하게 (집)[v:Place]에서 할 수 있는 스트레칭 찾아줘")
+  plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBCqvigJzE5FQGJgZGIGYAkowMIADlAwA=)
+  last-modified (1572148060205)
+}
