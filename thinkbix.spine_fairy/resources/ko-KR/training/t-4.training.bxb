@@ -8,6 +8,16 @@ train (t-49fppbifn0l70msi5wwahf2at) {
   plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiEgYmBkYgZgCSjAwgAOUDAA==)
   last-modified (1572151333374)
 }
+train (t-4ecz1no1m4up7edbdx2muadx7) {
+  utterance ("[g:SelectStretchingSearch] (서 있을 때)[v:Situation] 할 수 있는 운동 알려줘")
+  plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBDrvizJLSxJLM/DwGJgZGIGYAkowMIADlAwA=)
+  last-modified (1572256506444)
+}
+train (t-4llbmy91ieas4jxhdtseg1zd9) {
+  utterance ("[g:SelectStretchingSearch] (어깨)[v:Part] 운동 알려줘")
+  plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiEgYmBkYgZgCSjAwgAOUDAA==)
+  last-modified (1572254969016)
+}
 train (t-4r1kb8gv3zndm6b7txgj1nyq3) {
   utterance ("[g:SelectStretchingSearch] (허리)[v:Part] 스트레칭 보여줘")
   plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiEgYmBkYgZgCSjAwgAOUDAA==)

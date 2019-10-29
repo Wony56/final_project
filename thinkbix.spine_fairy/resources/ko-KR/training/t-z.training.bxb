@@ -18,6 +18,11 @@ train (t-zr1wufstgc7uin5t44p5f1x76) {
   plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBDrvizJLSxJLM/DwGJgZGIGYAkowMIADlAwA=)
   last-modified (1572148068881)
 }
+train (t-ztm0aywht89loykj6pf2307vf) {
+  utterance ("[g:SelectStretchingSearch] (학생)[v:Situation]들이 할 만한 (허벅지)[v:Part] 운동 알려줘")
+  plan (Y2BhUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiEgY57OZklpQmlmTm5zEwMzAyMAFJBiANghAAFwUA)
+  last-modified (1572256746333)
+}
 train (t-zu6mi7an37nic1k8m5nzbdlrl) {
   utterance ("[g:SelectStretchingSearch] (실내)[v:Place]에서 (손목)[v:Part]이 뻐근할 때 좋은 스트레칭")
   plan (Y2BhUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiEgYp7FI5icmpDMwMjAxMQJIBSIMgBMBFAQ==)
