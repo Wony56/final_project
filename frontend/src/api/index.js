@@ -15,8 +15,11 @@ export default {
   userDetail(params) {
     return null;
   },
-  search(params) {
-    return null;
+  getAllStretchings() {
+    return axios.get(`${apiUrl}/find/all`);
+  },
+  search(keyword) {
+    return axios.get(`${apiUrl}/search?keyword=${keyword}`);
   },
   stretchingDetail(params) {
     return null;

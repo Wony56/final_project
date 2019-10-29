@@ -1,8 +1,33 @@
 import express from "express";
 import routes from "../routes";
-import { home, postUpload, postUploadMany, getView, getAllStretchings, getStretchings, getStretchingsByViews, getAllStretchingsForAdmin, getDetail, getEdit, postEdit, getDelete } from "../controllers/dataController";
-import { uploadImage, onlyAdmin, onlyPrivate, onlyPublic } from "../middlewares";
-import { getJoin, postJoin, postLogin, getLogin, logout } from "../controllers/userController";
+import {
+  home,
+  postUpload,
+  postUploadMany,
+  getView,
+  getAllStretchings,
+  getStretchings,
+  getStretchingsByViews,
+  getAllStretchingsForAdmin,
+  getDetail,
+  getEdit,
+  postEdit,
+  getDelete,
+  search
+} from "../controllers/dataController";
+import {
+  uploadImage,
+  onlyAdmin,
+  onlyPrivate,
+  onlyPublic
+} from "../middlewares";
+import {
+  getJoin,
+  postJoin,
+  postLogin,
+  getLogin,
+  logout
+} from "../controllers/userController";
 
 const router = express.Router();
 
@@ -35,6 +60,7 @@ router.get(routes.findAll, getAllStretchings);
 router.get(routes.findByView, getStretchingsByViews);
 router.get(routes.find, getStretchings);
 router.get(routes.findList, getAllStretchingsForAdmin);
+router.get(routes.search, search);
 
 //Views
 router.get(routes.view(), getView);
