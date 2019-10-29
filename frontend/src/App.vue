@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" data-app=true>
     <header-bar />
     <div class="main">
       <router-view />
