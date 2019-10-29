@@ -3,6 +3,11 @@ train (t-848nwggce1rnac5wlog97n4gz) {
   plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBDrvizJLSxJLM/DwGJgZGIGYAkowMIADlAwA=)
   last-modified (1572151351973)
 }
+train (t-8dri1c7zkglvzmka26se81wdg) {
+  utterance ("[g:SelectStretchingSearch] (회사)[v:Situation]에서 할 만한 스트레칭 보여줘")
+  plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBDrvizJLSxJLM/DwGJgZGIGYAkowMIADlAwA=)
+  last-modified (1572256634113)
+}
 train (t-8sy4vvq7jy1ud602fgqp842i7) {
   utterance ("[g:SelectStretchingSearch] (월경)[v:Situation]일 때 좋은 마사지 보여줘")
   plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBDrvizJLSxJLM/DwGJgZGIGYAkowMIADlAwA=)
