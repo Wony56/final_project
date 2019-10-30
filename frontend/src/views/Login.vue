@@ -1,371 +1,194 @@
 <template>
-  <div class="cont">
-    <div class="form sign-in">
-      <h2>Welcome back,</h2>
-      <label>
-        <span>Email</span>
-        <input type="email" />
-      </label>
-      <label>
-        <span>Password</span>
-        <input type="password" />
-      </label>
-      <p class="forgot-pass">Forgot password?</p>
-      <button type="button" class="submit">Sign In</button>
-      <button type="button" class="fb-btn">
-        Connect with
-        <span>facebook</span>
-      </button>
-    </div>
-    <div class="sub-cont">
-      <div class="img">
-        <div class="img__text m--up">
-          <h2>New here?</h2>
-          <p>Sign up and discover great amount of new opportunities!</p>
-        </div>
-        <div class="img__text m--in">
-          <h2>One of us?</h2>
-          <p>If you already has an account, just sign in. We've missed you!</p>
-        </div>
-        <div class="img__btn">
-          <span class="m--up">Sign Up</span>
-          <span class="m--in">Sign In</span>
-        </div>
-      </div>
-      <div class="form sign-up">
-        <h2>Time to feel like home,</h2>
-        <label>
-          <span>Name</span>
-          <input type="text" />
-        </label>
-        <label>
-          <span>Email</span>
-          <input type="email" />
-        </label>
-        <label>
-          <span>Password</span>
-          <input type="password" />
-        </label>
-        <button type="button" class="submit">Sign Up</button>
-        <button type="button" class="fb-btn">
-          Join with
-          <span>facebook</span>
-        </button>
-      </div>
+  <div class="login-page">
+    <div class="form">
+      <form class="register-form">
+        <input type="text" v-model="signUpName" placeholder="name" />
+        <input type="password" v-model="signUpPassword" placeholder="password" />
+        <input type="text" v-model="signUpEmailAddress" placeholder="email address" />
+        <input type="text" v-model="signUpJob" placeholder="job" />
+        <input type="text" v-model="signUpAge" placeholder="age" />
+        <v-combobox v-model="select" :items="items" label="part select" multiple chips></v-combobox>
+
+        <button v-on:click="signUp">create</button>
+        <p class="message">
+          Already registered?
+          <a href="#" v-on:click="clear">Sign In</a>
+        </p>
+      </form>
+
+      <form class="login-form">
+        <input type="text" v-model="username" placeholder="username" />
+        <input type="password" v-model="password" placeholder="password" />
+
+        <button v-on:click="signIn">login</button>
+        <p class="message">
+          Not registered?
+          <a href="#" v-on:click="clear">Create an account</a>
+        </p>
+      </form>
     </div>
   </div>
 </template>
 
 <script>
+import $ from "jquery";
+
 export default {
+  data() {
+    return {
+      username: "",
+      password: "",
+      signUpName: "",
+      signUpPassword: "",
+      signUpEmailAddress: "",
+      signUpJob: "",
+      signUpAge: "",
+      select: [],
+      items: [
+        " 머리/목",
+        " 어깨",
+        " 가슴",
+        " 허리/복부",
+        " 팔",
+        " 손목",
+        " 다리"
+      ]
+    };
+  },
+  methods: {
+    signIn: function() {
+      //로그인
+      alert("하이");
+    },
+    signUp: function() {
+      //회원가입
+      alert("바이");
+      // alert(this.select);
+    },
+    clear: function() {
+      this.username = "";
+      this.password = "";
+      this.signUpName = "";
+      this.signUpPassword = "";
+      this.signUpEmailAddress = "";
+      this.signUpJob = "";
+      this.signUpAge = "";
+      this.select = [];
+    }
+  },
+
   mounted() {
-    document.querySelector(".img__btn").addEventListener("click", function() {
-      document.querySelector(".cont").classList.toggle("s--signup");
+    $(".message a").click(function() {
+      $("form").animate({ height: "toggle", opacity: "toggle" }, "slow");
     });
   }
 };
 </script>
 
 <style lang="scss" scoped>
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+.login-page {
+  width: 500px;
+  padding: 2.5% 0 0;
+  margin: auto;
 }
-
-body {
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
-  background: #ededed;
-}
-
-input,
-button {
-  border: none;
-  outline: none;
-  background: none;
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
-}
-
-$contW: 900px;
-$imgW: 260px;
-$formW: $contW - $imgW;
-$switchAT: 1.2s;
-
-$inputW: 260px;
-$btnH: 36px;
-
-$diffRatio: ($contW - $imgW) / $contW;
-
-@mixin signUpActive {
-  .cont.s--signup & {
-    @content;
-  }
-}
-
-.tip {
-  font-size: 20px;
-  margin: 40px auto 50px;
-  text-align: center;
-}
-
-.cont {
-  overflow: hidden;
-  position: relative;
-  width: $contW;
-  height: 550px;
-  margin: 0 auto 100px;
-  background: #fff;
-}
-
 .form {
   position: relative;
-  width: $formW;
-  height: 100%;
-  transition: transform $switchAT ease-in-out;
-  padding: 50px 30px 0;
+  z-index: 1;
+  background: #ffffff;
+  max-width: 500px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  // box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
-
-.sub-cont {
-  overflow: hidden;
-  position: absolute;
-  left: $formW;
-  top: 0;
-  width: $contW;
-  height: 100%;
-  padding-left: $imgW;
-  background: #fff;
-  transition: transform $switchAT ease-in-out;
-
-  @include signUpActive {
-    transform: translate3d($formW * -1, 0, 0);
-  }
+.form input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
 }
-
-button {
-  display: block;
-  margin: 0 auto;
-  width: $inputW;
-  height: $btnH;
-  border-radius: 30px;
-  color: #fff;
-  font-size: 15px;
+.form button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #f8bbd0;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #ffffff;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
   cursor: pointer;
 }
-
-.img {
-  overflow: hidden;
-  z-index: 2;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: $imgW;
-  height: 100%;
-  padding-top: 360px;
-
-  &:before {
-    content: "";
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: $contW;
-    height: 100%;
-    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/sections-3.jpg");
-    background-size: cover;
-    transition: transform $switchAT ease-in-out;
-  }
-
-  &:after {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.6);
-  }
-
-  @include signUpActive {
-    &:before {
-      transform: translate3d($formW, 0, 0);
-    }
-  }
-
-  &__text {
-    z-index: 2;
-    position: absolute;
-    left: 0;
-    top: 50px;
-    width: 100%;
-    padding: 0 20px;
-    text-align: center;
-    color: #fff;
-    transition: transform $switchAT ease-in-out;
-
-    h2 {
-      margin-bottom: 10px;
-      font-weight: normal;
-    }
-
-    p {
-      font-size: 14px;
-      line-height: 1.5;
-    }
-
-    &.m--up {
-      @include signUpActive {
-        transform: translateX($imgW * 2);
-      }
-    }
-
-    &.m--in {
-      transform: translateX($imgW * -2);
-
-      @include signUpActive {
-        transform: translateX(0);
-      }
-    }
-  }
-
-  &__btn {
-    overflow: hidden;
-    z-index: 2;
-    position: relative;
-    width: 100px;
-    height: $btnH;
-    margin: 0 auto;
-    background: transparent;
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 15px;
-    cursor: pointer;
-
-    &:after {
-      content: "";
-      z-index: 2;
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      border: 2px solid #fff;
-      border-radius: 30px;
-    }
-
-    span {
-      position: absolute;
-      left: 0;
-      top: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-      height: 100%;
-      transition: transform $switchAT;
-
-      &.m--in {
-        transform: translateY($btnH * -2);
-
-        @include signUpActive {
-          transform: translateY(0);
-        }
-      }
-
-      &.m--up {
-        @include signUpActive {
-          transform: translateY($btnH * 2);
-        }
-      }
-    }
-  }
+.form button:hover,
+.form button:active,
+.form button:focus {
+  // background: #43a047;
+  background: #fa86af;
 }
-
-h2 {
-  width: 100%;
-  font-size: 26px;
-  text-align: center;
-}
-
-label {
-  display: block;
-  width: $inputW;
-  margin: 25px auto 0;
-  text-align: center;
-
-  span {
-    font-size: 12px;
-    color: #cfcfcf;
-    text-transform: uppercase;
-  }
-}
-
-input {
-  display: block;
-  width: 100%;
-  margin-top: 5px;
-  padding-bottom: 5px;
+.form .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
   font-size: 16px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+}
+.form .message a {
+  // color: #4caf50;
+  color: #fa86af;
+  text-decoration: none;
+}
+.form .register-form {
+  display: none;
+}
+.container {
+  position: relative;
+  z-index: 1;
+  max-width: 300px;
+  margin: 0 auto;
+}
+.container:before,
+.container:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.container .info {
+  margin: 50px auto;
   text-align: center;
 }
-
-.forgot-pass {
-  margin-top: 15px;
-  text-align: center;
+.container .info h1 {
+  margin: 0 0 15px;
+  padding: 0;
+  font-size: 36px;
+  font-weight: 300;
+  color: #1a1a1a;
+}
+.container .info span {
+  color: #4d4d4d;
   font-size: 12px;
-  color: #cfcfcf;
 }
-
-.submit {
-  margin-top: 40px;
-  margin-bottom: 20px;
-  background: #d4af7a;
-  text-transform: uppercase;
+.container .info span a {
+  color: #000000;
+  text-decoration: none;
 }
-
-.fb-btn {
-  border: 2px solid #d3dae9;
-  color: darken(#d3dae9, 20%);
-
-  span {
-    font-weight: bold;
-    color: darken(#768cb6, 20%);
-  }
+.container .info span .fa {
+  color: #ef3b3a;
 }
-
-.sign-in {
-  transition-timing-function: ease-out;
-
-  @include signUpActive {
-    transition-timing-function: ease-in-out;
-    transition-duration: $switchAT;
-    transform: translate3d($formW, 0, 0);
-  }
-}
-
-.sign-up {
-  transform: translate3d($contW * -1, 0, 0);
-
-  @include signUpActive {
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-.icon-link {
-  position: absolute;
-  left: 5px;
-  bottom: 5px;
-  width: 32px;
-
-  img {
-    width: 100%;
-    vertical-align: top;
-  }
-
-  &--twitter {
-    left: auto;
-    right: 5px;
-  }
+body {
+  background: #76b852; /* fallback for old browsers */
+  background: -webkit-linear-gradient(right, #76b852, #8dc26f);
+  background: -moz-linear-gradient(right, #76b852, #8dc26f);
+  background: -o-linear-gradient(right, #76b852, #8dc26f);
+  background: linear-gradient(to left, #76b852, #8dc26f);
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 </style>
