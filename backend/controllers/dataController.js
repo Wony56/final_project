@@ -288,6 +288,18 @@ export const getDelete = async (req, res) => {
   }
 };
 
+export const searchAll = async (req, res) => {
+  try {
+    const datas = await Stretching.find({});
+
+    res.status(200).json(datas);
+  } catch (error) {
+    console.log(error);
+
+    res.status(400).json({ message: error });
+  }
+};
+
 export const search = async (req, res) => {
   const {
     query: { term: keyword }

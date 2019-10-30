@@ -14,6 +14,7 @@ const FIND_ALL = "/find/all";
 const FIND_LIST = "/find/list";
 const FIND_BY_VIEWS = "/find/view";
 const FIND = "/find";
+const SEARCH_ALL = "/search/all";
 const SEARCH = "/search";
 
 // Update data
@@ -36,6 +37,7 @@ const routes = {
   findList: FIND_LIST,
   findByView: FIND_BY_VIEWS,
   find: FIND,
+  searchAll: SEARCH_ALL,
   search: SEARCH,
   view: id => {
     if (id) {

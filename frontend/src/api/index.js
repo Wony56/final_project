@@ -14,7 +14,7 @@ export default {
     return null;
   },
   getAllStretchings() {
-    return axios.get(`/find/all`);
+    return axios.get(`/search/all`);
   },
   search(keyword) {
     return axios.get(`/search?keyword=${keyword}`);
