@@ -1,27 +1,25 @@
 import axios from "axios";
 
-const apiUrl = "/api";
-
 export default {
-  login(params) {
+  login() {
     return null;
   },
-  register(params) {
+  register() {
     return null;
   },
   logout() {
     return null;
   },
-  userDetail(params) {
+  userDetail() {
     return null;
   },
   getAllStretchings() {
-    return axios.get(`${apiUrl}/find/all`);
+    return axios.get(`/search/all`);
   },
   search(keyword) {
-    return axios.get(`${apiUrl}/search?keyword=${keyword}`);
+    return axios.get(`/search?keyword=${keyword}`);
   },
-  stretchingDetail(params) {
+  stretchingDetail() {
     return null;
   }
 };

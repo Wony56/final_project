@@ -13,7 +13,8 @@ import {
   getEdit,
   postEdit,
   getDelete,
-  search
+  search,
+  searchAll
 } from "../controllers/dataController";
 import {
   uploadImage,
@@ -60,6 +61,7 @@ router.get(routes.findAll, getAllStretchings);
 router.get(routes.findByView, getStretchingsByViews);
 router.get(routes.find, getStretchings);
 router.get(routes.findList, getAllStretchingsForAdmin);
+router.get(routes.searchAll, searchAll);
 router.get(routes.search, search);
 
 //Views
