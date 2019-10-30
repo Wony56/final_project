@@ -14,8 +14,10 @@ const FIND_ALL = "/find/all";
 const FIND_LIST = "/find/list";
 const FIND_BY_VIEWS = "/find/view";
 const FIND = "/find";
-const SEARCH_ALL = "/search/all";
-const SEARCH = "/search";
+
+// API
+const SEARCH_ALL = "/api/search/all";
+const SEARCH = "/api/search";
 
 // Update data
 const EDIT = "/edit/:id";
