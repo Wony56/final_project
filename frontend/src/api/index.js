@@ -1,5 +1,7 @@
 import axios from "axios";
 
+const apiUrl = "/api";
+
 export default {
   login() {
     return null;
@@ -14,10 +16,10 @@ export default {
     return null;
   },
   getAllStretchings() {
-    return axios.get(`/search/all`);
+    return axios.get(`${apiUrl}/search/all`);
   },
   search(keyword) {
-    return axios.get(`/search?keyword=${keyword}`);
+    return axios.get(`${apiUrl}/search?keyword=${keyword}`);
   },
   stretchingDetail() {
     return null;
