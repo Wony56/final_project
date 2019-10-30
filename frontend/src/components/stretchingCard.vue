@@ -1,7 +1,7 @@
 <template>
 <v-content align-center>
     <v-card class='card' max-width=300px min-height=300px max-height=300px @click.stop='dialog=true'>
-        <v-img :src="card.processList[0].imgAddress+card.processList[0].imgPath" class="align-top" contain max-height=200px></v-img>
+        <v-img :src="card.processList[0].imgAddress+card.processList[0].imgPath" class="align-top" contain height=175px></v-img>
         <v-card-title v-text="card.title" class="headline"></v-card-title>
         <v-card-text>
             <span v-for='(hash) in card.hashtag' :key=hash>{{hash}}</span>
