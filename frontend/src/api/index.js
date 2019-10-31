@@ -4,7 +4,7 @@ const apiUrl = "/api";
 
 export default {
   login(params) {
-    return axios.post(`${apiUrl}/login`, { params });
+    return axios.post(`${apiUrl}/user/login`, { params });
   },
   register(params) {
     return axios.post(`${apiUrl}/join`, { params });
