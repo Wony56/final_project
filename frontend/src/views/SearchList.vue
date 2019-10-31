@@ -1,6 +1,6 @@
 <template>
-  <v-container fluid style='margin-left:25px'>
-    <v-layout row wrap justify-center>
+  <v-container fluid class='automargin'>
+    <v-layout wrap class='automargin' style='width:80%'>
       <v-flex xs12 sm3 md3 v-for="(item) in stretchingList" :key="item._id" pa-2>
         <StretchingCard :card="item"/>
       </v-flex>
@@ -48,3 +48,9 @@ export default {
 
 }
 </script>
+
+<style>
+.automargin{
+  margin:0 auto;
+}
+</style>
