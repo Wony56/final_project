@@ -67,7 +67,9 @@
 import $ from "jquery";
 
 export default {
-  data() {
+  name: "login",
+
+  data: function() {
     return {
       username: "",
       password: "",
@@ -95,7 +97,8 @@ export default {
   methods: {
     signIn: function() {
       //로그인
-      alert("하이");
+      // alert("하이");
+      apiUrl.login(this.username, this.password).then(async );
     },
     signUp: function() {
       //회원가입
