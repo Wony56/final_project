@@ -12,6 +12,9 @@ export default {
   logout() {
     return axios.get(`${apiUrl}/logout`);
   },
+  recommend() {
+    return axios.get(`${apiUrl}/find/view`);
+  },
   getAllStretchings() {
     return axios.get(`${apiUrl}/search/all`);
   },
