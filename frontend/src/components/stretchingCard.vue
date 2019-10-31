@@ -13,18 +13,19 @@
       <v-card>
         <v-card-title class="headline font-weight-bold">{{card.title}}</v-card-title>
         <v-card-subtitle style='margin-top:3px'>
-            <span v-for='(hash,index) in card.hashtag' :key=index>{{hash}}</span>
+            <span v-for='(hash,index) in card.hashtag' :key=index>{{hash}}&nbsp;</span>
         </v-card-subtitle>
         <hr>
 
         <v-flex v-for='(list,index) in card.processList' :key=index>
-          <v-img :src='list.imgAddress+list.imgPath' contain height=300 style='margin:25px'></v-img>
+          <v-img :src='list.imgAddress+list.imgPath' contain min-height=220 max-height=300 aspect-ratio='4/3' style='margin:25px'></v-img>
           <v-card-text v-for='(description,index) in list.description' :key=index v-text='description'></v-card-text>
         </v-flex>
-        <!-- <v-card-text>설명</v-card-text> -->
 
         <v-card-actions>
-          <v-btn text @click="dialog = false" color="#F8BBD0">Close</v-btn>
+            <v-flex style='width:100%;align:center;text-align:center;margin:5px'>
+                <v-btn text @click="dialog = false" color="#F8BBD0">Close</v-btn>
+            </v-flex>
         </v-card-actions>
       </v-card>
     </v-dialog>
@@ -32,12 +33,11 @@
 </template>
 
 <script>
-// import {mapActions} from 'vuex'
+
 export default {
 
     data () {
         return {
-            // card:{src:'https://cdn.vuetifyjs.com/images/cards/house.jpg',title:'aaa'},
             dialog: false,
         }
     },
@@ -48,7 +48,7 @@ export default {
         }
     },
     mounted(){
-        // ...mapActions('index',['search'])
+
     }
 }
 </script>

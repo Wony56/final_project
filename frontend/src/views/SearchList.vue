@@ -13,37 +13,38 @@
 import { mapState, mapActions } from "vuex"; 
 import StretchingCard from '../components/stretchingCard.vue'
 export default {
+    props: {
+      keyword:{
+        type:String,
+        default:""
+      }
+    },
     data () {
         return {
-          
-          // stretchingList:[{id:0,src:'https://cdn.vuetifyjs.com/images/cards/house.jpg',title:'aaa'},
-          //   {id:1,src:'https://cdn.vuetifyjs.com/images/cards/house.jpg',title:'aaa'},
-          //   {id:2,src:'https://cdn.vuetifyjs.com/images/cards/house.jpg',title:'aaa'},
-          //   {id:3,src:'https://cdn.vuetifyjs.com/images/cards/house.jpg',title:'aaa'},
-          //   {id:4,src:'https://cdn.vuetifyjs.com/images/cards/house.jpg',title:'aaa'},
-          //   {id:5,src:'https://cdn.vuetifyjs.com/images/cards/house.jpg',title:'aaa'},
-          //   {id:6,src:'https://cdn.vuetifyjs.com/images/cards/house.jpg',title:'aaa'}
-          // ]
+          // keyword:'등'
         }
     },
     components: {
         StretchingCard
     },
-    // computed:mapActions("index", ["getAllStretchings"]) 
     computed: {
        ...mapState({
          stretchingList: state => state.stretching.stretchingList
        }),
     },
     mounted(){
-      this.getAllStretchings();
-      //console.log(this.stretchingList)// eslint-disable-line no-console
+      console.log(this.keyword)// eslint-disable-line no-console
+      if(this.keyword !== ""){
+        this.search(this.keyword);
+      }else{
+        this.getAllStretchings();
+      }
+      
+      console.log(this.stretchingList)// eslint-disable-line no-console
     },
     methods:{
       ...mapActions(["getAllStretchings"]),
-      // aaa(){
-      //   console.log(this.stretchingList); // eslint-disable-line no-console
-      // }
+      ...mapActions(["search"]),
     },
 
 }
