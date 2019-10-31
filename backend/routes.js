@@ -4,6 +4,9 @@ const HOME = "/";
 const LOGIN = "/login";
 const LOGOUT = "/logout";
 const JOIN = "/join";
+const EDIT_PROFILE = "/edit-profile";
+const CHANGE_PASSWORD = "/change-password";
+const LOGGEDUSER = "/user";
 
 // Data Upload
 const UPLOAD = "/upload";
@@ -41,6 +44,9 @@ const routes = {
   find: FIND,
   searchAll: SEARCH_ALL,
   search: SEARCH,
+  editProfile: EDIT_PROFILE,
+  changePassword: CHANGE_PASSWORD,
+  loggedUser: LOGGEDUSER,
   view: id => {
     if (id) {
       return `/view/${id}`;

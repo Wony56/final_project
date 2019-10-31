@@ -27,7 +27,10 @@ import {
   postJoin,
   postLogin,
   getLogin,
-  logout
+  logout,
+  postEditProfile,
+  postChangePassword,
+  loggedUser
 } from "../controllers/userController";
 
 const router = express.Router();
@@ -67,5 +70,11 @@ router.get(routes.search, search);
 //Views
 router.get(routes.view(), getView);
 router.get(routes.detail(), getDetail);
+
+//Profile
+router.post(routes.editProfile, onlyPrivate, postEditProfile);
+router.post(routes.changePassword, onlyPrivate, postChangePassword);
+
+router.get(routes.loggedUser, loggedUser);
 
 export default router;
