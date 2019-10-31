@@ -1,14 +1,16 @@
 import Vue from "vue";
 import Vuex from "vuex";
+import stretching from "./stretching.js";
+import user from "./user.js";
 
 Vue.use(Vuex);
 
 export default new Vuex.Store({
-  state: {
-    userInfo: "",
-    loginCheck: false
-  },
+  state: {},
   mutations: {},
   actions: {},
-  modules: {}
+  modules: {
+    stretching,
+    user
+  }
 });
