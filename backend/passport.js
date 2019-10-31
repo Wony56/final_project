@@ -1,15 +1,16 @@
 import passport from "passport";
 import User from "./models/User";
 import routes from "./routes";
+import api from "../frontend/src/api";
 
 passport.use(User.createStrategy());
 
-passport.serializeUser(function(user, done){
-    done(null, user.id);
-})
+passport.serializeUser(function(user, done) {
+  done(null, user.id);
+});
 
-passport.deserializeUser(function(id, done){
-    User.findById(id, function(err, user){
-        done(err, user);
-    })
-})
+passport.deserializeUser(function(id, done) {
+  User.findById(id, function(err, user) {
+    done(err, user);
+  });
+});

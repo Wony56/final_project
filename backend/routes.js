@@ -2,6 +2,7 @@ const HOME = "/";
 
 // User
 const LOGIN = "/login";
+const LOGIN_WEB = "/user/login";
 const LOGOUT = "/logout";
 const JOIN = "/join";
 const EDIT_PROFILE = "/edit-profile";
@@ -34,6 +35,7 @@ const DETAIL = "/detail/:id";
 const routes = {
   home: HOME,
   login: LOGIN,
+  loginWeb: LOGIN_WEB,
   logout: LOGOUT,
   join: JOIN,
   upload: UPLOAD,

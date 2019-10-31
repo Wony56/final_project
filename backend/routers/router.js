@@ -32,6 +32,7 @@ import {
   postChangePassword,
   loggedUser
 } from "../controllers/userController";
+import passport from "passport";
 
 const router = express.Router();
 
@@ -44,6 +45,7 @@ router.post(routes.join, onlyPublic, postJoin, postLogin);
 //Login
 router.get(routes.login, onlyPublic, getLogin);
 router.post(routes.login, onlyPublic, postLogin);
+router.post(routes.loginWeb, passport.authenticate("local"), loggedUser);
 
 //Logout
 router.get(routes.logout, onlyPrivate, logout);
