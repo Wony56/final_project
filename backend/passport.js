@@ -1,7 +1,6 @@
 import passport from "passport";
 import User from "./models/User";
 import routes from "./routes";
-import api from "../frontend/src/api";
 
 passport.use(User.createStrategy());
 
