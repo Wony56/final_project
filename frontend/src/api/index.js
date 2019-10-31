@@ -12,11 +12,14 @@ export default {
   logout() {
     return axios.get(`${apiUrl}/logout`);
   },
+  recommend() {
+    return axios.get(`${apiUrl}/find/view`);
+  },
   getAllStretchings() {
     return axios.get(`${apiUrl}/search/all`);
   },
-  search(keyword) {
-    return axios.get(`${apiUrl}/search?keyword=${keyword}`);
+  search(params) {
+    return axios.get(`${apiUrl}/search?${params.category}=${params.value}`);
   },
   stretchingDetail(id) {
     return axios.get(`${apiUrl}/detail/${id}`);
