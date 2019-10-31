@@ -2,11 +2,42 @@
   <div class="login-page">
     <div class="form">
       <form class="register-form">
-        <input type="text" v-model="signUpName" placeholder="name" />
+        <input type="text" v-model="signUpId" placeholder="id" />
         <input type="password" v-model="signUpPassword" placeholder="password" />
+        <input type="text" v-model="signUpName" placeholder="name" />
         <input type="text" v-model="signUpEmailAddress" placeholder="email address" />
         <input type="text" v-model="signUpJob" placeholder="job" />
         <input type="text" v-model="signUpAge" placeholder="age" />
+        <!-- <v-text-field
+          v-validate="'required|min:4|max:20'"
+          v-model="signUpName"
+          :counter="20"
+          :error-messages="errors.collect('id')"
+          label="아이디"
+          data-vv-name="id"
+          required
+        ></v-text-field>-->
+        <!--
+        <v-text-field
+          v-validate="'required|min:6|max:40'"
+          v-model="signUpPassword"
+          :counter="40"
+          :error-messages="errors.collect('pwd')"
+          label="비밀번호"
+          data-vv-name="pwd"
+          required
+          type="password"
+        ></v-text-field>
+        <v-text-field
+          v-validate="'required|min:1|max:40'"
+          v-model="form.name"
+          :counter="40"
+          :error-messages="errors.collect('name')"
+          label="이름"
+          data-vv-name="name"
+          required
+        ></v-text-field>-->
+
         <v-combobox v-model="select" :items="items" label="part select" multiple chips></v-combobox>
 
         <button v-on:click="signUp">create</button>
@@ -17,8 +48,10 @@
       </form>
 
       <form class="login-form">
-        <input type="text" v-model="username" placeholder="username" />
-        <input type="password" v-model="password" placeholder="password" />
+        <v-form>
+          <v-text-field v-model="username" label="아이디" type="text"></v-text-field>
+          <v-text-field v-model="password" label="비밀번호" type="password"></v-text-field>
+        </v-form>
 
         <button v-on:click="signIn">login</button>
         <p class="message">
@@ -38,6 +71,7 @@ export default {
     return {
       username: "",
       password: "",
+      signUpId: "",
       signUpName: "",
       signUpPassword: "",
       signUpEmailAddress: "",
@@ -45,13 +79,16 @@ export default {
       signUpAge: "",
       select: [],
       items: [
-        " 머리/목",
-        " 어깨",
-        " 가슴",
-        " 허리/복부",
-        " 팔",
-        " 손목",
-        " 다리"
+        "어깨",
+        "손목",
+        "팔",
+        "등",
+        "허리",
+        "복근",
+        "가슴",
+        "종아리",
+        "허벅지",
+        "엉덩이"
       ]
     };
   },
@@ -69,6 +106,7 @@ export default {
       this.username = "";
       this.password = "";
       this.signUpName = "";
+      this.signUpId = "";
       this.signUpPassword = "";
       this.signUpEmailAddress = "";
       this.signUpJob = "";
