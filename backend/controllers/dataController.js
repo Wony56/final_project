@@ -302,7 +302,7 @@ export const searchAll = async (req, res) => {
 
 export const search = async (req, res) => {
   const {
-    query: { term: keyword }
+    query: { keyword }
   } = req;
 
   let results = [];
