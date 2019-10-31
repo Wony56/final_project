@@ -22,7 +22,7 @@ export default {
   }
 };
 /*
-console.log(this.$store.state.isReminder)
+
     console.log(this.$store.state.remindHour)
     console.log(this.$store.state.remindMin)  
 */
