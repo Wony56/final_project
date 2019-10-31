@@ -1,7 +1,6 @@
 import routes from "../routes";
 import User from "../models/User";
 import passport from "passport";
-import { url } from "inspector";
 
 export const getJoin = (req, res) => {
   res.render("join");
