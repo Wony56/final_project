@@ -1,19 +1,16 @@
-import Vue from 'vue'
-import Vuex from 'vuex'
-import stretching from './stretching'
-Vue.use(Vuex)
+import Vue from "vue";
+import Vuex from "vuex";
+import stretching from "./stretching.js";
+import user from "./user.js";
+
+Vue.use(Vuex);
 
 export default new Vuex.Store({
-  state: {
-
-  },
-  mutations: {
-
-  },
-  actions: {
-
-  },
+  state: {},
+  mutations: {},
+  actions: {},
   modules: {
-    stretching
+    stretching,
+    user
   }
-})
+});
