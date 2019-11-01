@@ -65,10 +65,11 @@
 
 <script>
 import $ from "jquery";
+// import { mapState, mapActions } from "vuex";
+import api from "../api";
+// import { async } from "q";
 
 export default {
-  name: "login",
-
   data: function() {
     return {
       username: "",
@@ -95,15 +96,49 @@ export default {
     };
   },
   methods: {
-    signIn: function() {
+    signIn: async function() {
       //로그인
-      // alert("하이");
-      apiUrl.login(this.username, this.password).then(async );
+      const loginInfo = {
+        username: this.username,
+        password: this.password
+      };
+      // console.log(this.username + " " + this.password);
+      const resp = await api
+        .login(loginInfo)
+        .then(res => {
+          console.log(res.data);
+        })
+        .catch(err => {
+          console.log(err);
+        });
+      console.log(resp);
     },
-    signUp: function() {
+    signUp: async function() {
       //회원가입
-      alert("바이");
-      // alert(this.select);
+      // alert("바이");
+
+      const newUserInfo = {
+        username: this.signUpId,
+        password: this.signUpPassword,
+        name: this.signUpName,
+        job: this.signUpJob,
+        age: this.signUpAge,
+        part: this.select
+      };
+
+      console.log(newUserInfo);
+
+      const resp = await api
+        .register(newUserInfo)
+        .then(res => {
+          // alert.log(res.data);
+          console.log(res.data);
+        })
+        .catch(err => {
+          console.log(err);
+        });
+
+      console.log(resp);
     },
     clear: function() {
       this.username = "";
@@ -117,7 +152,6 @@ export default {
       this.select = [];
     }
   },
-
   mounted() {
     $(".message a").click(function() {
       $("form").animate({ height: "toggle", opacity: "toggle" }, "slow");
