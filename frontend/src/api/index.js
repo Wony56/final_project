@@ -13,7 +13,7 @@ export default {
     return axios.get(`${apiUrl}/logout`);
   },
   recommend() {
-    return axios.get(`${apiUrl}/find/view`);
+    return axios.get(`${apiUrl}/search/recommend`);
   },
   getAllStretchings() {
     return axios.get(`${apiUrl}/search/all`);

@@ -68,6 +68,7 @@ router.get(routes.find, getStretchings);
 router.get(routes.findList, getAllStretchingsForAdmin);
 router.get(routes.searchAll, searchAll);
 router.get(routes.search, search);
+router.get(routes.recommend, getAllStretchings);
 
 //Views
 router.get(routes.view(), getView);

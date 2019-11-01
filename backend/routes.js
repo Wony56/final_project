@@ -22,6 +22,7 @@ const FIND = "/find";
 // API
 const SEARCH_ALL = "/api/search/all";
 const SEARCH = "/api/search";
+const RECOMMEND = "/api/search/recommend";
 
 // Update data
 const EDIT = "/edit/:id";
@@ -46,6 +47,7 @@ const routes = {
   find: FIND,
   searchAll: SEARCH_ALL,
   search: SEARCH,
+  recommend: RECOMMEND,
   editProfile: EDIT_PROFILE,
   changePassword: CHANGE_PASSWORD,
   loggedUser: LOGGEDUSER,
