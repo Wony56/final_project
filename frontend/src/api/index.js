@@ -3,8 +3,11 @@ import axios from "axios";
 const apiUrl = "/api";
 
 export default {
+  onAuthUser() {
+    return axios.get(`${apiUrl}/user`);
+  },
   login(params) {
-    return axios.post(`${apiUrl}/user/login`, { params });
+    return axios.post(`${apiUrl}/login`, params);
   },
   register(params) {
     return axios.post(`${apiUrl}/join`, { params });

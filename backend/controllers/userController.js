@@ -6,30 +6,27 @@ export const getJoin = (req, res) => {
   res.render("join");
 };
 
-export const postJoin = async (req, res, next) => {
+export const postJoin = async (req, res) => {
   const {
-    body: { username, password, rePassword, name, job, age, part }
+    body: {
+      params: { username, password, name, job, age, part }
+    }
   } = req;
 
-  if (password !== rePassword) {
-    res.status(400);
-    res.render("join");
-  } else {
-    try {
-      const user = await User({
-        username,
-        name,
-        job,
-        age,
-        part
-      });
+  try {
+    const user = await User({
+      username,
+      name,
+      job,
+      age,
+      part
+    });
 
-      await User.register(user, password);
-      next();
-    } catch (error) {
-      console.log(error);
-      res.redirect(routes.home);
-    }
+    await User.register(user, password);
+    res.status(201).json({ message: "Register success!" });
+  } catch (error) {
+    console.log(error);
+    res.status(400).json({ message: "Register fail..." });
   }
 };
 
@@ -76,9 +73,19 @@ export const postLogin = passport.authenticate("local", {
   successRedirect: routes.home
 });
 
+export const postWebLogin = passport.authenticate("local", {
+  failureRedirect: routes.loginFail,
+  successRedirect: routes.loggedUser
+});
+
 export const logout = (req, res) => {
   req.logout();
   res.redirect("login");
+};
+
+export const webLogout = (req, res) => {
+  req.logout();
+  res.status(200);
 };
 
 export const loggedUser = (req, res) => {
@@ -87,4 +94,8 @@ export const loggedUser = (req, res) => {
   } else {
     res.status(200).json({ user: {} });
   }
+};
+
+export const loginFail = (req, res) => {
+  res.status(401).json({ message: "아이디 또는 패스워드가 틀렸습니다." });
 };

@@ -2,12 +2,13 @@ const HOME = "/";
 
 // User
 const LOGIN = "/login";
-const LOGIN_WEB = "/user/login";
+const LOGIN_WEB = "/api/login";
 const LOGOUT = "/logout";
-const JOIN = "/join";
-const EDIT_PROFILE = "/edit-profile";
-const CHANGE_PASSWORD = "/change-password";
-const LOGGEDUSER = "/user";
+const LOGOUT_WEB = "/api/logout";
+const JOIN = "/api/join";
+const EDIT_PROFILE = "/api/edit-profile";
+const CHANGE_PASSWORD = "/api/change-password";
+const LOGGEDUSER = "/api/user";
 
 // Data Upload
 const UPLOAD = "/upload";
@@ -38,6 +39,7 @@ const routes = {
   login: LOGIN,
   loginWeb: LOGIN_WEB,
   logout: LOGOUT,
+  logoutWeb: LOGOUT_WEB,
   join: JOIN,
   upload: UPLOAD,
   uploadMany: UPLOAD_MANY,
