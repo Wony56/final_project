@@ -8,6 +8,8 @@ import UserDetail from "../views/UserDetail.vue";
 import EditUser from "../views/EditUser.vue";
 import ChangePassword from "../views/ChangePassword.vue";
 
+import store from "../store";
+
 Vue.use(VueRouter);
 
 const routes = [
@@ -19,7 +21,10 @@ const routes = [
   {
     path: "/login",
     name: "login",
-    component: Login
+    component: Login,
+    meta: {
+      requiresLogin: true
+    }
   },
   {
     path: "/register",
@@ -30,7 +35,7 @@ const routes = [
     path: "/search/:category/:value",
     name: "search",
     component: SearchList,
-    props:true
+    props: true
   },
   {
     path: "/me",
@@ -57,6 +62,18 @@ const router = new VueRouter({
   mode: "history",
   base: process.env.BASE_URL,
   routes
+});
+
+router.beforeEach((to, from, next) => {
+  if (to.matched.some(record => record.meta.requiresLogin)) {
+    if (store.state.user.loginCheck) {
+      next("/");
+    } else {
+      next();
+    }
+  } else {
+    next();
+  }
 });
 
 export default router;
