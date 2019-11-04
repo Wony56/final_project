@@ -2,8 +2,7 @@ import mongoose from "mongoose";
 
 const ScheduleSchema = new mongoose.Schema({
   time: {
-    type: Number,
-    required: "Time is required!"
+    type: Number
   },
   stretching: {
     type: mongoose.Schema.Types.ObjectId,

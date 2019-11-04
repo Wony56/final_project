@@ -85,7 +85,7 @@ export const logout = (req, res) => {
 
 export const webLogout = (req, res) => {
   req.logout();
-  res.status(200);
+  res.status(200).json({ message: "Logout Success!" });
 };
 
 export const loggedUser = (req, res) => {

@@ -31,7 +31,7 @@ export default {
     loginCheck: state => state.user.loginCheck
   }),
   methods: {
-    async logout() {
+    logout: async function() {
       await api
         .logout()
         .then(res => {
