@@ -103,15 +103,20 @@ export default {
         password: this.password
       };
       // console.log(this.username + " " + this.password);
-      const resp = await api
+      this.$store.state.user.userInfo = await api
         .login(loginInfo)
         .then(res => {
           console.log(res.data);
+          if (res.status === 200) {
+            alert("성공!");
+            return res.data.user;
+          }
+          this.$router.push("/");
         })
         .catch(err => {
+          alert("아이디 또는 패스워드가 틀렸습니다.");
           console.log(err);
         });
-      console.log(resp);
     },
     signUp: async function() {
       //회원가입
@@ -131,7 +136,6 @@ export default {
       const resp = await api
         .register(newUserInfo)
         .then(res => {
-          // alert.log(res.data);
           console.log(res.data);
         })
         .catch(err => {

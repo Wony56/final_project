@@ -30,9 +30,10 @@ import {
   logout,
   postEditProfile,
   postChangePassword,
-  loggedUser
+  loggedUser,
+  postWebLogin,
+  webLogout
 } from "../controllers/userController";
-import passport from "passport";
 
 const router = express.Router();
 
@@ -40,15 +41,16 @@ router.get(routes.home, onlyAdmin, home);
 
 //Join
 router.get(routes.join, onlyPublic, getJoin);
-router.post(routes.join, onlyPublic, postJoin, postLogin);
+router.post(routes.join, onlyPublic, postJoin);
 
 //Login
 router.get(routes.login, onlyPublic, getLogin);
 router.post(routes.login, onlyPublic, postLogin);
-router.post(routes.loginWeb, passport.authenticate("local"), loggedUser);
+router.post(routes.loginWeb, postWebLogin);
 
 //Logout
 router.get(routes.logout, onlyPrivate, logout);
+router.get(routes.logoutWeb, onlyPrivate, webLogout);
 
 // Data Upload
 router.post(routes.upload, onlyAdmin, uploadImage, postUpload);
