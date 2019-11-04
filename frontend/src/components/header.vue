@@ -53,7 +53,6 @@ export default {
 
 <style lang="scss">
 .header {
-  margin-bottom: 10px;
   font-weight: 600;
   .title-container {
     display: flex;
