@@ -104,12 +104,12 @@
     <v-dialog v-model="dialog" max-width="500">
       <v-card>
         <v-card-title class="headline font-weight-bold"><h1>비밀번호 수정</h1></v-card-title>
-        <input type="password" placeholder="현재 비밀번호">
-        <input type="password" placeholder="변경할 비밀번호">
-        <input type="password" placeholder="비밀번호 확인">
+        <input type="password" placeholder="현재 비밀번호" id="oldPassword">
+        <input type="password" placeholder="변경할 비밀번호" id="newPassword1">
+        <input type="password" placeholder="비밀번호 확인" id="newPassword2">
         <v-card-actions>
             <v-flex style='width:100%;align:center;text-align:center;margin:5px'>
-                <v-btn text @click="dialog = false" color="#F8BBD0">Change</v-btn>
+                <v-btn text @click="changePassword" color="#F8BBD0">Change</v-btn>
                 <v-btn text @click="dialog = false" color="#F8BBD0">Close</v-btn>
             </v-flex>
         </v-card-actions>
@@ -307,7 +307,7 @@ th{
 }
 </style>
 <script>
-
+import api from "../api";
 import { mapState, mapActions } from "vuex";
 import StretchingCard from '../components/stretchingCard.vue'
 export default{
@@ -316,26 +316,16 @@ export default{
           type : Object,
           default:null
       },
-      // body : {
-      //   name : String,
-      //   age : String,
-      //   job : String,
-      //   part : Object,
-      //   select : {
-      //         type : Object,
-      //         default:null
-      //   }
-      // }
   },
   data(){
     return{
       all_part:["어깨","손목","팔","등","허리","복근","가슴","종아리","허벅지","엉덩이"],
       eng_part:["deltoids","forearms","triceps","trapezius","lats","abs","pectorals","calves","hamstrings","glutes"],
       body:{
-        name:"String",
-        age:"Stringw",
-        job:"String2",
-        part:["엉덩이","어깨"]
+        name:  this.$store.state.user.userInfo.name,
+        age:  this.$store.state.user.userInfo.age,
+        job:  this.$store.state.user.userInfo.job,
+        part:  this.$store.state.user.userInfo.part
       },
       dialog: false,
     }
@@ -363,13 +353,64 @@ export default{
   methods : {
     ...mapActions(["getAllStretchings"]),
     ...mapActions(["search"]),
-    Edit: function(){
-      console.log(document.getElementById("username").value)//eslint-disable-line no-console
+    Edit: async function(){
+      const newUserInfo = {
+        username: this.$store.state.user.userInfo.username,
+        name: document.getElementById("username").value,
+        job: document.getElementById("userjob").value,
+        age: document.getElementById("userage").value,
+        part: []
+      };
+      if(document.getElementById("username").value==""){
+        newUserInfo.name=this.$store.state.user.userInfo.name
+      }
+      if(document.getElementById("userage").value==""){
+        newUserInfo.age=this.$store.state.user.userInfo.age
+      }
+      if(document.getElementById("userjob").value==""){
+        newUserInfo.job=this.$store.state.user.userInfo.job
+      }
       for (var i=0; i<this.all_part.length; i++) {
         if(document.getElementById(this.eng_part[i]).checked){
           console.log(this.all_part[i]+"!!")//eslint-disable-line no-console
+          newUserInfo.part.push(this.all_part[i]);
         }
       }
+      console.log(newUserInfo)
+      this.$store.state.user.userInfo = await api
+      .editProfile(newUserInfo)
+      .then(res =>{
+        if (res.status === 200) {
+          alert("성공!");
+          return res.data.user;
+        }
+        this.$router.go(0);
+      })
+      .catch(err => {
+        console.log(err);
+      });
+    },
+    changePassword : async function(){
+      if(document.getElementById("newPassword1").value!=document.getElementById("newPassword2").value){
+        alert("변경할 패스워드가 일치하지 않습니다.")
+        return;
+      }
+
+      const pass = {
+        oldPassword: document.getElementById("oldPassword").value,
+        newPassword: document.getElementById("newPassword1").value,
+      }
+      await api
+      .changePassword(pass)
+      .then(res =>{
+        if (res.status === 200) {
+          alert("비밀번호 변경 성공!");
+        }
+        this.$router.go(0);
+      })
+      .catch(err => {
+        console.log(err);
+      });
     }
   }
 
