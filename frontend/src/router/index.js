@@ -7,6 +7,7 @@ import SearchList from "../views/SearchList.vue";
 import UserDetail from "../views/UserDetail.vue";
 import EditUser from "../views/EditUser.vue";
 import ChangePassword from "../views/ChangePassword.vue";
+//import TestReminder from "../views/Test/TestReminder";
 
 Vue.use(VueRouter);
 
@@ -46,6 +47,11 @@ const routes = [
     name: "changePassword",
     component: ChangePassword
   },
+  // {
+  //   path: "/testReminder",
+  //   name: "TestReminder",
+  //   component: TestReminder
+  // },
   {
     path: "*",
     redirect: "/"

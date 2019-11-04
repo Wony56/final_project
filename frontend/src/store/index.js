@@ -16,12 +16,6 @@ export default new Vuex.Store({
       } else {
         state.isReminder = false
       }
-    },
-    setRemindHour(state, hour) {
-      state.remindHour = hour
-    },
-    setRemindMin(state, min) {
-      state.remindMin = min
     }
   },
   actions: {
