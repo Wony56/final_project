@@ -34,6 +34,7 @@ import {
   postWebLogin,
   webLogout
 } from "../controllers/userController";
+import passport from "passport";
 
 const router = express.Router();
 
