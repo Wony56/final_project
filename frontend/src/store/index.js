@@ -1,25 +1,13 @@
-import Vue from 'vue'
-import Vuex from 'vuex'
+import Vue from "vue";
+import Vuex from "vuex";
+import stretching from "./stretching.js";
+import user from "./user.js";
 
-Vue.use(Vuex)
+Vue.use(Vuex);
 
 export default new Vuex.Store({
-  state: {
-    isReminder: false,
-    remindHour: 0,
-    remindMin: 0
-  },
-  mutations: {
-    setReminder(state, trigger) {
-      if (trigger == true) {
-        state.isReminder = true
-      } else {
-        state.isReminder = false
-      }
-    }
-  },
-  actions: {
-  },
   modules: {
+    stretching,
+    user
   }
-})
+});

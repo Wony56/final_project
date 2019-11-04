@@ -28,9 +28,10 @@ const routes = [
     component: Register
   },
   {
-    path: "/search",
+    path: "/search/:category/:value",
     name: "search",
-    component: SearchList
+    component: SearchList,
+    props: true
   },
   {
     path: "/me",

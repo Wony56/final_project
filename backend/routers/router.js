@@ -27,7 +27,12 @@ import {
   postJoin,
   postLogin,
   getLogin,
-  logout
+  logout,
+  postEditProfile,
+  postChangePassword,
+  loggedUser,
+  postWebLogin,
+  webLogout
 } from "../controllers/userController";
 
 const router = express.Router();
@@ -36,14 +41,16 @@ router.get(routes.home, onlyAdmin, home);
 
 //Join
 router.get(routes.join, onlyPublic, getJoin);
-router.post(routes.join, onlyPublic, postJoin, postLogin);
+router.post(routes.join, onlyPublic, postJoin);
 
 //Login
 router.get(routes.login, onlyPublic, getLogin);
 router.post(routes.login, onlyPublic, postLogin);
+router.post(routes.loginWeb, postWebLogin);
 
 //Logout
 router.get(routes.logout, onlyPrivate, logout);
+router.get(routes.logoutWeb, onlyPrivate, webLogout);
 
 // Data Upload
 router.post(routes.upload, onlyAdmin, uploadImage, postUpload);
@@ -63,9 +70,16 @@ router.get(routes.find, getStretchings);
 router.get(routes.findList, getAllStretchingsForAdmin);
 router.get(routes.searchAll, searchAll);
 router.get(routes.search, search);
+router.get(routes.recommend, getAllStretchings);
 
 //Views
 router.get(routes.view(), getView);
 router.get(routes.detail(), getDetail);
+
+//Profile
+router.post(routes.editProfile, onlyPrivate, postEditProfile);
+router.post(routes.changePassword, onlyPrivate, postChangePassword);
+
+router.get(routes.loggedUser, loggedUser);
 
 export default router;

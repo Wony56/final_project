@@ -2,8 +2,13 @@ const HOME = "/";
 
 // User
 const LOGIN = "/login";
+const LOGIN_WEB = "/api/login";
 const LOGOUT = "/logout";
-const JOIN = "/join";
+const LOGOUT_WEB = "/api/logout";
+const JOIN = "/api/join";
+const EDIT_PROFILE = "/api/edit-profile";
+const CHANGE_PASSWORD = "/api/change-password";
+const LOGGEDUSER = "/api/user";
 
 // Data Upload
 const UPLOAD = "/upload";
@@ -14,8 +19,11 @@ const FIND_ALL = "/find/all";
 const FIND_LIST = "/find/list";
 const FIND_BY_VIEWS = "/find/view";
 const FIND = "/find";
-const SEARCH_ALL = "/search/all";
-const SEARCH = "/search";
+
+// API
+const SEARCH_ALL = "/api/search/all";
+const SEARCH = "/api/search";
+const RECOMMEND = "/api/search/recommend";
 
 // Update data
 const EDIT = "/edit/:id";
@@ -29,7 +37,9 @@ const DETAIL = "/detail/:id";
 const routes = {
   home: HOME,
   login: LOGIN,
+  loginWeb: LOGIN_WEB,
   logout: LOGOUT,
+  logoutWeb: LOGOUT_WEB,
   join: JOIN,
   upload: UPLOAD,
   uploadMany: UPLOAD_MANY,
@@ -39,6 +49,10 @@ const routes = {
   find: FIND,
   searchAll: SEARCH_ALL,
   search: SEARCH,
+  recommend: RECOMMEND,
+  editProfile: EDIT_PROFILE,
+  changePassword: CHANGE_PASSWORD,
+  loggedUser: LOGGEDUSER,
   view: id => {
     if (id) {
       return `/view/${id}`;

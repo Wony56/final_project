@@ -302,20 +302,34 @@ export const searchAll = async (req, res) => {
 
 export const search = async (req, res) => {
   const {
-    query: { term: keyword }
+    query: { title, place, part, situation }
   } = req;
 
   let results = [];
   try {
-    results = await Stretching.find({
-      $or: [
-        { title: { $regex: keyword, $options: "i" } },
-        { place: { $regex: keyword, $options: "i" } },
-        { part: { $regex: keyword, $options: "i" } },
-        { situation: { $regex: keyword, $options: "i" } },
-        { hashtag: { $regex: keyword, $options: "i" } }
-      ]
-    });
+    if (title) {
+      results = await Stretching.find({
+        title: { $regex: title, $options: "i" }
+      });
+    }
+
+    if (place) {
+      results = await Stretching.find({
+        place: { $regex: place, $options: "i" }
+      });
+    }
+
+    if (part) {
+      results = await Stretching.find({
+        part: { $regex: part, $options: "i" }
+      });
+    }
+
+    if (situation) {
+      results = await Stretching.find({
+        situation: { $regex: situation, $options: "i" }
+      });
+    }
   } catch (error) {
     console.log(error);
     res.status(400);

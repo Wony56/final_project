@@ -1,25 +1,30 @@
 import axios from "axios";
 
+const apiUrl = "/api";
+
 export default {
-  login() {
-    return null;
+  onAuthUser() {
+    return axios.get(`${apiUrl}/user`);
   },
-  register() {
-    return null;
+  login(params) {
+    return axios.post(`${apiUrl}/login`, params);
+  },
+  register(params) {
+    return axios.post(`${apiUrl}/join`, { params });
   },
   logout() {
-    return null;
+    return axios.get(`${apiUrl}/logout`);
   },
-  userDetail() {
-    return null;
+  recommend() {
+    return axios.get(`${apiUrl}/search/recommend`);
   },
   getAllStretchings() {
-    return axios.get(`/search/all`);
+    return axios.get(`${apiUrl}/search/all`);
   },
-  search(keyword) {
-    return axios.get(`/search?keyword=${keyword}`);
+  search(params) {
+    return axios.get(`${apiUrl}/search?${params.category}=${params.value}`);
   },
-  stretchingDetail() {
-    return null;
+  stretchingDetail(id) {
+    return axios.get(`${apiUrl}/detail/${id}`);
   }
 };

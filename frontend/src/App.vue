@@ -1,7 +1,5 @@
 <template>
-  <div id="app" data-app=true>
-    {{this.$store.state}}
-
+  <div id="app" data-app="true">
     <header-bar />
     <div class="main">
       <router-view />
