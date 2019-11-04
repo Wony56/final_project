@@ -4,39 +4,10 @@
       <form class="register-form">
         <input type="text" v-model="signUpId" placeholder="id" />
         <input type="password" v-model="signUpPassword" placeholder="password" />
+        <input type="password" v-model="signUpcheckPassword" placeholder="checkPassword" />
         <input type="text" v-model="signUpName" placeholder="name" />
-        <input type="text" v-model="signUpEmailAddress" placeholder="email address" />
         <input type="text" v-model="signUpJob" placeholder="job" />
         <input type="text" v-model="signUpAge" placeholder="age" />
-        <!-- <v-text-field
-          v-validate="'required|min:4|max:20'"
-          v-model="signUpName"
-          :counter="20"
-          :error-messages="errors.collect('id')"
-          label="아이디"
-          data-vv-name="id"
-          required
-        ></v-text-field>-->
-        <!--
-        <v-text-field
-          v-validate="'required|min:6|max:40'"
-          v-model="signUpPassword"
-          :counter="40"
-          :error-messages="errors.collect('pwd')"
-          label="비밀번호"
-          data-vv-name="pwd"
-          required
-          type="password"
-        ></v-text-field>
-        <v-text-field
-          v-validate="'required|min:1|max:40'"
-          v-model="form.name"
-          :counter="40"
-          :error-messages="errors.collect('name')"
-          label="이름"
-          data-vv-name="name"
-          required
-        ></v-text-field>-->
 
         <v-combobox v-model="select" :items="items" label="part select" multiple chips></v-combobox>
 
@@ -77,7 +48,7 @@ export default {
       signUpId: "",
       signUpName: "",
       signUpPassword: "",
-      signUpEmailAddress: "",
+      signUpcheckPassword: "",
       signUpJob: "",
       signUpAge: "",
       select: [],
@@ -102,16 +73,16 @@ export default {
         username: this.username,
         password: this.password
       };
-      // console.log(this.username + " " + this.password);
+
       this.$store.state.user.userInfo = await api
         .login(loginInfo)
         .then(res => {
           console.log(res.data);
           if (res.status === 200) {
             alert("성공!");
+            this.$router.push("/");
             return res.data.user;
           }
-          this.$router.push("/");
         })
         .catch(err => {
           alert("아이디 또는 패스워드가 틀렸습니다.");
@@ -121,28 +92,35 @@ export default {
     signUp: async function() {
       //회원가입
       // alert("바이");
+      if (this.signUpPassword === this.signUpcheckPassword) {
+        const newUserInfo = {
+          username: this.signUpId,
+          password: this.signUpPassword,
+          name: this.signUpName,
+          job: this.signUpJob,
+          age: this.signUpAge,
+          part: this.select
+        };
 
-      const newUserInfo = {
-        username: this.signUpId,
-        password: this.signUpPassword,
-        name: this.signUpName,
-        job: this.signUpJob,
-        age: this.signUpAge,
-        part: this.select
-      };
+        console.log(newUserInfo);
 
-      console.log(newUserInfo);
+        const resp = await api
+          .register(newUserInfo)
+          .then(res => {
+            console.log(res.data);
+          })
+          .catch(err => {
+            console.log(err);
+          });
 
-      const resp = await api
-        .register(newUserInfo)
-        .then(res => {
-          console.log(res.data);
-        })
-        .catch(err => {
-          console.log(err);
-        });
-
-      console.log(resp);
+        alert("회원가입 성공");
+        this.$router.go(-1);
+        console.log(resp);
+      } else {
+        alert("비밀번호 확인이 틀렸습니다.");
+        this.signUpcheckPassword = "";
+        return false;
+      }
     },
     clear: function() {
       this.username = "";
