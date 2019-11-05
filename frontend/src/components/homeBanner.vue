@@ -16,6 +16,7 @@
         </v-flex>
       </v-col>
     </v-row>
+    
           <v-layout>
           <v-flex xs2 px-2>
             <v-select
@@ -72,21 +73,6 @@
         >
           {{item.title}}
         </span>
-        <!-- <v-chip
-          v-if="item === Object(item)"
-          v-bind="attrs"
-          :input-value="selected"
-          label
-          small
-        >
-        <span class="pr-2">
-          {{ item.title }}
-        </span>
-        <v-icon
-          small
-          @click="parent.selectItem(item)"
-        >mdi-close</v-icon>
-        </v-chip> -->
       </template>
       <template v-slot:item="{ index, item }">
           <v-list-item-avatar>
@@ -121,6 +107,7 @@ export default {
       search: null,
       focus: true,
       message: [],
+      time : this.$store.state.user.timecheck
     };
   },
   mounted() {

@@ -64,7 +64,7 @@ export default {
           job: this.$store.state.user.userInfo.job,
           age: this.$store.state.user.userInfo.age,
           part: this.$store.state.user.userInfo.part,
-          schedules:[]
+          schedules:this.$store.state.user.userInfo.schedules
         };
         newUserInfo.schedules.push(this.card.title);
         console.log(this.$store.state.user.userInfo);

@@ -5,7 +5,8 @@ Vue.use(Vuex);
 
 const state = {
   userInfo: "",
-  loginCheck: false
+  loginCheck: false,
+  timecheck: localStorage.getItem('Mytime'),
 };
 
 export default {

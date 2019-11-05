@@ -42,9 +42,9 @@ export default {
   methods: {
     // ...mapActions(['getAllStretchings']),
     async recommend(){
-const result = await Api.recommend(); 
+const result = await Api.recommend();
       this.$nextTick(function() {
-        
+
       console.log(result); // eslint-disable-line no-console
       result.data.datas.forEach(data => {
           let imgURL = data.processList[0].imgAddress+data.processList[0].imgPath;
@@ -52,7 +52,7 @@ const result = await Api.recommend();
           this.slides.push({title : data.title, image: imgURL,  text: `${data.title}`, hashtag: hashtag});
       });
     });
-      
+
     },
   },
   // computed:{
@@ -75,10 +75,13 @@ const result = await Api.recommend();
     margin-left: 10px;
     margin-right: 10px;
     font-size: 20px;
-    color: #fff; 
-    text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+    color: #fff;
+    text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
     font-weight: 600;
   }
+.v-application a{
+  color:gray!important;
+}
   .st-title{
     padding-top: 50px;
     padding-bottom: 50px;
@@ -88,7 +91,7 @@ const result = await Api.recommend();
   .vueperslide_image_solo{
     font-size: 16px;
     color: #fff;
-    text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+    text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
     font-weight: 600;
   }
   .vueperslides__arrow{
