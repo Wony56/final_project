@@ -25,13 +25,17 @@ export default {
     console.log(this.$store.state.remindMin)  
 */
 </script>
-
 <style lang="scss">
+@font-face { font-family: 'netmarbleB'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.1/netmarbleB.woff') format('woff'); font-weight: normal; font-style: normal; }
 a {
   text-decoration: none;
   color: black;
 }
 .main {
   min-height: 700px;
+}
+*{
+  font-family: 'netmarbleB';
+
 }
 </style>
