@@ -19,7 +19,8 @@ export const postJoin = async (req, res) => {
       name,
       job,
       age,
-      part
+      part,
+      schedules
     });
 
     await User.register(user, password);

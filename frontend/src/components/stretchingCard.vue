@@ -11,7 +11,12 @@
 
     <v-dialog v-model="dialog" max-width="700">
       <v-card>
-        <v-card-title class="headline font-weight-bold">{{card.title}}</v-card-title>
+        <v-card-title class="headline font-weight-bold">
+          {{card.title}}
+          <v-btn text @click="plusSchedules" color="#F2A640">
+            <v-icon>mdi-star</v-icon>
+          </v-btn>
+        </v-card-title>
         <v-card-subtitle style='margin-top:3px'>
             <span v-for='(hash,index) in card.hashtag' :key=index>{{hash}}&nbsp;</span>
         </v-card-subtitle>
@@ -33,7 +38,7 @@
 </template>
 
 <script>
-
+import api from "../api";
 export default {
 
     data () {
@@ -49,6 +54,34 @@ export default {
     },
     mounted(){
 
+    },
+    methods:{
+      plusSchedules: async function(){
+
+        const newUserInfo = {
+          username: this.$store.state.user.userInfo.username,
+          name: this.$store.state.user.userInfo.name,
+          job: this.$store.state.user.userInfo.job,
+          age: this.$store.state.user.userInfo.age,
+          part: this.$store.state.user.userInfo.part,
+          schedules:[]
+        };
+        newUserInfo.schedules.push(this.card.title);
+        console.log(this.$store.state.user.userInfo);
+        console.log(newUserInfo);
+        this.$store.state.user.userInfo = await api
+        .editProfile(newUserInfo)
+        .then(res =>{
+          if (res.status === 200) {
+            alert("성공!");
+            return res.data.user;
+          }
+          this.$router.go(0);
+        })
+        .catch(err => {
+          console.log(err);
+        });
+      }
     }
 }
 </script>

@@ -99,7 +99,8 @@ export default {
           name: this.signUpName,
           job: this.signUpJob,
           age: this.signUpAge,
-          part: this.select
+          part: this.select,
+          schedules : []
         };
 
         console.log(newUserInfo);

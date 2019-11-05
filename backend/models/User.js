@@ -19,8 +19,7 @@ const UserSchema = new mongoose.Schema({
   ],
   schedules: [
     {
-      type: mongoose.Schema.Types.ObjectId,
-      ref: "Schedule"
+      type: String
     }
   ],
   isStaff: {
