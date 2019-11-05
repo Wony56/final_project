@@ -20,7 +20,8 @@ import {
   uploadImage,
   onlyAdmin,
   onlyPrivate,
-  onlyPublic
+  onlyPublic,
+  authMiddleware
 } from "../middlewares";
 import {
   getJoin,
@@ -42,16 +43,30 @@ router.get(routes.home, onlyAdmin, home);
 
 //Join
 router.get(routes.join, onlyPublic, getJoin);
-router.post(routes.join, onlyPublic, postJoin);
+router.post(routes.join, postJoin);
 
 //Login
 router.get(routes.login, onlyPublic, getLogin);
 router.post(routes.login, onlyPublic, postLogin);
-router.post(routes.loginWeb, postWebLogin);
+router.post(routes.loginWeb, (req, res, next) => {
+  passport.authenticate("local", (err, user, info) => {
+    if (err) {
+      return next(err);
+    }
+
+    if (!user) {
+      return res.status(400).send([user, "Cannot log in", info]);
+    }
+
+    req.login(user, err => {
+      res.send("Logged in");
+    });
+  })(req, res, next);
+});
 
 //Logout
 router.get(routes.logout, onlyPrivate, logout);
-router.get(routes.logoutWeb, onlyPrivate, webLogout);
+router.get(routes.logoutWeb, webLogout);
 
 // Data Upload
 router.post(routes.upload, onlyAdmin, uploadImage, postUpload);
@@ -81,6 +96,6 @@ router.get(routes.detail(), getDetail);
 router.post(routes.editProfile, postEditProfile);
 router.post(routes.changePassword, postChangePassword);
 
-router.get(routes.loggedUser, loggedUser);
+router.get(routes.loggedUser, authMiddleware, loggedUser);
 
 export default router;

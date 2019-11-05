@@ -9,25 +9,33 @@ export const getJoin = (req, res) => {
 export const postJoin = async (req, res) => {
   const {
     body: {
-      params: { username, password, name, job, age, part,schedules }
+      params: { username, password, name, job, age, part }
     }
   } = req;
 
   try {
-    const user = await User({
+    console.log(username, password);
+
+    const existedUser = await User.findOne({ username });
+
+    if (existedUser) {
+      throw new Error("이미 존재하는 아이디입니다.");
+    }
+
+    await User.create({
       username,
+      password,
       name,
       job,
       age,
       part,
-      schedules
+      schedules: []
     });
 
-    await User.register(user, password);
     res.status(201).json({ message: "Register success!" });
   } catch (error) {
     console.log(error);
-    res.status(400).json({ message: "Register fail..." });
+    res.status(400).json({ message: error });
   }
 };
 
@@ -59,11 +67,19 @@ export const postChangePassword = async (req, res) => {
   } = req;
 
   try {
-    await req.user.changePassword(oldPassword, newPassword);
+    const user = await User.findById(req.session.passport.user);
+
+    if (user.password !== oldPassword) {
+      throw new Error("기존 패스워드가 틀렸습니다.");
+    }
+    await User.findByIdAndUpdate(req.session.passport.user, {
+      password: newPassword
+    });
+
     res.status(201).json({ message: "Password Updated!" });
   } catch (error) {
     console.log(error);
-    res.status(400).json({ message: "Password Not Changed!" });
+    res.status(400).json({ message: error });
   }
 };
 
@@ -72,11 +88,6 @@ export const getLogin = (req, res) => res.render("login");
 export const postLogin = passport.authenticate("local", {
   failureRedirect: routes.login,
   successRedirect: routes.home
-});
-
-export const postWebLogin = passport.authenticate("local", {
-  failureRedirect: routes.loginFail,
-  successRedirect: routes.loggedUser
 });
 
 export const logout = (req, res) => {
@@ -89,12 +100,12 @@ export const webLogout = (req, res) => {
   res.status(200).json({ message: "Logout Success!" });
 };
 
-export const loggedUser = (req, res) => {
-  if (req.user) {
-    res.status(200).json({ user: req.user });
-  } else {
-    res.status(200).json({ user: {} });
-  }
+export const loggedUser = async (req, res) => {
+  let user = await User.findById({ _id: req.session.passport.user });
+
+  console.log([user, req.session]);
+
+  res.status(200).json({ user });
 };
 
 export const loginFail = (req, res) => {

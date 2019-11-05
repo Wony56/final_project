@@ -6,6 +6,10 @@ const UserSchema = new mongoose.Schema({
     type: String,
     required: "Username is required!"
   },
+  password: {
+    type: String,
+    required: "Password is requried!"
+  },
   name: {
     type: String,
     required: "Name is required!"
@@ -28,7 +32,7 @@ const UserSchema = new mongoose.Schema({
   }
 });
 
-UserSchema.plugin(passportLocalMongoose, { usernameField: "username" });
+// UserSchema.plugin(passportLocalMongoose, { usernameField: "username" });
 
 const model = mongoose.model("User", UserSchema);
 
