@@ -1,8 +1,9 @@
 <template>
   <div class="user-detail">
     <div class="container">
-    <h1>MyPage</h1>
+
     <div class="human-body">
+      <h1>MyPage</h1>
         <div class="muscle-groups">
           <div style="height:50px">
           <h1>Part Select</h1>
@@ -101,6 +102,24 @@
     <v-btn class="ma-2" tile outlined color="warning" style="color:red"  @click.stop='dialog=true'>
         <v-icon left>mdi-pencil</v-icon> Password Edit
     </v-btn>
+<div style="margin-top: 5%;margin-bottom: 5%;">
+    <div v-if="this.$store.state.user.timecheck!=0">
+      <v-btn class="ma-2" tile outlined color="blue" style="color:blue" @click="timeZero">stop!</v-btn>
+    </div>
+    <div v-if="this.$store.state.user.timecheck==0">
+      <select id="myTime">
+        <option selected value="0">시간선택</option>
+        <option value="1">1초</option>
+        <option value="300">5분</option>
+        <option value="600">10분</option>
+        <option value="900">15분</option>
+        <option value="1800">30분</option>
+        <option value="3600">60분</option>
+      </select>
+      <v-btn class="ma-2" tile outlined color="blue" style="color:blue" @click="timeSet">start?</v-btn>
+    </div>
+</div>
+
     <v-dialog v-model="dialog" max-width="500">
       <v-card>
         <v-card-title class="headline font-weight-bold"><h1>비밀번호 수정</h1></v-card-title>
@@ -121,9 +140,11 @@
  <div style="clear : both"></div>
 
 <v-layout wrap class='automargin' style='width:80%'>
+
+  <h1>즐겨찾기</h1>
 <hr style="width:100%; color:pink">
 <div style="float:left" v-for="(item) in stretchingList" :key="item._id">
-<v-flex v-if="mystretching.includes(item.title)" pa-2>
+<v-flex v-if="mystretching.includes(item.title)" pa-1>
   <StretchingCard :card="item"/>
 </v-flex>
 </div>
@@ -244,6 +265,23 @@ $svg-z: 100;
 }
 </style>
 <style>
+select {
+  color: gray;
+  width: 200px;
+  padding: .3em .3em;
+  font-family: inherit;
+  background: url(https://farm1.staticflickr.com/379/19928272501_4ef877c265_t.jpg) no-repeat 95% 50%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 1px solid #999;
+  border-radius: 0px;
+}
+
+select::-ms-expand {
+  /* for IE 11 */
+  display: none;
+}
 .automargin{
   margin:0 auto;
 }
@@ -330,7 +368,7 @@ export default{
         part:  this.$store.state.user.userInfo.part
       },
       dialog: false,
-      mystretching:["고양이 스트레칭","나비 자세"]
+      mystretching:this.$store.state.user.userInfo.schedules//["고양이 스트레칭","나비 자세"]
     }
   },
   components: {
@@ -415,6 +453,14 @@ export default{
       .catch(err => {
         console.log(err);
       });
+    },
+    timeSet: function(){
+      localStorage.setItem('Mytime',document.getElementById("myTime").value)
+      this.$store.state.user.timecheck=localStorage.getItem('Mytime');
+      console.log(this.$store.state.user.timecheck)
+    },
+    timeZero: function(){
+      this.$store.state.user.timecheck=0;
     }
   }
 

@@ -81,6 +81,7 @@ export default {
           if (res.status === 200) {
             alert("성공!");
             this.$router.push("/");
+            localStorage.setItem('Mytime', 0)
             return res.data.user;
           }
         })
