@@ -54,7 +54,7 @@ export default {
             alert("로그아웃되었습니다.");
             this.$store.state.user.userInfo = {};
             this.$store.state.user.loginCheck = false;
-            this.$router.go("/");
+            this.$router.push("/");
           }
         })
         .catch(err => {

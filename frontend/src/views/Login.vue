@@ -116,7 +116,7 @@ export default {
           });
 
         alert("회원가입 성공");
-        this.$router.go(-1);
+        this.$router.go(-2);
         console.log(resp);
       } else {
         alert("비밀번호 확인이 틀렸습니다.");
