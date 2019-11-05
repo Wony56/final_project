@@ -81,7 +81,7 @@ export default {
           if (res.status === 200) {
             alert("성공!");
             this.$router.push("/");
-            localStorage.setItem('Mytime', 0)
+            localStorage.setItem("Mytime", 0);
             return res.data.user;
           }
         })
@@ -101,7 +101,7 @@ export default {
           job: this.signUpJob,
           age: this.signUpAge,
           part: this.select,
-          schedules : []
+          schedules: []
         };
 
         console.log(newUserInfo);
@@ -110,13 +110,14 @@ export default {
           .register(newUserInfo)
           .then(res => {
             console.log(res.data);
+            alert("회원가입 성공");
+            this.$router.go(-2);
           })
           .catch(err => {
             console.log(err);
+            alert("회원가입 실패");
           });
 
-        alert("회원가입 성공");
-        this.$router.go(-2);
         console.log(resp);
       } else {
         alert("비밀번호 확인이 틀렸습니다.");

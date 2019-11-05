@@ -30,4 +30,11 @@ api
   })
   .catch(err => {
     console.log(err);
+
+    new Vue({
+      vuetify,
+      router,
+      store,
+      render: h => h(App)
+    }).$mount("#app");
   });
