@@ -147,7 +147,7 @@ export default {
 @import url(https://fonts.googleapis.com/css?family=Roboto:300);
 
 .login-page {
-  width: 500px;
+  max-width: 500px;
   padding: 2.5% 0 0;
   margin: auto;
 }
