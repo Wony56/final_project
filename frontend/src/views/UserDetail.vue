@@ -109,7 +109,7 @@
     <div v-if="this.$store.state.user.timecheck==0">
       <select id="myTime">
         <option selected value="0">시간선택</option>
-        <option value="1">1초</option>
+        <option value="60">1분</option>
         <option value="300">5분</option>
         <option value="600">10분</option>
         <option value="900">15분</option>
