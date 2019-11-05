@@ -78,8 +78,8 @@ router.get(routes.view(), getView);
 router.get(routes.detail(), getDetail);
 
 //Profile
-router.post(routes.editProfile, onlyPrivate, postEditProfile);
-router.post(routes.changePassword, onlyPrivate, postChangePassword);
+router.post(routes.editProfile, postEditProfile);
+router.post(routes.changePassword, postChangePassword);
 
 router.get(routes.loggedUser, loggedUser);
 
