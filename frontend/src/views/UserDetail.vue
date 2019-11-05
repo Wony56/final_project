@@ -122,9 +122,11 @@
 
 <v-layout wrap class='automargin' style='width:80%'>
 <hr style="width:100%; color:pink">
-<v-flex xs12 sm6 md3 v-for="(item) in stretchingList" :key="item._id" pa-2>
+<div style="float:left" v-for="(item) in stretchingList" :key="item._id">
+<v-flex v-if="mystretching.includes(item.title)" pa-2>
   <StretchingCard :card="item"/>
 </v-flex>
+</div>
 </v-layout>
 
  <div style="clear : both"></div>
@@ -328,6 +330,7 @@ export default{
         part:  this.$store.state.user.userInfo.part
       },
       dialog: false,
+      mystretching:["고양이 스트레칭","나비 자세"]
     }
   },
   components: {
@@ -359,7 +362,8 @@ export default{
         name: document.getElementById("username").value,
         job: document.getElementById("userjob").value,
         age: document.getElementById("userage").value,
-        part: []
+        part: [],
+        schedules:this.$store.state.user.userInfo.schedules
       };
       if(document.getElementById("username").value==""){
         newUserInfo.name=this.$store.state.user.userInfo.name
