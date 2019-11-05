@@ -1,12 +1,8 @@
 import mongoose from "mongoose";
 
 const ScheduleSchema = new mongoose.Schema({
-  time: {
-    type: Number
-  },
   stretching: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: "Stretching"
+    type: String
   }
 });
 
