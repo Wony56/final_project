@@ -9,7 +9,7 @@ export const getJoin = (req, res) => {
 export const postJoin = async (req, res) => {
   const {
     body: {
-      params: { username, password, name, job, age, part }
+      params: { username, password, name, job, age, part,schedules }
     }
   } = req;
 
