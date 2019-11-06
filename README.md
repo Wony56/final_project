@@ -90,24 +90,24 @@ resources
 
 ##### 구현<a id="menu8"></a>
  - 메인 페이지
-    * 배너 및 검색
+    * 배너 및 검색  
      ![mainpage.PNG](./images/website/mainpage.PNG)
-    * 추천스트레칭
+    * 추천스트레칭  
      ![mainpage2.PNG](./images/website/mainpage2.PNG)
  - 로그인 & 회원가입
-    * 로그인 화면
+    * 로그인 화면  
      ![login.PNG](./images/website/login.PNG)
-    * 회원가입 화면
+    * 회원가입 화면  
      ![sginup.PNG](./images/website/signup.PNG)
- - 검색결과 화면
+ - 검색결과 화면  
      ![stretchinglist.PNG](./images/website/stretchinglist.PNG)
- - 상세페이지
+ - 상세페이지  
      ![stretchingdetail.PNG](./images/website/stretchingdetail.PNG)
- - 마이페이지
+ - 마이페이지  
      ![mypage.png](./images/website/mypage.png)
-    * 스트레칭 시간 선택
+    * 스트레칭 시간 선택  
      ![mypage(1).png](./images/website/mypage\(1\).png)
-    * 스트레칭 시간 선택 후 타임워치
+    * 스트레칭 시간 선택 후 타임워치  
      ![mypage(3).png](./images/website/mypage\(3\).png)
-    * 즐겨찾기한 운동
-     ![mypage(2).png](./images/website/mypage\(w\).png)
+    * 즐겨찾기한 운동  
+     ![mypage(2).png](./images/website/mypage\(2\).png)
