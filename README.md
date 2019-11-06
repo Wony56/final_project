@@ -91,23 +91,23 @@ resources
 ##### 구현<a id="menu8"></a>
  - 메인 페이지
     * 배너 및 검색
-  <img src="https://lab.ssafy.com/jupang/final_project/blob/feature/test/images/website/mainpage.PNG" alt="image-20191025161115304" style="zoom:50%; align-items:left" />
+     ![mainpage.PNG](./images/website/mainpage.PNG)
     * 추천스트레칭
-    <img src="https://lab.ssafy.com/jupang/final_project/blob/feature/test/images/website/mainpage2.PNG" alt="image-20191025161115304" style="zoom:50%; align-items:left" />
+     ![mainpage2.PNG](./images/website/mainpage2.PNG)
  - 로그인 & 회원가입
     * 로그인 화면
- <img src="https://lab.ssafy.com/jupang/final_project/blob/feature/test/images/website/login.PNG" alt="image-20191025161115304" style="zoom:50%; align-items:left" />
+     ![login.PNG](./images/website/login.PNG)
     * 회원가입 화면
- <img src="https://lab.ssafy.com/jupang/final_project/blob/feature/test/images/website/signup.PNG" alt="image-20191025161115304" style="zoom:50%; align-items:left" />
+     ![sginup.PNG](./images/website/signup.PNG)
  - 검색결과 화면
- <img src="https://lab.ssafy.com/jupang/final_project/blob/feature/test/images/website/stretchinglist.PNG" alt="image-20191025161115304" style="zoom:50%; align-items:left" />
+     ![stretchinglist.PNG](./images/website/stretchinglist.PNG)
  - 상세페이지
- <img src="https://lab.ssafy.com/jupang/final_project/blob/feature/test/images/website/stretchingdetail.PNG" alt="image-20191025161115304" style="zoom:50%; align-items:left" />
+     ![stretchingdetail.PNG](./images/website/stretchingdetail.PNG)
  - 마이페이지
- <img src="https://lab.ssafy.com/jupang/final_project/blob/feature/test/images/website/mypage.png" alt="image-20191025161115304" style="zoom:50%; align-items:left" />
+     ![mypage.png](./images/website/mypage.png)
     * 스트레칭 시간 선택
- <img src="https://lab.ssafy.com/jupang/final_project/blob/feature/test/images/website/mypage(1).png" alt="image-20191025161115304" style="zoom:50%; align-items:left" />
+     ![mypage(1).png](./images/website/mypage\(1\).png)
     * 스트레칭 시간 선택 후 타임워치
- <img src="https://lab.ssafy.com/jupang/final_project/blob/feature/test/images/website/mypage(3).png" alt="image-20191025161115304" style="zoom:50%; align-items:left" />
+     ![mypage(3).png](./images/website/mypage\(3\).png)
     * 즐겨찾기한 운동
- <img src="https://lab.ssafy.com/jupang/final_project/blob/feature/test/images/website/mypage(2).png" alt="image-20191025161115304" style="zoom:50%; align-items:left" />
+     ![mypage(2).png](./images/website/mypage\(w\).png)
