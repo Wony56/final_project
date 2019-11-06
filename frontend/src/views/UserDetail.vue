@@ -109,7 +109,7 @@
     <div v-if="this.$store.state.user.timecheck==0">
       <select id="myTime">
         <option selected value="0">시간선택</option>
-        <option value="1">1초</option>
+        <option value="60">1분</option>
         <option value="300">5분</option>
         <option value="600">10분</option>
         <option value="900">15분</option>
@@ -144,8 +144,9 @@
   <h1>즐겨찾기</h1>
 <hr style="width:100%; color:pink">
 <div style="float:left" v-for="(item) in stretchingList" :key="item._id">
-<v-flex v-if="mystretching.includes(item.title)" pa-1>
+<v-flex v-if="mystretching.includes(item.title)" pa-1 style="text-align: center;  ">
   <StretchingCard :card="item"/>
+  <v-btn text @click="deletestetching(item.title)" color="red">Delete</v-btn>
 </v-flex>
 </div>
 </v-layout>
@@ -368,7 +369,8 @@ export default{
         part:  this.$store.state.user.userInfo.part
       },
       dialog: false,
-      mystretching:this.$store.state.user.userInfo.schedules//["고양이 스트레칭","나비 자세"]
+      mystretching:this.$store.state.user.userInfo.schedules,//["고양이 스트레칭","나비 자세"]
+      deltitle:""
     }
   },
   components: {
@@ -431,6 +433,37 @@ export default{
       .catch(err => {
         console.log(err);
       });
+    },
+    deletestetching :async function(e){
+
+        const newUserInfo = {
+          username: this.$store.state.user.userInfo.username,
+          name: this.$store.state.user.userInfo.name,
+          job: this.$store.state.user.userInfo.job,
+          age: this.$store.state.user.userInfo.age,
+          part: this.$store.state.user.userInfo.part,
+          schedules:[]
+        };
+        for (var i=0; i<this.$store.state.user.userInfo.schedules.length; i++) {
+          if(this.$store.state.user.userInfo.schedules[i]!=e){
+            newUserInfo.schedules.push(this.$store.state.user.userInfo.schedules[i]);
+          }
+        }
+        console.log(e);
+        console.log(newUserInfo);
+        this.$store.state.user.userInfo = await api
+        .editProfile(newUserInfo)
+        .then(res =>{
+          if (res.status === 200) {
+            //alert("성공!");
+            return res.data.user;
+          }
+          this.$router.go(0);
+        })
+        .catch(err => {
+          console.log(err);
+        });
+
     },
     changePassword : async function(){
       if(document.getElementById("newPassword1").value!=document.getElementById("newPassword2").value){

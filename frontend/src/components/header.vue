@@ -7,12 +7,15 @@
         </v-avatar>
         <router-link to="/">척추요정</router-link>
       </v-toolbar-title>
+      <v-spacer></v-spacer>
+      <div v-if="this.$store.state.user.timecheck">
       <v-row v-if="this.$store.state.user.timecheck!=0"
       align="center"
       justify="center"
       style="color:gray">
         <h1>{{parseInt(this.$store.state.user.timecheck/60)}} : {{this.$store.state.user.timecheck%60}} 후 스트레칭!!</h1>
       </v-row>
+    </div>
       <v-spacer></v-spacer>
 
       <v-toolbar-items v-if="loginCheck">
@@ -37,7 +40,7 @@ Vue.use(VueSweetalert2);
 export default {
   data(){
    return{
-     timerCount:  this.$store.state.user.timecheck,
+     timerCount:this.$store.state.user.timecheck,
      timer: ''
    }
  },
@@ -54,6 +57,8 @@ export default {
             alert("로그아웃되었습니다.");
             this.$store.state.user.userInfo = {};
             this.$store.state.user.loginCheck = false;
+            localStorage.setItem('Mytime', 0)
+            this.$store.state.user.timecheck=0;
             this.$router.push("/");
           }
         })
@@ -81,9 +86,9 @@ export default {
         this.$swal({
           title: '잠시 쉬고 스트레칭 시-작!!',
           text: 'mypage로 가요~',
-          imageUrl: 'https://lab.ssafy.com/jupang/final_project/raw/develop/images/Spine_fairy.png',
-          imageWidth: 250,
-          imageHeight: 250,
+          imageUrl: 'https://postfiles.pstatic.net/MjAxOTExMDZfNTgg/MDAxNTcyOTk5MTM3NTQy.Wm8D6pnJbtbcy6ilCQGRym6flceWLllN-lU50mYTUxAg.i6JcaIHDh92dQB8C0UzwE_9ip8XYZnLwkUhuWzbicRQg.PNG.tjrwndus0311/Spine_fairy.png?type=w773',
+          imageWidth: 200,
+          imageHeight: 200,
           imageAlt: 'Custom image',
         })
       }
