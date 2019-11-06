@@ -1,3 +1,8 @@
+train (t-46iyov9ea84y6ob52eh9y82qa) {
+  utterance ("[g:SelectStretchingSearch] (목)[v:Part] 아플 때 운동 알려줘")
+  plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiEgYmBkYgZgCSjAwgAOUDAA==)
+  last-modified (1572941136219)
+}
 train (t-47c1r2dsw8u39eyyevo2cp5va) {
   utterance ("[g:SelectStretchingSearch] (교실)[v:Place]에서 (어깨)[v:Part]가 뻐근할 때 좋은 스트레칭 보여줘")
   plan (Y2BhUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiEgYp7FI5icmpDMwMjAxMQJIBSIMgBMBFAQ==)
@@ -8,6 +13,11 @@ train (t-49fppbifn0l70msi5wwahf2at) {
   plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiEgYmBkYgZgCSjAwgAOUDAA==)
   last-modified (1572151333374)
 }
+train (t-4dz6ebi9gbkntfbooctxsisgj) {
+  utterance ("[g:SelectStretchingSearch] (어깨)[v:Part] 통증이 있을 때 할 수 있는 운동 보여줘")
+  plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiEgYmBkYgZgCSjAwgAOUDAA==)
+  last-modified (1572941127526)
+}
 train (t-4ecz1no1m4up7edbdx2muadx7) {
   utterance ("[g:SelectStretchingSearch] (서 있을 때)[v:Situation] 할 수 있는 운동 알려줘")
   plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBDrvizJLSxJLM/DwGJgZGIGYAkowMIADlAwA=)
@@ -17,6 +27,11 @@ train (t-4llbmy91ieas4jxhdtseg1zd9) {
   utterance ("[g:SelectStretchingSearch] (어깨)[v:Part] 운동 알려줘")
   plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiEgYmBkYgZgCSjAwgAOUDAA==)
   last-modified (1572254969016)
+}
+train (t-4lqeu17c6wvqw5gwprs19aqsq) {
+  utterance ("[g:SelectStretchingSearch] (허리)[v:Part] 통증이 있을 때 할 수 있는 운동 검색해줘")
+  plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiEgYmBkYgZgCSjAwgAOUDAA==)
+  last-modified (1572941126311)
 }
 train (t-4r1kb8gv3zndm6b7txgj1nyq3) {
   utterance ("[g:SelectStretchingSearch] (허리)[v:Part] 스트레칭 보여줘")

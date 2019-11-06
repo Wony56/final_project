@@ -3,6 +3,11 @@ train (t-o7vdp5up552hw766hq11g11e2) {
   plan (Y2BiUC7JyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAeXpBYwqOBQlFhUglDJwAiEDFAMJAE=)
   last-modified (1572176551206)
 }
+train (t-o9hpi4bk5l9dhbqm0xniqgyj0) {
+  utterance ("[g:SelectStretchingSearch] (목)[v:Part] 통증을 줄일 수 있는 스트레칭 찾아줘")
+  plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiEgYmBkYgZgCSjAwgAOUDAA==)
+  last-modified (1572941076350)
+}
 train (t-ocglvsvbxcbef2s0pk92hd21k) {
   utterance ("[g:SelectStretchingSearch] (찜질방)[v:Place]에서 하기 좋은 운동 알려줘")
   plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBCqvigJzE5FQGJgZGIGYAkowMIADlAwA=)

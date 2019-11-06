@@ -1,3 +1,13 @@
+train (t-5fn1azmdbwyv5ao0x3nko6375) {
+  utterance ("[g:SelectStretchingSearch] (손목)[v:Part]이 결릴 때 좋은 운동 알려줘")
+  plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiEgYmBkYgZgCSjAwgAOUDAA==)
+  last-modified (1572941118585)
+}
+train (t-5s3oxzsnuctx24rp6zzrn9qut) {
+  utterance ("[g:SelectStretchingSearch] (생리)[v:Situation]할 때 할 만한 (허리)[v:Part] 스트레칭 검색해줘")
+  plan (Y2BhUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiEgY57OZklpQmlmTm5zEwMzAyMAFJBiANghAAFwUA)
+  last-modified (1572941094616)
+}
 train (t-5ypy9112wp9mwr3a6kqg2e5i3) {
   utterance ("[g:SelectStretchingSearch] (휴식시간)[v:Situation]에 할만한 스트레칭 보여줘")
   plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBDrvizJLSxJLM/DwGJgZGIGYAkowMIADlAwA=)

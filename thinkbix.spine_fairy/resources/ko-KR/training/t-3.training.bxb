@@ -1,7 +1,7 @@
 train (t-327u8ol70t8ow44vplcunu0uu) {
   utterance ("[g:SelectStretchingSearch] (자세 교정)[v:Situation] 스트레칭 알려줘")
   plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBDrvizJLSxJLM/DwGJgZGIGYAkowMIADlAwA=)
-  last-modified (1572150439287)
+  last-modified (1572941441735)
 }
 train (t-3g5isxzoyg0br5cl1z2tmo7as) {
   utterance ("[g:SelectStretchingSearch] (무릎)[v:Part]이 뻐근할 때 좋은 스트레칭")
@@ -12,6 +12,16 @@ train (t-3grsg5jaczaq5opzstqjdb7eh) {
   utterance ("[g:SelectStretchingSearch] (등)[v:Part]의 좋은 스트레칭 찾아줘")
   plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiEgYmBkYgZgCSjAwgAOUDAA==)
   last-modified (1572151319776)
+}
+train (t-3ixtlwe65cu6nr9tdf3y6o051) {
+  utterance ("[g:SelectStretchingSearch] (회사)[v:Place]에서 (목)[v:Part]이 뻐근할 때 할 수 있는 운동 검색해줘")
+  plan (Y2BhUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiEgYp7FI5icmpDMwMjAxMQJIBSIMgBMBFAQ==)
+  last-modified (1572941101136)
+}
+train (t-3jbrk8lda5ewy19tyawljnm92) {
+  utterance ("[g:SelectStretchingSearch] (손목)[v:Part]에 통증을 느낄 때 필요한 스트레칭 검색해줘")
+  plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiEgYmBkYgZgCSjAwgAOUDAA==)
+  last-modified (1572941062498)
 }
 train (t-3ljfh9pu59vytebkj696v0st2) {
   utterance ("[g:SelectStretchingSearch] (직장인)[v:Situation]이 할 수 있는 (손목)[v:Part] 스트레칭 알려줘")

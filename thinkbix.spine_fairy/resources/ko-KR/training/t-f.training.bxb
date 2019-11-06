@@ -18,6 +18,11 @@ train (t-fcytq7zzzfssqmt6uzg9bzn63) {
   plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBDrvizJLSxJLM/DwGJgZGIGYAkowMIADlAwA=)
   last-modified (1571990665961)
 }
+train (t-fot78j5r7fzmzv96lzny990bl) {
+  utterance ("[g:SelectStretchingSearch] (손목)[v:Part] 통증에 도움이 되는 스트레칭 검색해줘")
+  plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiEgYmBkYgZgCSjAwgAOUDAA==)
+  last-modified (1572941111245)
+}
 train (t-fqhqnbxp1vml3zb61g62nhmj1) {
   utterance ("[g:SelectStretchingSearch] (도구)[v:Situation]를 이용한 운동 뭐가 있을까")
   plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBDrvizJLSxJLM/DwGJgZGIGYAkowMIADlAwA=)

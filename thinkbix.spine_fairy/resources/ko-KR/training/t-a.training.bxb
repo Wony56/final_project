@@ -8,6 +8,11 @@ train (t-a8icqoip8bl54rnunmpo7rk45) {
   plan (Y2BhUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiEgY57OZklpQmlmTm5zEwMzAyMAFJBiANghAAFwUA)
   last-modified (1572151357316)
 }
+train (t-akex1dyl5hgjvy7tymurgz743) {
+  utterance ("[g:SelectStretchingSearch] (학생)[v:Situation]에게 좋은 스트레칭 찾아줘")
+  plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBDrvizJLSxJLM/DwGJgZGIGYAkowMIADlAwA=)
+  last-modified (1572941065565)
+}
 train (t-al4j6ugq18kuhi4b0llbj43ny) {
   utterance ("[g:SelectStretchingSearch] (허리디스크)[v:Situation]에 좋은 스트레칭 검색해줘")
   plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBDrvizJLSxJLM/DwGJgZGIGYAkowMIADlAwA=)

@@ -1,7 +1,7 @@
-train (t-skb6n6a6diyv29zq6j48lonjt) {
-  utterance ("[g:SelectStretchingSearch] (허벅지)[v:Part] 운동")
-  plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiEgYmBkYgZgCSjAwgAOUDAA==)
-  last-modified (1572255159646)
+train (t-s09sqkzqzzi6q6nu8fqefw7x1) {
+  utterance ("[g:SelectStretchingSearch] (직장인)[v:Situation]이 할 수 있는 스트레칭 알려줘")
+  plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBDrvizJLSxJLM/DwGJgZGIGYAkowMIADlAwA=)
+  last-modified (1572941061319)
 }
 train (t-sz6dx66rp0cg1dm5zo4qptc78) {
   utterance ("[g:SelectStretchingSearch] (비둘기)[v:Situation] 동작이 뭐더라")

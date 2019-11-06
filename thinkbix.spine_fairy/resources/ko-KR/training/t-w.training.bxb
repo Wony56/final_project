@@ -13,8 +13,18 @@ train (t-w77ai1f9v5fiauu8x91fwh6zd) {
   plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiEgYmBkYgZgCSjAwgAOUDAA==)
   last-modified (1572256812824)
 }
+train (t-wnisguwy1sziml51goiget9cb) {
+  utterance ("[g:SelectStretchingSearch] (야근)[v:Situation]할 때 할 수 있는 스트레칭 보여줘")
+  plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBDrvizJLSxJLM/DwGJgZGIGYAkowMIADlAwA=)
+  last-modified (1572941082576)
+}
 train (t-wotqgt2z2ybgq59zcum7j96rh) {
   utterance ("[g:SelectStretchingSearch] (컴퓨터)[v:Situation]하다가 하기 좋은 운동")
   plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBDrvizJLSxJLM/DwGJgZGIGYAkowMIADlAwA=)
   last-modified (1572245213258)
+}
+train (t-wqu52h3wdb0h6pdgux6pozo3u) {
+  utterance ("[g:SelectStretchingSearch] (침대)[v:Place]에서 할 수 있는 스트레칭 알려줘")
+  plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBCqvigJzE5FQGJgZGIGYAkowMIADlAwA=)
+  last-modified (1572941139529)
 }
