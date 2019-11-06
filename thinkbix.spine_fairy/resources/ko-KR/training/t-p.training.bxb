@@ -1,3 +1,8 @@
+train (t-p4r0jpn6e43ztu6c74gn0fj08) {
+  utterance ("[g:SelectStretchingSearch] (어깨)[v:Part]가 뻐근할 때 좋은 스트레칭")
+  plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiEgYmBkYgZgCSjAwgAOUDAA==)
+  last-modified (1572941122971)
+}
 train (t-p8fw5froc87fyfm3ltcsubsw8) {
   utterance ("[g:SelectStretchingSearch] (누워서)[v:Situation]에 할 수 있는 스트레칭 검색해줘")
   plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBDrvizJLSxJLM/DwGJgZGIGYAkowMIADlAwA=)
@@ -12,4 +17,14 @@ train (t-pfacw8nu1zgwlsxan08cq9b7i) {
   utterance ("[g:SelectStretchingSearch] (자기 전)[v:Situation]에 할만한 스트레칭 알려줘")
   plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBDrvizJLSxJLM/DwGJgZGIGYAkowMIADlAwA=)
   last-modified (1572147965640)
+}
+train (t-pfp3dbn6huanijedzq8jfxdvr) {
+  utterance ("[g:SelectStretchingSearch] (어깨)[v:Part]가 시원해지는 운동 알려줘")
+  plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiEgYmBkYgZgCSjAwgAOUDAA==)
+  last-modified (1572941110254)
+}
+train (t-purx2pezpj2d2d2iyxneb8rre) {
+  utterance ("[g:SelectStretchingSearch] (허리 디스크)[v:Situation] 예방에 도움이 되는 스트레칭")
+  plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBDrvizJLSxJLM/DwGJgZGIGYAkowMIADlAwA=)
+  last-modified (1572941103785)
 }

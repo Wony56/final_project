@@ -33,6 +33,11 @@ train (t-7b3mqeapfzo413zx991jsflrb) {
   plan (Y2BhUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBCqvigJzE5FQGOewGZZaUJpZk5ucxMDMwMjABSQYgDYIQABcFAA==)
   last-modified (1572243465774)
 }
+train (t-7gtdret2lnnglxyosowbyyedp) {
+  utterance ("[g:SelectStretchingSearch] (쉬는 시간)[v:Situation]에 할 만한 스트레칭 알려줘")
+  plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBDrvizJLSxJLM/DwGJgZGIGYAkowMIADlAwA=)
+  last-modified (1572941073830)
+}
 train (t-7j2zzsz27ta14yl4fgcvvpcfc) {
   utterance ("[g:SelectStretchingSearch] (의자)[v:Place]에 (앉아서)[v:Situation] 할 만한 운동 알려줘")
   plan (Y2BhUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBCqvigJzE5FQGOewGZZaUJpZk5ucxMDMwMjABSQYgDYIQABcFAA==)

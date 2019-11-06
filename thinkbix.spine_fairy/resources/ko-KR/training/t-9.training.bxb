@@ -13,6 +13,16 @@ train (t-9lreftairtfvrq067glzxxh02) {
   plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiEgYmBkYgZgCSjAwgAOUDAA==)
   last-modified (1572147764370)
 }
+train (t-9ob0sb4faobe1ugs8vw8lmc6m) {
+  utterance ("[g:SelectStretchingSearch] (어깨)[v:Part] 아플 때 때 운동 검색해줘")
+  plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiEgYmBkYgZgCSjAwgAOUDAA==)
+  last-modified (1572941134688)
+}
+train (t-9qaxdvchh0etzm0f6xclmx3w0) {
+  utterance ("[g:SelectStretchingSearch] (손목)[v:Part] 아플 때 운동 보여줘")
+  plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiEgYmBkYgZgCSjAwgAOUDAA==)
+  last-modified (1572941135435)
+}
 train (t-9xgguceuzcwvdbqd00s5avfts) {
   utterance ("[g:SelectStretchingSearch] (어깨)[v:Part]가 아플 때 좋은 스트레칭")
   plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiEgYmBkYgZgCSjAwgAOUDAA==)

@@ -8,3 +8,8 @@ train (t-eiyizeor28qm8wdas2ot7doen) {
   plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBDrvizJLSxJLM/DwGJgZGIGYAkowMIADlAwA=)
   last-modified (1572241828264)
 }
+train (t-eonoku1fv3frnaji5rj00897t) {
+  utterance ("[g:SelectStretchingSearch] (직장인)[v:Situation]이 하기 좋은 스트레칭")
+  plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBDrvizJLSxJLM/DwGJgZGIGYAkowMIADlAwA=)
+  last-modified (1572941072892)
+}

@@ -1,3 +1,8 @@
+train (t-q5fhaju2btbatpvdg5kw4zz5z) {
+  utterance ("[g:SelectStretchingSearch] (야근)[v:Situation]하다가 하기 좋은 스트레칭")
+  plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBDrvizJLSxJLM/DwGJgZGIGYAkowMIADlAwA=)
+  last-modified (1572941081203)
+}
 train (t-qfyu1zqd3fumus7k9srtlumny) {
   utterance ("[g:SelectStretchingSearch] (엉덩)[v:Part]이 스트레칭 알려줄래")
   plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiEgYmBkYgZgCSjAwgAOUDAA==)

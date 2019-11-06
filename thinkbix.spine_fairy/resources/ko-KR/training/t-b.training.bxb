@@ -8,6 +8,11 @@ train (t-bbn6bub1rhrp82mc6zukitq5x) {
   plan (Y2BhUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiEgYp7FI5icmpDMwMjAxMQJIBSIMgBMBFAQ==)
   last-modified (1572151363371)
 }
+train (t-bhnorn5lqgp6vd03grjem9bby) {
+  utterance ("[g:SelectStretchingSearch] (허리)[v:Part]가 시원해지는 스트레칭 찾아줘")
+  plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiEgYmBkYgZgCSjAwgAOUDAA==)
+  last-modified (1572941107239)
+}
 train (t-bs7twz2kte5u5tqpfnhdoghyj) {
   utterance ("[g:SelectStretchingSearch] (키 크는 운동)[v:Situation] 알려줘")
   plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBDrvizJLSxJLM/DwGJgZGIGYAkowMIADlAwA=)

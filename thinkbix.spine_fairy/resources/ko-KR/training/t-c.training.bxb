@@ -3,6 +3,11 @@ train (t-c6lk4xallcwgbeqk394iwa2o4) {
   plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBDrvizJLSxJLM/DwGJgZGIGYAkowMIADlAwA=)
   last-modified (1572240167401)
 }
+train (t-cd6vz1lhmf49byaveudxnn67r) {
+  utterance ("[g:SelectStretchingSearch] (목)[v:Part] 통증에 도움이 되는 스트레칭 알려줘")
+  plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiEgYmBkYgZgCSjAwgAOUDAA==)
+  last-modified (1572941113092)
+}
 train (t-cfx0t8btnxgtfflas4y6o8ndp) {
   utterance ("[g:SelectStretchingSearch] (차)[v:Place]에서 할 만한 운동 알려줘")
   plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBCqvigJzE5FQGJgZGIGYAkowMIADlAwA=)
