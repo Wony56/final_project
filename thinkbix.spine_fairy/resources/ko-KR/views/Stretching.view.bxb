@@ -6,6 +6,10 @@ result-view{
       template ("질문하신 스트레칭에 대한 #{size(result)}개의 결과입니다.")
     }else-if (size(result)==1){
       template("#{value(result.title)}을 시작할게요.")
+    }else{
+      template (" "){
+        speech ("이런 스트레칭은 어떠세요?")
+      }
     }
   }
   
@@ -26,14 +30,14 @@ result-view{
             }
           }
         }
-      } else{ 
+      } else-if(size(result)==1){ 
         section{
           content{
             
             compound-card{
               content{
                 layout-macro (StretchingPoint){
-                  param(stretchingSel){
+                  param (stretchingSel){
                     expression (result)
                   }
                 }
@@ -43,6 +47,16 @@ result-view{
             compound-card{
               content{
                 layout-macro (StretchingCheck){
+                  param(stretchingSel){
+                    expression (result)
+                  }
+                }
+              }
+            }
+            
+            compound-card{
+              content{
+                layout-macro (StretchingRepetition){
                   param(stretchingSel){
                     expression (result)
                   }
@@ -76,9 +90,48 @@ result-view{
         }
       }
     }
+    else{
+      section{
+        content{
+          cell-area{
+            slot2{
+              content{
+                primary{
+                  template ("찾으시는 결과가 없어요 😂")
+                }
+              }
+            }
+          }
+          cell-area{
+            slot2{
+              content{
+                primary{
+                  template ("이런 스트레칭은 어떠세요?")
+                }
+                secondary{
+                  template ("1초만 기다려 주세요🌈")
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
     } 
   }
-
+refresh{
+  spec{
+    delay-seconds (1)
+    with-request{
+      if (size(result)==0){
+        intent{
+          goal{StretchingRanking}
+        }
+      }
+    }
+  }
+}
 
 
   conversation-drivers{

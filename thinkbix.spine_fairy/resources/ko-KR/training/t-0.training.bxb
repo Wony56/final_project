@@ -1,0 +1,20 @@
+train (t-0c4n5i0klu06nnwsvtdoz0ya3) {
+  utterance ("[g:SelectStretchingSearch] (손목터널증후군)[v:Situation]에 좋은 운동알려줘")
+  plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBDrvizJLSxJLM/DwGJgZGIGYAkowMIADlAwA=)
+  last-modified (1572240002043)
+}
+train (t-0svd944lxgd8rkgkx4qg0y9lm) {
+  utterance ("[g:SelectStretchingSearch] (어깨)[v:Part]가 아플 때 할만한 스트레칭 보여줘")
+  plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiEgYmBkYgZgCSjAwgAOUDAA==)
+  last-modified (1572941133300)
+}
+train (t-0tj61qsc8yq5c1pqp0o5lf6ha) {
+  utterance ([g:GetStretchingStep] 처음으로)
+  plan (Y2BiUC7JyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAeXpBYwqGFV5J5agqaOEQgZoBhIAgA=)
+  last-modified (1572232722280)
+}
+train (t-0zyorqyqvk46kdyhi7hp8rjta) {
+  utterance ("[g:SelectStretchingSearch] (앉아서)[v:Situation] 하는 스트레칭 알려줘")
+  plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBDrvizJLSxJLM/DwGJgZGIGYAkowMIADlAwA=)
+  last-modified (1572242189876)
+}

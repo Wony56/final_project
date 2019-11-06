@@ -1,11 +1,7 @@
 endpoints {
   action-endpoints {
-    // action-endpoint (GetStretching) {
-    //   accepted-inputs (place, part)
-    //   local-endpoint (GetStretching.js)
-    // }
     action-endpoint (SelectStretchingSearch) {
-      accepted-inputs (place, part, situation, searchKeyword)
+      accepted-inputs (place, part, situation)
       local-endpoint (SelectStretchingSearch.js)
     }
     action-endpoint (GetStretchingStep) {
@@ -29,8 +25,12 @@ endpoints {
       local-endpoint (CommitYoutubeShow.js)
     }
     action-endpoint (SearchByTitle){
-      accepted-inputs (title,searchKeyword)
+      accepted-inputs (title)
       local-endpoint (SearchByTitle.js)
+    }
+    action-endpoint (StretchingRanking){
+      accepted-inputs (stretchingRank)
+      local-endpoint (StretchingRanking.js)
     }
   }
 }

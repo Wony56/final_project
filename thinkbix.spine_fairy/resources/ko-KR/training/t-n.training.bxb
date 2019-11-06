@@ -1,0 +1,55 @@
+train (t-n6ufs7bojzhxh2m3aimx4u1zu) {
+  utterance ("[g:SelectStretchingSearch] (회사)[v:Place]에서 할 수 있는 (어깨)[v:Part] 스트레칭")
+  plan (Y2BhUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiEgYp7FI5icmpDMwMjAxMQJIBSIMgBMBFAQ==)
+  last-modified (1571990674886)
+}
+train (t-n98pbjgqiuzprf6mp7tjt1746) {
+  utterance ([g:GetStretchingStep] 처음으로)
+  plan (Y2BiUC7JyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAeXpBYwqGFV5J5agqaOEQgZoBhIAgA=)
+  last-modified (1572232805347)
+}
+train (t-n9tmgtrc7vidia7m87xvwahwd) {
+  utterance ("[g:SelectStretchingSearch] (거북목)[v:Situation]예방에 좋은 스트레칭 알려줘")
+  plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBDrvizJLSxJLM/DwGJgZGIGYAkowMIADlAwA=)
+  last-modified (1572147942727)
+}
+train (t-nbsmrair0keh2u6cpbn4mim6z) {
+  utterance ("[g:SelectStretchingSearch] (주부)[v:Situation]가 할 만한 (목)[v:Part] 운동 보여줄래")
+  plan (Y2BhUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiEgY57OZklpQmlmTm5zEwMzAyMAFJBiANghAAFwUA)
+  last-modified (1572941096448)
+}
+train (t-ngm5xlvxnl1dtgc8ehbndza3i) {
+  utterance ("[g:SelectStretchingSearch] (컴퓨터)[v:Situation] 할 때 할 만한 (어깨)[v:Part] 스트레칭 보여줘")
+  plan (Y2BhUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiEgY57OZklpQmlmTm5zEwMzAyMAFJBiANghAAFwUA)
+  last-modified (1572941093473)
+}
+train (t-no7gcmkx6vakewnnqqy90zq31) {
+  utterance ("[g:SelectStretchingSearch] (라운드숄더)[v:Situation] 운동")
+  plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBDrvizJLSxJLM/DwGJgZGIGYAkowMIADlAwA=)
+  last-modified (1572941067897)
+}
+train (t-np75p6v1xb47p31tfbb163x94) {
+  utterance ("[g:SelectStretchingSearch] (폼롤러)[v:Situation]를 이용해서")
+  plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBDrvizJLSxJLM/DwGJgZGIGYAkowMIADlAwA=)
+  last-modified (1572230154844)
+}
+train (t-nre5fi6xe6jr25byurp872y9q) {
+  utterance ("[g:SelectStretchingSearch] (손목)[v:Part] 통증이 있을 때 할 수 있는 운동 알려줘")
+  plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiEgYmBkYgZgCSjAwgAOUDAA==)
+  last-modified (1572941128762)
+}
+train (t-ntayi931qhamv7viayprirxgo) {
+  utterance ("[g:SelectStretchingSearch] (어깨)[v:Part]에 통증을 느낄 때 필요한 스트레칭 찾아줘")
+  plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiEgYmBkYgZgCSjAwgAOUDAA==)
+  last-modified (1572941063923)
+}
+train (t-ntl9ixh1ywo3ye5x8n9eeb4rs) {
+  utterance ("[g:SelectStretchingSearch] (의자)[v:Place]에서 할 만한 (어깨)[v:Part] 운동")
+  plan (Y2BhUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiEgYp7FI5icmpDMwMjAxMQJIBSIMgBMBFAQ==)
+  last-modified (1572250355931)
+}
+train (t-nwzjsvj23clrqpvoofgcekto1) {
+  utterance ("[g:SelectStretchingSearch] (생리통)[v:Situation]이 있을때 좋은 마사지 검색해줘")
+  plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBDrvizJLSxJLM/DwGJgZGIGYAkowMIADlAwA=)
+  last-modified (1572249391837)
+}

@@ -1,4 +1,4 @@
 integer (length) {
-  description (__DESCRIPTION__)
+  description (운동 동작 길이)
   extends (viv.core.Integer)
 }

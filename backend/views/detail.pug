@@ -1,0 +1,24 @@
+extends layouts/main
+
+block content
+    .data-container
+        input(type="text", value=`Title: ${ stretching.title }`, readonly)
+        input(type="text", value=`Repetition: ${ stretching.repetition }`, readonly)
+        input(type="text", value=`Views: ${ stretching.views }`, readonly)
+        input(type="text", value=`Check: ${ stretching.check }`, readonly)
+        input(type="text", value=`Point: ${ stretching.point }`, readonly)
+        input(type="text", value=`Place: ${ stretching.place.join("&&") }`, readonly)
+        input(type="text", value=`Part: ${ stretching.part.join("&&") }`, readonly)
+        input(type="text", value=`Situation: ${ stretching.situation.join("&&") }`, readonly)
+        input(type="text", value=`HashTag: ${ stretching.hashtag.join("&&") }`, readonly)
+        .data-process-list
+            each item, index in stretching.processList
+                img(src=`${item.imgAddress}/${item.imgPath}`, alt=`${item.imgPath}`)
+                textarea(rows="10", cols="50", readonly) #{ item.description.join("&&") }
+        .data-update
+            a(href=`/edit/${ stretching.id }`)
+                button 수정하기
+            a(href=`/delete/${ stretching.id }`)
+                button 삭제하기
+        a(href=routes.findList)
+            button 목록으로 돌아가기

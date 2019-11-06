@@ -1,0 +1,33 @@
+result-view{
+  match :  StretchingRank(result)
+  
+  message("가장 많은 사람들이 한 스트레칭입니다.")
+  render{
+    layout{
+      section{
+        content{
+          for-each (result){
+            as (item){
+              layout-macro (StretchingRankContent){
+                  param (stretchingRank){
+                    expression (item)
+                  }
+                }
+            }
+          }
+        }
+      }
+    }
+  }
+    conversation-drivers{
+      conversation-driver{
+        template-macro (PartRecommend)
+      }
+      conversation-driver{
+        template-macro (PlaceRecommend)
+      }
+      conversation-driver{
+        template-macro (SituationRecommend)
+      }
+  }
+}

@@ -1,0 +1,5 @@
+action (StretchingRanking) {
+  description (조회순이 높은 스트레칭 3개 반환)
+  type(Search)
+  output (StretchingRank)
+}

@@ -1,5 +1,40 @@
+train (t-v0d151ustqmapw7mv1d3v5vby) {
+  utterance ("[g:SelectStretchingSearch] (사무실)[v:Place]에서 할만한 스트레칭 보여줘")
+  plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBCqvigJzE5FQGJgZGIGYAkowMIADlAwA=)
+  last-modified (1572941141864)
+}
+train (t-vchcgr21xn8hffir7g1zi8jg4) {
+  utterance ("[g:SelectStretchingSearch] (손목)[v:Part]이 아플 때 할만한 스트레칭 보여줘")
+  plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiEgYmBkYgZgCSjAwgAOUDAA==)
+  last-modified (1572941131607)
+}
+train (t-vhbfiavd69grfur2mvu7gwhxa) {
+  utterance ("[g:SelectStretchingSearch] (차)[v:Place]에서 (목)[v:Part]이 시원해지는 스트레칭")
+  plan (Y2BhUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiEgYp7FI5icmpDMwMjAxMQJIBSIMgBMBFAQ==)
+  last-modified (1571990687465)
+}
+train (t-vhf402ppv3p9fxn1tbqsjxudx) {
+  utterance ("[g:SelectStretchingSearch] (직장인)[v:Situation]이 할 만한 (어깨)[v:Part] 운동 검색해줘")
+  plan (Y2BhUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiEgY57OZklpQmlmTm5zEwMzAyMAFJBiANghAAFwUA)
+  last-modified (1572941097698)
+}
+train (t-vis3pxks3o29i9ypeitd7keg0) {
+  utterance ("[g:SelectStretchingSearch] (학교)[v:Place]에서 (허리)[v:Part]가 뻐근할 때 좋은 스트레칭")
+  plan (Y2BhUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiEgYp7FI5icmpDMwMjAxMQJIBSIMgBMBFAQ==)
+  last-modified (1571990701765)
+}
+train (t-vplpq7vvxb28zk39wibd4k4cm) {
+  utterance ("[g:SelectStretchingSearch] (어깨)[v:Part] (통증)[v:Situation]에 좋은 스트레칭 알려줘")
+  plan (Y2BhUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiEgY57OZklpQmlmTm5zEwMzAyMAFJBiANghAAFwUA)
+  last-modified (1572249230319)
+}
 train (t-vqd7vyzs5v23zz5f0pfgo3srm) {
-  utterance ("[g:SelectStretchingSearch] (등)[v:Part]에 좋은 스트레칭이 (있을까)[v:SearchKeyword:검색]")
-  plan (Y2BhUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiElx2gfV5p1aW5xelMDAzMDIwAUkGIA2CEAAXBQA=)
-  last-modified (1571971757044)
+  utterance ("[g:SelectStretchingSearch] (등)[v:Part]에 좋은 스트레칭이 있을까")
+  plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiEgYmBkYgZgCSjAwgAOUDAA==)
+  last-modified (1572148032466)
+}
+train (t-vx68gspwqsc6czettj0c4rztw) {
+  utterance ("[g:SelectStretchingSearch] (허리)[v:Part] 스트레칭")
+  plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiEgYmBkYgZgCSjAwgAOUDAA==)
+  last-modified (1571987284748)
 }

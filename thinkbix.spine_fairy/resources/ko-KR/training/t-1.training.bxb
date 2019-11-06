@@ -1,0 +1,40 @@
+train (t-10smo60ibkstfolis44p8mdd0) {
+  utterance ("[g:SelectStretchingSearch] (다이어트)[v:Situation]에 좋은 운동 알려줘")
+  plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBDrvizJLSxJLM/DwGJgZGIGYAkowMIADlAwA=)
+  last-modified (1572242528956)
+}
+train (t-12lta9kj9dcrp4obpqhqb95x2) {
+  utterance ("[g:SelectStretchingSearch] (족저근막염)[v:Situation] 예방에 도움이 되는 스트레칭 알려줘")
+  plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBDrvizJLSxJLM/DwGJgZGIGYAkowMIADlAwA=)
+  last-modified (1572941102711)
+}
+train (t-12yup8s4yvhz1za9zmnk9nog4) {
+  utterance ("[g:SelectStretchingSearch] (목)[v:Part]이 뻐근할 때 좋은 스트레칭")
+  plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiEgYmBkYgZgCSjAwgAOUDAA==)
+  last-modified (1572941122130)
+}
+train (t-1g0kb8lo90kt79ts84bwc6c6l) {
+  utterance ("[g:SelectStretchingSearch] (어깨)[v:Part]에 좋은 스트레칭 알려줘")
+  plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiEgYmBkYgZgCSjAwgAOUDAA==)
+  last-modified (1572238848959)
+}
+train (t-1pe227c36en89gsn5tw9defo9) {
+  utterance ("[g:SelectStretchingSearch] (허벅지)[v:Part]에 좋은 스트레칭 알려줘")
+  plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiEgYmBkYgZgCSjAwgAOUDAA==)
+  last-modified (1572256947432)
+}
+train (t-1qq8u0v2xbuur59o6dqs3yxmf) {
+  utterance ("[g:SelectStretchingSearch] (게임)[v:Situation]하다가 하기 좋은 운동")
+  plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBDrvizJLSxJLM/DwGJgZGIGYAkowMIADlAwA=)
+  last-modified (1572245969038)
+}
+train (t-1udcf3d1s9mc7wcb6r3b5xggc) {
+  utterance ("[g:SelectStretchingSearch] (개구리 자세)[v:Situation] 알려줘")
+  plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBDrvizJLSxJLM/DwGJgZGIGYAkowMIADlAwA=)
+  last-modified (1572250418675)
+}
+train (t-1y7cv5c3zi4ue6ev1cap2velh) {
+  utterance ("[g:SelectStretchingSearch] (목)[v:Part]이 아플 때 할만한 스트레칭 검색해줘")
+  plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiEgYmBkYgZgCSjAwgAOUDAA==)
+  last-modified (1572941129699)
+}

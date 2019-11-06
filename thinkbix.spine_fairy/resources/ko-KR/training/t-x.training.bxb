@@ -1,0 +1,15 @@
+train (t-x9t25drvdvzniwr04g306ghes) {
+  utterance ("[g:SelectStretchingSearch] (목)[v:Part] 아플 때 할 수 있는 스트레칭 찾아줘")
+  plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiEgYmBkYgZgCSjAwgAOUDAA==)
+  last-modified (1572941138878)
+}
+train (t-xk0hjhw0scwir1yrd12aw2phd) {
+  utterance ("[g:SelectStretchingSearch] (차)[v:Place]에서 할 수 있는 (손목)[v:Part] 스트레칭 보여줘")
+  plan (Y2BhUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiEgYp7FI5icmpDMwMjAxMQJIBSIMgBMBFAQ==)
+  last-modified (1572148048811)
+}
+train (t-xtm0uvcdyjcp1t9bl7akj1mu2) {
+  utterance ("[g:SelectStretchingSearch] (방)[v:Situation]에서 할 만한 (허리)[v:Part] 운동 추천해줘")
+  plan (Y2BhUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiEgY57OZklpQmlmTm5zEwMzAyMAFJBiANghAAFwUA)
+  last-modified (1572242287408)
+}

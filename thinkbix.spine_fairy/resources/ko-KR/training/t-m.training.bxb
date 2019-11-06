@@ -1,0 +1,15 @@
+train (t-m060pge4l8i1mmqe88t7026pv) {
+  utterance ("[g:SelectStretchingSearch] (목)[v:Part]이 시원해지는 스트레칭 검색해줘")
+  plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiEgYmBkYgZgCSjAwgAOUDAA==)
+  last-modified (1572941108950)
+}
+train (t-mnv0ywes9dj3d50n40voj5lfq) {
+  utterance ("[g:SelectStretchingSearch] (발)[v:Part] 마사지 알려줄래")
+  plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiEgYmBkYgZgCSjAwgAOUDAA==)
+  last-modified (1572147934528)
+}
+train (t-mzjw8zuww7fw2ajo6vya0edhn) {
+  utterance ("[g:SelectStretchingSearch] (라운드 숄더)[v:Situation] 예방에 좋은 스트레칭")
+  plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBDrvizJLSxJLM/DwGJgZGIGYAkowMIADlAwA=)
+  last-modified (1572941104948)
+}

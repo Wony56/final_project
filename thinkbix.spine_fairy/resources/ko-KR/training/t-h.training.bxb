@@ -1,0 +1,20 @@
+train (t-h2fnkjxmabh5jha3624skd7l8) {
+  utterance ("[g:SelectStretchingSearch] (찜질방)[v:Place]에서 하기 좋은 운동")
+  plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBCqvigJzE5FQGJgZGIGYAkowMIADlAwA=)
+  last-modified (1572244608272)
+}
+train (t-h7i3m9is4h6xc14003jkvztym) {
+  utterance ("[g:SelectStretchingSearch] (침대)[v:Place]에서 하기 좋은 운동")
+  plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBCqvigJzE5FQGJgZGIGYAkowMIADlAwA=)
+  last-modified (1572244563563)
+}
+train (t-hn08r5d62w43276um6ai0caa0) {
+  utterance ("[g:SelectStretchingSearch] (직장인)[v:Situation]에게 좋은 스트레칭 보여줘")
+  plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBDrvizJLSxJLM/DwGJgZGIGYAkowMIADlAwA=)
+  last-modified (1572147878354)
+}
+train (t-hvdzx6o2ym4ka2wh4jxmxiuqh) {
+  utterance ("[g:SelectStretchingSearch] (목)[v:Part]이 아플 때 좋은 스트레칭 알려줘")
+  plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiEgYmBkYgZgCSjAwgAOUDAA==)
+  last-modified (1572147885856)
+}

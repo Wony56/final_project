@@ -1,0 +1,20 @@
+train (t-b3zl33kveyx9qu8mnxwwdyb6i) {
+  utterance ("[g:SelectStretchingSearch] (야근)[v:Situation]할 때 추천 스트레칭")
+  plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBDrvizJLSxJLM/DwGJgZGIGYAkowMIADlAwA=)
+  last-modified (1572246404767)
+}
+train (t-bbn6bub1rhrp82mc6zukitq5x) {
+  utterance ("[g:SelectStretchingSearch] (회사)[v:Place]에서 (목)[v:Part]이 결릴 때 좋은 스트레칭 알려줘")
+  plan (Y2BhUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiEgYp7FI5icmpDMwMjAxMQJIBSIMgBMBFAQ==)
+  last-modified (1572151363371)
+}
+train (t-bhnorn5lqgp6vd03grjem9bby) {
+  utterance ("[g:SelectStretchingSearch] (허리)[v:Part]가 시원해지는 스트레칭 찾아줘")
+  plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBEqvigMSiEgYmBkYgZgCSjAwgAOUDAA==)
+  last-modified (1572941107239)
+}
+train (t-bs7twz2kte5u5tqpfnhdoghyj) {
+  utterance ("[g:SelectStretchingSearch] (키 크는 운동)[v:Situation] 알려줘")
+  plan (Y2BmUCrJyMzLTsqs0CsuyMxLjU9LzCyq1AsuKUotSQbKpAen5jBoY1eTmpOaXIKsMrEoOYNBDrvizJLSxJLM/DwGJgZGIGYAkowMIADlAwA=)
+  last-modified (1572250072414)
+}
