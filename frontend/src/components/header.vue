@@ -86,9 +86,9 @@ export default {
         this.$swal({
           title: '잠시 쉬고 스트레칭 시-작!!',
           text: 'mypage로 가요~',
-          imageUrl: 'https://lab.ssafy.com/jupang/final_project/raw/develop/images/Spine_fairy.png',
-          imageWidth: 250,
-          imageHeight: 250,
+          imageUrl: 'https://postfiles.pstatic.net/MjAxOTExMDZfNTgg/MDAxNTcyOTk5MTM3NTQy.Wm8D6pnJbtbcy6ilCQGRym6flceWLllN-lU50mYTUxAg.i6JcaIHDh92dQB8C0UzwE_9ip8XYZnLwkUhuWzbicRQg.PNG.tjrwndus0311/Spine_fairy.png?type=w773',
+          imageWidth: 200,
+          imageHeight: 200,
           imageAlt: 'Custom image',
         })
       }
