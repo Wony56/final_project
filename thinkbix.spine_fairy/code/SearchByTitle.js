@@ -1,20 +1,19 @@
-var http=require('http')
-var console = require('console')
-var config = require('config')
-module.exports.function = function SearchByTitle (title) {
-  console.log(title)
-  url = encodeURI(config.get('remoteURL')+'find?title='+title);
-  var response = http.getUrl(url,{format:'json'}).datas;
+var db = require('lib/database.js')
 
-  if(response==null){
-    url = encodeURI(config.get('remoteURL')+'find/view');
-    response = http.getUrl(url,{format:'json'}).datas;
+module.exports.function = function SearchByTitle (title) {
+  let data
+  let stretchingSel = []
+
+  data = db.findByTitle(title)
+  
+  if(data == null){
+    data = db.findByViews()
   }
-  let stretchingSel = [];
-  for(let i = 0; i < response.length; i++){
-      if(response[i] != null){
-        stretchingSel.push(response[i]);
+
+  for(let i = 0; i < data.length; i++){
+      if(data[i] != null){
+        stretchingSel.push(response[i])
       }
   }
-  return stretchingSel;
+  return stretchingSel
 }

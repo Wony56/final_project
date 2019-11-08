@@ -81,7 +81,10 @@ export default {
           if (res.status === 200) {
             alert("성공!");
             this.$router.push("/");
+<<<<<<< Updated upstream
             localStorage.setItem("Mytime", 0);
+=======
+>>>>>>> Stashed changes
             return res.data.user;
           }
         })
@@ -100,8 +103,12 @@ export default {
           name: this.signUpName,
           job: this.signUpJob,
           age: this.signUpAge,
+<<<<<<< Updated upstream
           part: this.select,
           schedules: []
+=======
+          part: this.select
+>>>>>>> Stashed changes
         };
 
         console.log(newUserInfo);
@@ -110,6 +117,7 @@ export default {
           .register(newUserInfo)
           .then(res => {
             console.log(res.data);
+<<<<<<< Updated upstream
             alert("회원가입 성공");
             this.$router.go(-2);
           })
@@ -118,6 +126,15 @@ export default {
             alert("회원가입 실패");
           });
 
+=======
+          })
+          .catch(err => {
+            console.log(err);
+          });
+
+        alert("회원가입 성공");
+        this.$router.go(-1);
+>>>>>>> Stashed changes
         console.log(resp);
       } else {
         alert("비밀번호 확인이 틀렸습니다.");

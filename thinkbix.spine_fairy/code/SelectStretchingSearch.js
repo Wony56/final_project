@@ -1,46 +1,38 @@
-var http=require('http')
-var console = require('console')
-var config = require('config')
+var db = require('lib/database.js')
 module.exports.function = function SelectStretchingSearch (place, part, situation) {
-  console.log(part+" , "+place+" , "+situation)
-  
-  let stretchingSel = [];
-  let stretchingRank = [];
+  let data
+  let stretchingSel = []
+  let stretchingRank = []
 
-  if(place===undefined&&part===undefined&&situation===undefined){
-      url = encodeURI(config.get('remoteURL')+'find/view');
-  var response = http.getUrl(url,{format:'json'}).datas;
-  console.log(response)
-  for(let i = 0; i < response.length; i++){
-      if(response[i] != null){
-        stretchingRank.push(response[i]);
+  if(place===undefined && part===undefined && situation===undefined){
+    data = db.findByViews()
+    for(let i = 0; i < data.length; i++){
+      if(data[i] != null){
+        stretchingRank.push(data[i])
       }
-  }
-  console.log("come here"+stretchingSel);
+    }
   }else{
-    if(part===undefined&&situation===undefined){
-      url = encodeURI(config.get('remoteURL')+'find?place='+place);
+    if(part===undefined && situation===undefined){
+      data = db.findByPlace(place)
     }else if(place===undefined&&situation===undefined){
-      url = encodeURI(config.get('remoteURL')+'find?part='+part);
+      data = db.findByPlace(part)
     }else if(place===undefined&&part===undefined){
-      url = encodeURI(config.get('remoteURL')+'find?situation='+situation);
+      data = db.findBySituation(situation)
     }else if(place===undefined){
-      url = encodeURI(config.get('remoteURL')+'find?part='+part+'&situation='+situation);
+      data = db.findByPartAndSituation(part, situation)
     }else if(part===undefined){
-      url = encodeURI(config.get('remoteURL')+'find?place='+place+'&situation='+situation);
+      data = db.findByPlaceAndSituation(place, situation)
     }else if(situation===undefined){
-      url = encodeURI(config.get('remoteURL')+'find?place='+place+'&part='+part);
+      data = db.findByPlaceAndPart(place, part)
     }else{
-      url = encodeURI(config.get('remoteURL')+'find?place='+place+'&part='+part+'&situation='+situation);
+      data = db.findByPlaceAndPartAndSituation(place, part, situation)
     }
-    console.log(url)
-    var response = http.getUrl(url,{format:'json'}).datas;
-    console.log(response)
-    for(let i = 0; i < response.length; i++){
-      if(response[i] != null){
-        stretchingSel.push(response[i]);
+
+    for(let i = 0; i < data.length; i++){
+      if(data[i] != null){
+        stretchingSel.push(data[i])
       }
     }
   }
-  return stretchingSel;
+  return stretchingSel
 }

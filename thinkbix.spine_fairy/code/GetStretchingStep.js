@@ -1,6 +1,3 @@
-var console = require('console')
-var http=require('http')
-var config = require('config')
 module.exports.function = function GetStretchingStep (stretchingSel,stretchingStep) {
 
   var idx = 0
