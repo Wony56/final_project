@@ -89,6 +89,29 @@ result-view{
           
         }
       }
+      section{
+        content{
+          title-area{
+            slot2{
+              paragraph{
+                value("본 캡슐은 저작권자의 동의 아래 제작되었습니다.")
+                
+              }
+            }
+            slot3{
+              
+              paragraph{
+
+                value(
+                  피지컬갤러리,정유진, 병원 가지 않고 통증 잡는 5분 스트레칭, 피오르드, 2018
+김성종,남기민, 쓸모있는 몸을 만드는 스트레칭, 북스고, 2019
+                )
+
+              }
+            }
+          }
+        }
+      }
     }
     else{
       section{
