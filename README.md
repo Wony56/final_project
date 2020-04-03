@@ -1,7 +1,7 @@
 # Final_Project
 Bixby Programming  & AI chatBot
 ### Project__척추요정
-<img src="https://lab.ssafy.com/jupang/final_project/raw/develop/images/logo.png" alt="image-20191025162159210" style="zoom:50%;" />
+<img src="./images/logo.png" alt="image-20191025162159210" style="zoom:50%;" />
 
 ### Team__ThinkBix
 "안녕하십니까! 사용자의 건강을 책임지는 개발자 ThinkBix 입니다."
