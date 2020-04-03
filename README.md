@@ -1,5 +1,5 @@
 # Final_Project
-Bixby Programming  & AI chatBot
+Bixby Programming
 ### Project__척추요정
 <img src="./images/logo.png" alt="image-20191025162159210" style="zoom:50%;" />
 
@@ -24,10 +24,10 @@ Bixby Programming  & AI chatBot
 
 ### Bixby Project
 ##### 서버구조 <a id="menu1"></a>
-![image-20191025165524228](https://lab.ssafy.com/jupang/final_project/raw/develop/images/server_architecture.png)
+![image-20191025165524228](./images/server_architecture.png)
 
 ##### 데이터 구조 <a id="menu2"></a>
-![image-20191025165759600](https://lab.ssafy.com/jupang/final_project/raw/develop/images/database.png)
+![image-20191025165759600](./images/database.png)
 
 - 데이터 출처 :
 - 쓸모있는 몸을 만드는 스트레칭
@@ -38,10 +38,10 @@ Bixby Programming  & AI chatBot
 ###### Backend Page <a id="menu3"></a>
 * 데이터를 관리하기 위한 Backend Page
 
-![image-20191025160611797](https://lab.ssafy.com/jupang/final_project/raw/develop/images/backendpage_login.png)
+![image-20191025160611797](./images/backendpage_login.png)
 * Admin으로 로그인 이후 필요한 데이터 추가 가능
 
-![image-20191025160551931](https://lab.ssafy.com/jupang/final_project/raw/develop/images/backendpage.png)
+![image-20191025160551931](./images/backendpage.png)
 
 ##### 캡슐구조 <a id="menu4"></a>
 assets,code,models,resources 구성 되어 있습니다.
@@ -67,15 +67,15 @@ resources
 - Bixby 실행화면
   * 스트레칭 검색 시
 
-  <img src="https://lab.ssafy.com/jupang/final_project/raw/develop/images/apppage.png" alt="image-20191025160922003" style="zoom:50%; align-items:left" />
+  <img src="./images/apppage.png" alt="image-20191025160922003" style="zoom:50%; align-items:left" />
 
   * 리스트에서 클릭 시 DetailPage
 
-    - <img src="https://lab.ssafy.com/jupang/final_project/raw/develop/images/appdetail.png" alt="image-20191025161023730" style="zoom:50%;" />
+    - <img src="./images/appdetail.png" alt="image-20191025161023730" style="zoom:50%;" />
 
   * 운동 시작 시
 
-    - <img src="https://lab.ssafy.com/jupang/final_project/raw/develop/images/appstep.png" alt="image-20191025161115304" style="zoom:50%;" />
+    - <img src="./images/appstep.png" alt="image-20191025161115304" style="zoom:50%;" />
 
 
 ##### 발화(Training) <a id="menu6"></a>
@@ -83,7 +83,7 @@ resources
 ---
 ### Web Project
 ##### 서버구조 <a id = "menu7"></a>
-<img src="https://lab.ssafy.com/jupang/final_project/blob/feature/test/images/website/server_architecture2.PNG" style="zoom:50%;" />
+<img src="./images/website/server_architecture2.PNG" style="zoom:50%;" />
 
 ##### 데이터 구조
  - 빅스비의 [데이터구조](#menu2) 와 같기 때문에 생략
